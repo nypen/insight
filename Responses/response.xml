@@ -1,0 +1,809 @@
+<?xml version='1.0' encoding='utf-8'?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata" xmlns:d="http://schemas.microsoft.com/ado/2007/08/dataservices" xml:base="https://scihub.copernicus.eu/apihub/odata/v1/Products('2b17b57d-fff4-4645-b539-91f305c27c69')/">
+    <id>https://scihub.copernicus.eu/apihub/odata/v1/Products('2b17b57d-fff4-4645-b539-91f305c27c69')/Attributes</id>
+    <title type="text">Attributes</title>
+    <updated>2020-11-15T09:56:55.946Z</updated>
+    <author>
+        <name/>
+    </author>
+    <link href="Attributes" rel="self" title="Attributes"/>
+    <entry>
+        <id>https://scihub.copernicus.eu/apihub/odata/v1/Products('2b17b57d-fff4-4645-b539-91f305c27c69')/Attributes('Acquisition%20Type')</id>
+        <title type="text">Acquisition Type</title>
+        <updated>2020-11-15T09:56:55.947Z</updated>
+        <category term="DHuS.Attribute" scheme="http://schemas.microsoft.com/ado/2007/08/dataservices/scheme"/>
+        <link href="Attributes('Acquisition%20Type')" rel="edit" title="Attribute"/>
+        <content type="application/xml">
+            <m:properties>
+                <d:Id>Acquisition Type</d:Id>
+                <d:Name>Acquisition Type</d:Name>
+                <d:ContentType>text/plain</d:ContentType>
+                <d:ContentLength>7</d:ContentLength>
+                <d:Value>NOMINAL</d:Value>
+                <d:Category>product</d:Category>
+            </m:properties>
+        </content>
+    </entry>
+    <entry>
+        <id>https://scihub.copernicus.eu/apihub/odata/v1/Products('2b17b57d-fff4-4645-b539-91f305c27c69')/Attributes('Carrier%20rocket')</id>
+        <title type="text">Carrier rocket</title>
+        <updated>2020-11-15T09:56:55.947Z</updated>
+        <category term="DHuS.Attribute" scheme="http://schemas.microsoft.com/ado/2007/08/dataservices/scheme"/>
+        <link href="Attributes('Carrier%20rocket')" rel="edit" title="Attribute"/>
+        <content type="application/xml">
+            <m:properties>
+                <d:Id>Carrier rocket</d:Id>
+                <d:Name>Carrier rocket</d:Name>
+                <d:ContentType>text/plain</d:ContentType>
+                <d:ContentLength>5</d:ContentLength>
+                <d:Value>Soyuz</d:Value>
+                <d:Category>platform</d:Category>
+            </m:properties>
+        </content>
+    </entry>
+    <entry>
+        <id>https://scihub.copernicus.eu/apihub/odata/v1/Products('2b17b57d-fff4-4645-b539-91f305c27c69')/Attributes('Cycle%20number')</id>
+        <title type="text">Cycle number</title>
+        <updated>2020-11-15T09:56:55.947Z</updated>
+        <category term="DHuS.Attribute" scheme="http://schemas.microsoft.com/ado/2007/08/dataservices/scheme"/>
+        <link href="Attributes('Cycle%20number')" rel="edit" title="Attribute"/>
+        <content type="application/xml">
+            <m:properties>
+                <d:Id>Cycle number</d:Id>
+                <d:Name>Cycle number</d:Name>
+                <d:ContentType>text/plain</d:ContentType>
+                <d:ContentLength>2</d:ContentLength>
+                <d:Value>69</d:Value>
+                <d:Category>product</d:Category>
+            </m:properties>
+        </content>
+    </entry>
+    <entry>
+        <id>https://scihub.copernicus.eu/apihub/odata/v1/Products('2b17b57d-fff4-4645-b539-91f305c27c69')/Attributes('Date')</id>
+        <title type="text">Date</title>
+        <updated>2020-11-15T09:56:55.947Z</updated>
+        <category term="DHuS.Attribute" scheme="http://schemas.microsoft.com/ado/2007/08/dataservices/scheme"/>
+        <link href="Attributes('Date')" rel="edit" title="Attribute"/>
+        <content type="application/xml">
+            <m:properties>
+                <d:Id>Date</d:Id>
+                <d:Name>Date</d:Name>
+                <d:ContentType>text/plain</d:ContentType>
+                <d:ContentLength>24</d:ContentLength>
+                <d:Value>2016-01-17T10:34:51.922Z</d:Value>
+                <d:Category>summary</d:Category>
+            </m:properties>
+        </content>
+    </entry>
+    <entry>
+        <id>https://scihub.copernicus.eu/apihub/odata/v1/Products('2b17b57d-fff4-4645-b539-91f305c27c69')/Attributes('Filename')</id>
+        <title type="text">Filename</title>
+        <updated>2020-11-15T09:56:55.947Z</updated>
+        <category term="DHuS.Attribute" scheme="http://schemas.microsoft.com/ado/2007/08/dataservices/scheme"/>
+        <link href="Attributes('Filename')" rel="edit" title="Attribute"/>
+        <content type="application/xml">
+            <m:properties>
+                <d:Id>Filename</d:Id>
+                <d:Name>Filename</d:Name>
+                <d:ContentType>text/plain</d:ContentType>
+                <d:ContentLength>72</d:ContentLength>
+                <d:Value>S1A_IW_SLC__1SDV_20160117T103451_20160117T103518_009533_00DD94_D46A.SAFE</d:Value>
+                <d:Category></d:Category>
+            </m:properties>
+        </content>
+    </entry>
+    <entry>
+        <id>https://scihub.copernicus.eu/apihub/odata/v1/Products('2b17b57d-fff4-4645-b539-91f305c27c69')/Attributes('Footprint')</id>
+        <title type="text">Footprint</title>
+        <updated>2020-11-15T09:56:55.947Z</updated>
+        <category term="DHuS.Attribute" scheme="http://schemas.microsoft.com/ado/2007/08/dataservices/scheme"/>
+        <link href="Attributes('Footprint')" rel="edit" title="Attribute"/>
+        <content type="application/xml">
+            <m:properties>
+                <d:Id>Footprint</d:Id>
+                <d:Name>Footprint</d:Name>
+                <d:ContentType>text/plain</d:ContentType>
+                <d:ContentLength>363</d:ContentLength>
+                <d:Value>&lt;gml:Polygon srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" xmlns:gml="http://www.opengis.net/gml">   &lt;gml:outerBoundaryIs>      &lt;gml:LinearRing>         &lt;gml:coordinates>29.073282,110.593719 29.480221,113.151863 27.857580,113.469070 27.447992,110.951752 29.073282,110.593719&lt;/gml:coordinates>      &lt;/gml:LinearRing>   &lt;/gml:outerBoundaryIs>&lt;/gml:Polygon></d:Value>
+                <d:Category>product</d:Category>
+            </m:properties>
+        </content>
+    </entry>
+    <entry>
+        <id>https://scihub.copernicus.eu/apihub/odata/v1/Products('2b17b57d-fff4-4645-b539-91f305c27c69')/Attributes('Format')</id>
+        <title type="text">Format</title>
+        <updated>2020-11-15T09:56:55.947Z</updated>
+        <category term="DHuS.Attribute" scheme="http://schemas.microsoft.com/ado/2007/08/dataservices/scheme"/>
+        <link href="Attributes('Format')" rel="edit" title="Attribute"/>
+        <content type="application/xml">
+            <m:properties>
+                <d:Id>Format</d:Id>
+                <d:Name>Format</d:Name>
+                <d:ContentType>text/plain</d:ContentType>
+                <d:ContentLength>4</d:ContentLength>
+                <d:Value>SAFE</d:Value>
+                <d:Category>product</d:Category>
+            </m:properties>
+        </content>
+    </entry>
+    <entry>
+        <id>https://scihub.copernicus.eu/apihub/odata/v1/Products('2b17b57d-fff4-4645-b539-91f305c27c69')/Attributes('Identifier')</id>
+        <title type="text">Identifier</title>
+        <updated>2020-11-15T09:56:55.947Z</updated>
+        <category term="DHuS.Attribute" scheme="http://schemas.microsoft.com/ado/2007/08/dataservices/scheme"/>
+        <link href="Attributes('Identifier')" rel="edit" title="Attribute"/>
+        <content type="application/xml">
+            <m:properties>
+                <d:Id>Identifier</d:Id>
+                <d:Name>Identifier</d:Name>
+                <d:ContentType>text/plain</d:ContentType>
+                <d:ContentLength>67</d:ContentLength>
+                <d:Value>S1A_IW_SLC__1SDV_20160117T103451_20160117T103518_009533_00DD94_D46A</d:Value>
+                <d:Category></d:Category>
+            </m:properties>
+        </content>
+    </entry>
+    <entry>
+        <id>https://scihub.copernicus.eu/apihub/odata/v1/Products('2b17b57d-fff4-4645-b539-91f305c27c69')/Attributes('Ingestion%20Date')</id>
+        <title type="text">Ingestion Date</title>
+        <updated>2020-11-15T09:56:55.947Z</updated>
+        <category term="DHuS.Attribute" scheme="http://schemas.microsoft.com/ado/2007/08/dataservices/scheme"/>
+        <link href="Attributes('Ingestion%20Date')" rel="edit" title="Attribute"/>
+        <content type="application/xml">
+            <m:properties>
+                <d:Id>Ingestion Date</d:Id>
+                <d:Name>Ingestion Date</d:Name>
+                <d:ContentType>text/plain</d:ContentType>
+                <d:ContentLength>24</d:ContentLength>
+                <d:Value>2016-01-17T14:47:22.492Z</d:Value>
+                <d:Category>product</d:Category>
+            </m:properties>
+        </content>
+    </entry>
+    <entry>
+        <id>https://scihub.copernicus.eu/apihub/odata/v1/Products('2b17b57d-fff4-4645-b539-91f305c27c69')/Attributes('Instrument')</id>
+        <title type="text">Instrument</title>
+        <updated>2020-11-15T09:56:55.947Z</updated>
+        <category term="DHuS.Attribute" scheme="http://schemas.microsoft.com/ado/2007/08/dataservices/scheme"/>
+        <link href="Attributes('Instrument')" rel="edit" title="Attribute"/>
+        <content type="application/xml">
+            <m:properties>
+                <d:Id>Instrument</d:Id>
+                <d:Name>Instrument</d:Name>
+                <d:ContentType>text/plain</d:ContentType>
+                <d:ContentLength>5</d:ContentLength>
+                <d:Value>SAR-C</d:Value>
+                <d:Category>summary</d:Category>
+            </m:properties>
+        </content>
+    </entry>
+    <entry>
+        <id>https://scihub.copernicus.eu/apihub/odata/v1/Products('2b17b57d-fff4-4645-b539-91f305c27c69')/Attributes('Instrument%20abbreviation')</id>
+        <title type="text">Instrument abbreviation</title>
+        <updated>2020-11-15T09:56:55.947Z</updated>
+        <category term="DHuS.Attribute" scheme="http://schemas.microsoft.com/ado/2007/08/dataservices/scheme"/>
+        <link href="Attributes('Instrument%20abbreviation')" rel="edit" title="Attribute"/>
+        <content type="application/xml">
+            <m:properties>
+                <d:Id>Instrument abbreviation</d:Id>
+                <d:Name>Instrument abbreviation</d:Name>
+                <d:ContentType>text/plain</d:ContentType>
+                <d:ContentLength>9</d:ContentLength>
+                <d:Value>SAR-C SAR</d:Value>
+                <d:Category>instrument</d:Category>
+            </m:properties>
+        </content>
+    </entry>
+    <entry>
+        <id>https://scihub.copernicus.eu/apihub/odata/v1/Products('2b17b57d-fff4-4645-b539-91f305c27c69')/Attributes('Instrument%20description')</id>
+        <title type="text">Instrument description</title>
+        <updated>2020-11-15T09:56:55.947Z</updated>
+        <category term="DHuS.Attribute" scheme="http://schemas.microsoft.com/ado/2007/08/dataservices/scheme"/>
+        <link href="Attributes('Instrument%20description')" rel="edit" title="Attribute"/>
+        <content type="application/xml">
+            <m:properties>
+                <d:Id>Instrument description</d:Id>
+                <d:Name>Instrument description</d:Name>
+                <d:ContentType>text/plain</d:ContentType>
+                <d:ContentLength>145</d:ContentLength>
+                <d:Value>&lt;a target="_blank" href="https://sentinel.esa.int/web/sentinel/missions/sentinel-1">https://sentinel.esa.int/web/sentinel/missions/sentinel-1&lt;/a></d:Value>
+                <d:Category>instrument</d:Category>
+            </m:properties>
+        </content>
+    </entry>
+    <entry>
+        <id>https://scihub.copernicus.eu/apihub/odata/v1/Products('2b17b57d-fff4-4645-b539-91f305c27c69')/Attributes('Instrument%20description%20text')</id>
+        <title type="text">Instrument description text</title>
+        <updated>2020-11-15T09:56:55.947Z</updated>
+        <category term="DHuS.Attribute" scheme="http://schemas.microsoft.com/ado/2007/08/dataservices/scheme"/>
+        <link href="Attributes('Instrument%20description%20text')" rel="edit" title="Attribute"/>
+        <content type="application/xml">
+            <m:properties>
+                <d:Id>Instrument description text</d:Id>
+                <d:Name>Instrument description text</d:Name>
+                <d:ContentType>text/plain</d:ContentType>
+                <d:ContentLength>1143</d:ContentLength>
+                <d:Value>The SAR Antenna Subsystem (SAS) is developed and build by AstriumGmbH. It is a large foldable planar phased array antenna, which isformed by a centre panel and two antenna side wings. In deployedconfiguration the antenna has an overall aperture of 12.3 x 0.84 m.The antenna provides a fast electronic scanning capability inazimuth and elevation and is based on low loss and highly stablewaveguide radiators build in carbon fibre technology, which arealready successfully used by the TerraSAR-X radar imaging mission.The SAR Electronic Subsystem (SES) is developed and build byAstrium Ltd. It provides all radar control, IF/ RF signalgeneration and receive data handling functions for the SARInstrument. The fully redundant SES is based on a channelisedarchitecture with one transmit and two receive chains, providing amodular approach to the generation and reception of wide-bandsignals and the handling of multi-polarisation modes. One keyfeature is the implementation of the Flexible Dynamic BlockAdaptive Quantisation (FD-BAQ) data compression concept, whichallows an efficient use of on-board storage resources and minimisesdownlink times.</d:Value>
+                <d:Category></d:Category>
+            </m:properties>
+        </content>
+    </entry>
+    <entry>
+        <id>https://scihub.copernicus.eu/apihub/odata/v1/Products('2b17b57d-fff4-4645-b539-91f305c27c69')/Attributes('Instrument%20mode')</id>
+        <title type="text">Instrument mode</title>
+        <updated>2020-11-15T09:56:55.947Z</updated>
+        <category term="DHuS.Attribute" scheme="http://schemas.microsoft.com/ado/2007/08/dataservices/scheme"/>
+        <link href="Attributes('Instrument%20mode')" rel="edit" title="Attribute"/>
+        <content type="application/xml">
+            <m:properties>
+                <d:Id>Instrument mode</d:Id>
+                <d:Name>Instrument mode</d:Name>
+                <d:ContentType>text/plain</d:ContentType>
+                <d:ContentLength>2</d:ContentLength>
+                <d:Value>IW</d:Value>
+                <d:Category>instrument</d:Category>
+            </m:properties>
+        </content>
+    </entry>
+    <entry>
+        <id>https://scihub.copernicus.eu/apihub/odata/v1/Products('2b17b57d-fff4-4645-b539-91f305c27c69')/Attributes('Instrument%20name')</id>
+        <title type="text">Instrument name</title>
+        <updated>2020-11-15T09:56:55.947Z</updated>
+        <category term="DHuS.Attribute" scheme="http://schemas.microsoft.com/ado/2007/08/dataservices/scheme"/>
+        <link href="Attributes('Instrument%20name')" rel="edit" title="Attribute"/>
+        <content type="application/xml">
+            <m:properties>
+                <d:Id>Instrument name</d:Id>
+                <d:Name>Instrument name</d:Name>
+                <d:ContentType>text/plain</d:ContentType>
+                <d:ContentLength>33</d:ContentLength>
+                <d:Value>Synthetic Aperture Radar (C-band)</d:Value>
+                <d:Category>instrument</d:Category>
+            </m:properties>
+        </content>
+    </entry>
+    <entry>
+        <id>https://scihub.copernicus.eu/apihub/odata/v1/Products('2b17b57d-fff4-4645-b539-91f305c27c69')/Attributes('Instrument%20swath')</id>
+        <title type="text">Instrument swath</title>
+        <updated>2020-11-15T09:56:55.947Z</updated>
+        <category term="DHuS.Attribute" scheme="http://schemas.microsoft.com/ado/2007/08/dataservices/scheme"/>
+        <link href="Attributes('Instrument%20swath')" rel="edit" title="Attribute"/>
+        <content type="application/xml">
+            <m:properties>
+                <d:Id>Instrument swath</d:Id>
+                <d:Name>Instrument swath</d:Name>
+                <d:ContentType>text/plain</d:ContentType>
+                <d:ContentLength>11</d:ContentLength>
+                <d:Value>IW1 IW2 IW3</d:Value>
+                <d:Category>instrument</d:Category>
+            </m:properties>
+        </content>
+    </entry>
+    <entry>
+        <id>https://scihub.copernicus.eu/apihub/odata/v1/Products('2b17b57d-fff4-4645-b539-91f305c27c69')/Attributes('JTS%20footprint')</id>
+        <title type="text">JTS footprint</title>
+        <updated>2020-11-15T09:56:55.947Z</updated>
+        <category term="DHuS.Attribute" scheme="http://schemas.microsoft.com/ado/2007/08/dataservices/scheme"/>
+        <link href="Attributes('JTS%20footprint')" rel="edit" title="Attribute"/>
+        <content type="application/xml">
+            <m:properties>
+                <d:Id>JTS footprint</d:Id>
+                <d:Name>JTS footprint</d:Name>
+                <d:ContentType>text/plain</d:ContentType>
+                <d:ContentLength>116</d:ContentLength>
+                <d:Value>POLYGON ((110.593719 29.073282,113.151863 29.480221,113.469070 27.857580,110.951752 27.447992,110.593719 29.073282))</d:Value>
+                <d:Category>product</d:Category>
+            </m:properties>
+        </content>
+    </entry>
+    <entry>
+        <id>https://scihub.copernicus.eu/apihub/odata/v1/Products('2b17b57d-fff4-4645-b539-91f305c27c69')/Attributes('Launch%20date')</id>
+        <title type="text">Launch date</title>
+        <updated>2020-11-15T09:56:55.947Z</updated>
+        <category term="DHuS.Attribute" scheme="http://schemas.microsoft.com/ado/2007/08/dataservices/scheme"/>
+        <link href="Attributes('Launch%20date')" rel="edit" title="Attribute"/>
+        <content type="application/xml">
+            <m:properties>
+                <d:Id>Launch date</d:Id>
+                <d:Name>Launch date</d:Name>
+                <d:ContentType>text/plain</d:ContentType>
+                <d:ContentLength>15</d:ContentLength>
+                <d:Value>April 3rd, 2014</d:Value>
+                <d:Category>platform</d:Category>
+            </m:properties>
+        </content>
+    </entry>
+    <entry>
+        <id>https://scihub.copernicus.eu/apihub/odata/v1/Products('2b17b57d-fff4-4645-b539-91f305c27c69')/Attributes('Mission%20datatake%20id')</id>
+        <title type="text">Mission datatake id</title>
+        <updated>2020-11-15T09:56:55.947Z</updated>
+        <category term="DHuS.Attribute" scheme="http://schemas.microsoft.com/ado/2007/08/dataservices/scheme"/>
+        <link href="Attributes('Mission%20datatake%20id')" rel="edit" title="Attribute"/>
+        <content type="application/xml">
+            <m:properties>
+                <d:Id>Mission datatake id</d:Id>
+                <d:Name>Mission datatake id</d:Name>
+                <d:ContentType>text/plain</d:ContentType>
+                <d:ContentLength>5</d:ContentLength>
+                <d:Value>56724</d:Value>
+                <d:Category>product</d:Category>
+            </m:properties>
+        </content>
+    </entry>
+    <entry>
+        <id>https://scihub.copernicus.eu/apihub/odata/v1/Products('2b17b57d-fff4-4645-b539-91f305c27c69')/Attributes('Mission%20type')</id>
+        <title type="text">Mission type</title>
+        <updated>2020-11-15T09:56:55.947Z</updated>
+        <category term="DHuS.Attribute" scheme="http://schemas.microsoft.com/ado/2007/08/dataservices/scheme"/>
+        <link href="Attributes('Mission%20type')" rel="edit" title="Attribute"/>
+        <content type="application/xml">
+            <m:properties>
+                <d:Id>Mission type</d:Id>
+                <d:Name>Mission type</d:Name>
+                <d:ContentType>text/plain</d:ContentType>
+                <d:ContentLength>17</d:ContentLength>
+                <d:Value>Earth observation</d:Value>
+                <d:Category>platform</d:Category>
+            </m:properties>
+        </content>
+    </entry>
+    <entry>
+        <id>https://scihub.copernicus.eu/apihub/odata/v1/Products('2b17b57d-fff4-4645-b539-91f305c27c69')/Attributes('Mode')</id>
+        <title type="text">Mode</title>
+        <updated>2020-11-15T09:56:55.947Z</updated>
+        <category term="DHuS.Attribute" scheme="http://schemas.microsoft.com/ado/2007/08/dataservices/scheme"/>
+        <link href="Attributes('Mode')" rel="edit" title="Attribute"/>
+        <content type="application/xml">
+            <m:properties>
+                <d:Id>Mode</d:Id>
+                <d:Name>Mode</d:Name>
+                <d:ContentType>text/plain</d:ContentType>
+                <d:ContentLength>2</d:ContentLength>
+                <d:Value>IW</d:Value>
+                <d:Category>summary</d:Category>
+            </m:properties>
+        </content>
+    </entry>
+    <entry>
+        <id>https://scihub.copernicus.eu/apihub/odata/v1/Products('2b17b57d-fff4-4645-b539-91f305c27c69')/Attributes('NSSDC%20identifier')</id>
+        <title type="text">NSSDC identifier</title>
+        <updated>2020-11-15T09:56:55.947Z</updated>
+        <category term="DHuS.Attribute" scheme="http://schemas.microsoft.com/ado/2007/08/dataservices/scheme"/>
+        <link href="Attributes('NSSDC%20identifier')" rel="edit" title="Attribute"/>
+        <content type="application/xml">
+            <m:properties>
+                <d:Id>NSSDC identifier</d:Id>
+                <d:Name>NSSDC identifier</d:Name>
+                <d:ContentType>text/plain</d:ContentType>
+                <d:ContentLength>9</d:ContentLength>
+                <d:Value>0000-000A</d:Value>
+                <d:Category>platform</d:Category>
+            </m:properties>
+        </content>
+    </entry>
+    <entry>
+        <id>https://scihub.copernicus.eu/apihub/odata/v1/Products('2b17b57d-fff4-4645-b539-91f305c27c69')/Attributes('Operator')</id>
+        <title type="text">Operator</title>
+        <updated>2020-11-15T09:56:55.947Z</updated>
+        <category term="DHuS.Attribute" scheme="http://schemas.microsoft.com/ado/2007/08/dataservices/scheme"/>
+        <link href="Attributes('Operator')" rel="edit" title="Attribute"/>
+        <content type="application/xml">
+            <m:properties>
+                <d:Id>Operator</d:Id>
+                <d:Name>Operator</d:Name>
+                <d:ContentType>text/plain</d:ContentType>
+                <d:ContentLength>21</d:ContentLength>
+                <d:Value>European Space Agency</d:Value>
+                <d:Category>platform</d:Category>
+            </m:properties>
+        </content>
+    </entry>
+    <entry>
+        <id>https://scihub.copernicus.eu/apihub/odata/v1/Products('2b17b57d-fff4-4645-b539-91f305c27c69')/Attributes('Orbit%20number%20%28start%29')</id>
+        <title type="text">Orbit number (start)</title>
+        <updated>2020-11-15T09:56:55.947Z</updated>
+        <category term="DHuS.Attribute" scheme="http://schemas.microsoft.com/ado/2007/08/dataservices/scheme"/>
+        <link href="Attributes('Orbit%20number%20%28start%29')" rel="edit" title="Attribute"/>
+        <content type="application/xml">
+            <m:properties>
+                <d:Id>Orbit number (start)</d:Id>
+                <d:Name>Orbit number (start)</d:Name>
+                <d:ContentType>text/plain</d:ContentType>
+                <d:ContentLength>4</d:ContentLength>
+                <d:Value>9533</d:Value>
+                <d:Category>product</d:Category>
+            </m:properties>
+        </content>
+    </entry>
+    <entry>
+        <id>https://scihub.copernicus.eu/apihub/odata/v1/Products('2b17b57d-fff4-4645-b539-91f305c27c69')/Attributes('Orbit%20number%20%28stop%29')</id>
+        <title type="text">Orbit number (stop)</title>
+        <updated>2020-11-15T09:56:55.947Z</updated>
+        <category term="DHuS.Attribute" scheme="http://schemas.microsoft.com/ado/2007/08/dataservices/scheme"/>
+        <link href="Attributes('Orbit%20number%20%28stop%29')" rel="edit" title="Attribute"/>
+        <content type="application/xml">
+            <m:properties>
+                <d:Id>Orbit number (stop)</d:Id>
+                <d:Name>Orbit number (stop)</d:Name>
+                <d:ContentType>text/plain</d:ContentType>
+                <d:ContentLength>4</d:ContentLength>
+                <d:Value>9533</d:Value>
+                <d:Category>product</d:Category>
+            </m:properties>
+        </content>
+    </entry>
+    <entry>
+        <id>https://scihub.copernicus.eu/apihub/odata/v1/Products('2b17b57d-fff4-4645-b539-91f305c27c69')/Attributes('Pass%20direction')</id>
+        <title type="text">Pass direction</title>
+        <updated>2020-11-15T09:56:55.947Z</updated>
+        <category term="DHuS.Attribute" scheme="http://schemas.microsoft.com/ado/2007/08/dataservices/scheme"/>
+        <link href="Attributes('Pass%20direction')" rel="edit" title="Attribute"/>
+        <content type="application/xml">
+            <m:properties>
+                <d:Id>Pass direction</d:Id>
+                <d:Name>Pass direction</d:Name>
+                <d:ContentType>text/plain</d:ContentType>
+                <d:ContentLength>9</d:ContentLength>
+                <d:Value>ASCENDING</d:Value>
+                <d:Category>product</d:Category>
+            </m:properties>
+        </content>
+    </entry>
+    <entry>
+        <id>https://scihub.copernicus.eu/apihub/odata/v1/Products('2b17b57d-fff4-4645-b539-91f305c27c69')/Attributes('Phase%20identifier')</id>
+        <title type="text">Phase identifier</title>
+        <updated>2020-11-15T09:56:55.947Z</updated>
+        <category term="DHuS.Attribute" scheme="http://schemas.microsoft.com/ado/2007/08/dataservices/scheme"/>
+        <link href="Attributes('Phase%20identifier')" rel="edit" title="Attribute"/>
+        <content type="application/xml">
+            <m:properties>
+                <d:Id>Phase identifier</d:Id>
+                <d:Name>Phase identifier</d:Name>
+                <d:ContentType>text/plain</d:ContentType>
+                <d:ContentLength>1</d:ContentLength>
+                <d:Value>1</d:Value>
+                <d:Category>product</d:Category>
+            </m:properties>
+        </content>
+    </entry>
+    <entry>
+        <id>https://scihub.copernicus.eu/apihub/odata/v1/Products('2b17b57d-fff4-4645-b539-91f305c27c69')/Attributes('Polarisation')</id>
+        <title type="text">Polarisation</title>
+        <updated>2020-11-15T09:56:55.947Z</updated>
+        <category term="DHuS.Attribute" scheme="http://schemas.microsoft.com/ado/2007/08/dataservices/scheme"/>
+        <link href="Attributes('Polarisation')" rel="edit" title="Attribute"/>
+        <content type="application/xml">
+            <m:properties>
+                <d:Id>Polarisation</d:Id>
+                <d:Name>Polarisation</d:Name>
+                <d:ContentType>text/plain</d:ContentType>
+                <d:ContentLength>5</d:ContentLength>
+                <d:Value>VV VH</d:Value>
+                <d:Category>product</d:Category>
+            </m:properties>
+        </content>
+    </entry>
+    <entry>
+        <id>https://scihub.copernicus.eu/apihub/odata/v1/Products('2b17b57d-fff4-4645-b539-91f305c27c69')/Attributes('Product%20class')</id>
+        <title type="text">Product class</title>
+        <updated>2020-11-15T09:56:55.947Z</updated>
+        <category term="DHuS.Attribute" scheme="http://schemas.microsoft.com/ado/2007/08/dataservices/scheme"/>
+        <link href="Attributes('Product%20class')" rel="edit" title="Attribute"/>
+        <content type="application/xml">
+            <m:properties>
+                <d:Id>Product class</d:Id>
+                <d:Name>Product class</d:Name>
+                <d:ContentType>text/plain</d:ContentType>
+                <d:ContentLength>1</d:ContentLength>
+                <d:Value>S</d:Value>
+                <d:Category>product</d:Category>
+            </m:properties>
+        </content>
+    </entry>
+    <entry>
+        <id>https://scihub.copernicus.eu/apihub/odata/v1/Products('2b17b57d-fff4-4645-b539-91f305c27c69')/Attributes('Product%20class%20description')</id>
+        <title type="text">Product class description</title>
+        <updated>2020-11-15T09:56:55.947Z</updated>
+        <category term="DHuS.Attribute" scheme="http://schemas.microsoft.com/ado/2007/08/dataservices/scheme"/>
+        <link href="Attributes('Product%20class%20description')" rel="edit" title="Attribute"/>
+        <content type="application/xml">
+            <m:properties>
+                <d:Id>Product class description</d:Id>
+                <d:Name>Product class description</d:Name>
+                <d:ContentType>text/plain</d:ContentType>
+                <d:ContentLength>23</d:ContentLength>
+                <d:Value>SAR Standard L1 Product</d:Value>
+                <d:Category>product</d:Category>
+            </m:properties>
+        </content>
+    </entry>
+    <entry>
+        <id>https://scihub.copernicus.eu/apihub/odata/v1/Products('2b17b57d-fff4-4645-b539-91f305c27c69')/Attributes('Product%20composition')</id>
+        <title type="text">Product composition</title>
+        <updated>2020-11-15T09:56:55.947Z</updated>
+        <category term="DHuS.Attribute" scheme="http://schemas.microsoft.com/ado/2007/08/dataservices/scheme"/>
+        <link href="Attributes('Product%20composition')" rel="edit" title="Attribute"/>
+        <content type="application/xml">
+            <m:properties>
+                <d:Id>Product composition</d:Id>
+                <d:Name>Product composition</d:Name>
+                <d:ContentType>text/plain</d:ContentType>
+                <d:ContentLength>5</d:ContentLength>
+                <d:Value>Slice</d:Value>
+                <d:Category>product</d:Category>
+            </m:properties>
+        </content>
+    </entry>
+    <entry>
+        <id>https://scihub.copernicus.eu/apihub/odata/v1/Products('2b17b57d-fff4-4645-b539-91f305c27c69')/Attributes('Product%20level')</id>
+        <title type="text">Product level</title>
+        <updated>2020-11-15T09:56:55.947Z</updated>
+        <category term="DHuS.Attribute" scheme="http://schemas.microsoft.com/ado/2007/08/dataservices/scheme"/>
+        <link href="Attributes('Product%20level')" rel="edit" title="Attribute"/>
+        <content type="application/xml">
+            <m:properties>
+                <d:Id>Product level</d:Id>
+                <d:Name>Product level</d:Name>
+                <d:ContentType>text/plain</d:ContentType>
+                <d:ContentLength>2</d:ContentLength>
+                <d:Value>L1</d:Value>
+                <d:Category>product</d:Category>
+            </m:properties>
+        </content>
+    </entry>
+    <entry>
+        <id>https://scihub.copernicus.eu/apihub/odata/v1/Products('2b17b57d-fff4-4645-b539-91f305c27c69')/Attributes('Product%20type')</id>
+        <title type="text">Product type</title>
+        <updated>2020-11-15T09:56:55.947Z</updated>
+        <category term="DHuS.Attribute" scheme="http://schemas.microsoft.com/ado/2007/08/dataservices/scheme"/>
+        <link href="Attributes('Product%20type')" rel="edit" title="Attribute"/>
+        <content type="application/xml">
+            <m:properties>
+                <d:Id>Product type</d:Id>
+                <d:Name>Product type</d:Name>
+                <d:ContentType>text/plain</d:ContentType>
+                <d:ContentLength>3</d:ContentLength>
+                <d:Value>SLC</d:Value>
+                <d:Category>product</d:Category>
+            </m:properties>
+        </content>
+    </entry>
+    <entry>
+        <id>https://scihub.copernicus.eu/apihub/odata/v1/Products('2b17b57d-fff4-4645-b539-91f305c27c69')/Attributes('Relative%20orbit%20%28start%29')</id>
+        <title type="text">Relative orbit (start)</title>
+        <updated>2020-11-15T09:56:55.947Z</updated>
+        <category term="DHuS.Attribute" scheme="http://schemas.microsoft.com/ado/2007/08/dataservices/scheme"/>
+        <link href="Attributes('Relative%20orbit%20%28start%29')" rel="edit" title="Attribute"/>
+        <content type="application/xml">
+            <m:properties>
+                <d:Id>Relative orbit (start)</d:Id>
+                <d:Name>Relative orbit (start)</d:Name>
+                <d:ContentType>text/plain</d:ContentType>
+                <d:ContentLength>2</d:ContentLength>
+                <d:Value>11</d:Value>
+                <d:Category>product</d:Category>
+            </m:properties>
+        </content>
+    </entry>
+    <entry>
+        <id>https://scihub.copernicus.eu/apihub/odata/v1/Products('2b17b57d-fff4-4645-b539-91f305c27c69')/Attributes('Relative%20orbit%20%28stop%29')</id>
+        <title type="text">Relative orbit (stop)</title>
+        <updated>2020-11-15T09:56:55.947Z</updated>
+        <category term="DHuS.Attribute" scheme="http://schemas.microsoft.com/ado/2007/08/dataservices/scheme"/>
+        <link href="Attributes('Relative%20orbit%20%28stop%29')" rel="edit" title="Attribute"/>
+        <content type="application/xml">
+            <m:properties>
+                <d:Id>Relative orbit (stop)</d:Id>
+                <d:Name>Relative orbit (stop)</d:Name>
+                <d:ContentType>text/plain</d:ContentType>
+                <d:ContentLength>2</d:ContentLength>
+                <d:Value>11</d:Value>
+                <d:Category>product</d:Category>
+            </m:properties>
+        </content>
+    </entry>
+    <entry>
+        <id>https://scihub.copernicus.eu/apihub/odata/v1/Products('2b17b57d-fff4-4645-b539-91f305c27c69')/Attributes('Satellite')</id>
+        <title type="text">Satellite</title>
+        <updated>2020-11-15T09:56:55.947Z</updated>
+        <category term="DHuS.Attribute" scheme="http://schemas.microsoft.com/ado/2007/08/dataservices/scheme"/>
+        <link href="Attributes('Satellite')" rel="edit" title="Attribute"/>
+        <content type="application/xml">
+            <m:properties>
+                <d:Id>Satellite</d:Id>
+                <d:Name>Satellite</d:Name>
+                <d:ContentType>text/plain</d:ContentType>
+                <d:ContentLength>10</d:ContentLength>
+                <d:Value>Sentinel-1</d:Value>
+                <d:Category>summary</d:Category>
+            </m:properties>
+        </content>
+    </entry>
+    <entry>
+        <id>https://scihub.copernicus.eu/apihub/odata/v1/Products('2b17b57d-fff4-4645-b539-91f305c27c69')/Attributes('Satellite%20description')</id>
+        <title type="text">Satellite description</title>
+        <updated>2020-11-15T09:56:55.947Z</updated>
+        <category term="DHuS.Attribute" scheme="http://schemas.microsoft.com/ado/2007/08/dataservices/scheme"/>
+        <link href="Attributes('Satellite%20description')" rel="edit" title="Attribute"/>
+        <content type="application/xml">
+            <m:properties>
+                <d:Id>Satellite description</d:Id>
+                <d:Name>Satellite description</d:Name>
+                <d:ContentType>text/plain</d:ContentType>
+                <d:ContentLength>145</d:ContentLength>
+                <d:Value>&lt;a target="_blank" href="https://sentinel.esa.int/web/sentinel/missions/sentinel-1">https://sentinel.esa.int/web/sentinel/missions/sentinel-1&lt;/a></d:Value>
+                <d:Category>platform</d:Category>
+            </m:properties>
+        </content>
+    </entry>
+    <entry>
+        <id>https://scihub.copernicus.eu/apihub/odata/v1/Products('2b17b57d-fff4-4645-b539-91f305c27c69')/Attributes('Satellite%20name')</id>
+        <title type="text">Satellite name</title>
+        <updated>2020-11-15T09:56:55.947Z</updated>
+        <category term="DHuS.Attribute" scheme="http://schemas.microsoft.com/ado/2007/08/dataservices/scheme"/>
+        <link href="Attributes('Satellite%20name')" rel="edit" title="Attribute"/>
+        <content type="application/xml">
+            <m:properties>
+                <d:Id>Satellite name</d:Id>
+                <d:Name>Satellite name</d:Name>
+                <d:ContentType>text/plain</d:ContentType>
+                <d:ContentLength>10</d:ContentLength>
+                <d:Value>Sentinel-1</d:Value>
+                <d:Category>platform</d:Category>
+            </m:properties>
+        </content>
+    </entry>
+    <entry>
+        <id>https://scihub.copernicus.eu/apihub/odata/v1/Products('2b17b57d-fff4-4645-b539-91f305c27c69')/Attributes('Satellite%20number')</id>
+        <title type="text">Satellite number</title>
+        <updated>2020-11-15T09:56:55.947Z</updated>
+        <category term="DHuS.Attribute" scheme="http://schemas.microsoft.com/ado/2007/08/dataservices/scheme"/>
+        <link href="Attributes('Satellite%20number')" rel="edit" title="Attribute"/>
+        <content type="application/xml">
+            <m:properties>
+                <d:Id>Satellite number</d:Id>
+                <d:Name>Satellite number</d:Name>
+                <d:ContentType>text/plain</d:ContentType>
+                <d:ContentLength>1</d:ContentLength>
+                <d:Value>A</d:Value>
+                <d:Category>platform</d:Category>
+            </m:properties>
+        </content>
+    </entry>
+    <entry>
+        <id>https://scihub.copernicus.eu/apihub/odata/v1/Products('2b17b57d-fff4-4645-b539-91f305c27c69')/Attributes('Sensing%20start')</id>
+        <title type="text">Sensing start</title>
+        <updated>2020-11-15T09:56:55.947Z</updated>
+        <category term="DHuS.Attribute" scheme="http://schemas.microsoft.com/ado/2007/08/dataservices/scheme"/>
+        <link href="Attributes('Sensing%20start')" rel="edit" title="Attribute"/>
+        <content type="application/xml">
+            <m:properties>
+                <d:Id>Sensing start</d:Id>
+                <d:Name>Sensing start</d:Name>
+                <d:ContentType>text/plain</d:ContentType>
+                <d:ContentLength>24</d:ContentLength>
+                <d:Value>2016-01-17T10:34:51.922Z</d:Value>
+                <d:Category>product</d:Category>
+            </m:properties>
+        </content>
+    </entry>
+    <entry>
+        <id>https://scihub.copernicus.eu/apihub/odata/v1/Products('2b17b57d-fff4-4645-b539-91f305c27c69')/Attributes('Sensing%20stop')</id>
+        <title type="text">Sensing stop</title>
+        <updated>2020-11-15T09:56:55.947Z</updated>
+        <category term="DHuS.Attribute" scheme="http://schemas.microsoft.com/ado/2007/08/dataservices/scheme"/>
+        <link href="Attributes('Sensing%20stop')" rel="edit" title="Attribute"/>
+        <content type="application/xml">
+            <m:properties>
+                <d:Id>Sensing stop</d:Id>
+                <d:Name>Sensing stop</d:Name>
+                <d:ContentType>text/plain</d:ContentType>
+                <d:ContentLength>24</d:ContentLength>
+                <d:Value>2016-01-17T10:35:18.872Z</d:Value>
+                <d:Category>product</d:Category>
+            </m:properties>
+        </content>
+    </entry>
+    <entry>
+        <id>https://scihub.copernicus.eu/apihub/odata/v1/Products('2b17b57d-fff4-4645-b539-91f305c27c69')/Attributes('Size')</id>
+        <title type="text">Size</title>
+        <updated>2020-11-15T09:56:55.947Z</updated>
+        <category term="DHuS.Attribute" scheme="http://schemas.microsoft.com/ado/2007/08/dataservices/scheme"/>
+        <link href="Attributes('Size')" rel="edit" title="Attribute"/>
+        <content type="application/xml">
+            <m:properties>
+                <d:Id>Size</d:Id>
+                <d:Name>Size</d:Name>
+                <d:ContentType>text/plain</d:ContentType>
+                <d:ContentLength>6</d:ContentLength>
+                <d:Value>7.0 GB</d:Value>
+                <d:Category>summary</d:Category>
+            </m:properties>
+        </content>
+    </entry>
+    <entry>
+        <id>https://scihub.copernicus.eu/apihub/odata/v1/Products('2b17b57d-fff4-4645-b539-91f305c27c69')/Attributes('Slice%20number')</id>
+        <title type="text">Slice number</title>
+        <updated>2020-11-15T09:56:55.947Z</updated>
+        <category term="DHuS.Attribute" scheme="http://schemas.microsoft.com/ado/2007/08/dataservices/scheme"/>
+        <link href="Attributes('Slice%20number')" rel="edit" title="Attribute"/>
+        <content type="application/xml">
+            <m:properties>
+                <d:Id>Slice number</d:Id>
+                <d:Name>Slice number</d:Name>
+                <d:ContentType>text/plain</d:ContentType>
+                <d:ContentLength>1</d:ContentLength>
+                <d:Value>5</d:Value>
+                <d:Category>product</d:Category>
+            </m:properties>
+        </content>
+    </entry>
+    <entry>
+        <id>https://scihub.copernicus.eu/apihub/odata/v1/Products('2b17b57d-fff4-4645-b539-91f305c27c69')/Attributes('Start%20relative%20orbit%20number')</id>
+        <title type="text">Start relative orbit number</title>
+        <updated>2020-11-15T09:56:55.947Z</updated>
+        <category term="DHuS.Attribute" scheme="http://schemas.microsoft.com/ado/2007/08/dataservices/scheme"/>
+        <link href="Attributes('Start%20relative%20orbit%20number')" rel="edit" title="Attribute"/>
+        <content type="application/xml">
+            <m:properties>
+                <d:Id>Start relative orbit number</d:Id>
+                <d:Name>Start relative orbit number</d:Name>
+                <d:ContentType>text/plain</d:ContentType>
+                <d:ContentLength>2</d:ContentLength>
+                <d:Value>11</d:Value>
+                <d:Category>product</d:Category>
+            </m:properties>
+        </content>
+    </entry>
+    <entry>
+        <id>https://scihub.copernicus.eu/apihub/odata/v1/Products('2b17b57d-fff4-4645-b539-91f305c27c69')/Attributes('Status')</id>
+        <title type="text">Status</title>
+        <updated>2020-11-15T09:56:55.948Z</updated>
+        <category term="DHuS.Attribute" scheme="http://schemas.microsoft.com/ado/2007/08/dataservices/scheme"/>
+        <link href="Attributes('Status')" rel="edit" title="Attribute"/>
+        <content type="application/xml">
+            <m:properties>
+                <d:Id>Status</d:Id>
+                <d:Name>Status</d:Name>
+                <d:ContentType>text/plain</d:ContentType>
+                <d:ContentLength>8</d:ContentLength>
+                <d:Value>ARCHIVED</d:Value>
+                <d:Category>product</d:Category>
+            </m:properties>
+        </content>
+    </entry>
+    <entry>
+        <id>https://scihub.copernicus.eu/apihub/odata/v1/Products('2b17b57d-fff4-4645-b539-91f305c27c69')/Attributes('Stop%20relative%20orbit%20number')</id>
+        <title type="text">Stop relative orbit number</title>
+        <updated>2020-11-15T09:56:55.948Z</updated>
+        <category term="DHuS.Attribute" scheme="http://schemas.microsoft.com/ado/2007/08/dataservices/scheme"/>
+        <link href="Attributes('Stop%20relative%20orbit%20number')" rel="edit" title="Attribute"/>
+        <content type="application/xml">
+            <m:properties>
+                <d:Id>Stop relative orbit number</d:Id>
+                <d:Name>Stop relative orbit number</d:Name>
+                <d:ContentType>text/plain</d:ContentType>
+                <d:ContentLength>2</d:ContentLength>
+                <d:Value>11</d:Value>
+                <d:Category>product</d:Category>
+            </m:properties>
+        </content>
+    </entry>
+    <entry>
+        <id>https://scihub.copernicus.eu/apihub/odata/v1/Products('2b17b57d-fff4-4645-b539-91f305c27c69')/Attributes('Timeliness%20Category')</id>
+        <title type="text">Timeliness Category</title>
+        <updated>2020-11-15T09:56:55.948Z</updated>
+        <category term="DHuS.Attribute" scheme="http://schemas.microsoft.com/ado/2007/08/dataservices/scheme"/>
+        <link href="Attributes('Timeliness%20Category')" rel="edit" title="Attribute"/>
+        <content type="application/xml">
+            <m:properties>
+                <d:Id>Timeliness Category</d:Id>
+                <d:Name>Timeliness Category</d:Name>
+                <d:ContentType>text/plain</d:ContentType>
+                <d:ContentLength>8</d:ContentLength>
+                <d:Value>Fast-24h</d:Value>
+                <d:Category>product</d:Category>
+            </m:properties>
+        </content>
+    </entry>
+</feed>
