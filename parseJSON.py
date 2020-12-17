@@ -13,7 +13,7 @@ sentinel2_data = ['Datatake sensing start', 'Ingestion Date', 'Mission datatake 
     'Satellite name','Satellite number', 'Instrument abbreviation', 'Instrument mode', 
     'identifier Instrument id', 'Instrument name', 'identifier Platform id']
 
-with open('response.json') as f:
+with open('Responses/response.json') as f:
   data = json.load(f)
 
 d = data['d']
