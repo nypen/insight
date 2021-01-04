@@ -1,13 +1,13 @@
 class eoInstrument:
     def __init__(
-        self,
-        id,
-        name,
-        instrumentShortName,
-        description,                # NOT in Sentinel 2
-        polarisationChannels,       # NOT in Sentinel 2
-        operationalMode,
-        swathIdentifier             # NOT in Sentinel 2
+        self
+        # id,
+        # name,
+        # instrumentShortName,
+        # description,                # NOT in Sentinel 2
+        # polarisationChannels,       # NOT in Sentinel 2
+        # operationalMode,
+        # swathIdentifier             # NOT in Sentinel 2
     ):
             self.id = ""
             self.name = ""
@@ -20,11 +20,11 @@ class eoInstrument:
 
 class eoPlatform: 
     def __init__(
-        self,
-        id,
-        description,           
-        platformSerialIdentifier,
-        platformShortName
+        self
+        # id,
+        # description,           
+        # platformSerialIdentifier,
+        # platformShortName
     ):
         self.id = ""
         self.description = ""
@@ -34,15 +34,15 @@ class eoPlatform:
 class eoAcquisitionParameters:
 
     def __init__(
-        self,
-        acquisitionType,
-        cycleNumber,
-        ascendingNodeDate,
-        acquisitionSubType,
-        orbitNumber,
-        orbitDirection,
-        beginningDateTime,
-        endingDateTime,
+        self
+        # acquisitionType,
+        # cycleNumber,
+        # ascendingNodeDate,
+        # acquisitionSubType,
+        # orbitNumber,
+        # orbitDirection,
+        # beginningDateTime,
+        # endingDateTime,
         #ascendingNodeDate
         #tileId     ONLY IN SENTINEL 2
     ):

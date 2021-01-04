@@ -1,6 +1,7 @@
 import urllib.request
 import sys
 import json
+import models
 
 sentinel1_data = ['Acquisition Type', 'Cycle number', 'Ingestion Date', 'Mission datatake id', 
     'Orbit number (start)', 'Orbit number (stop)', 'Pass direction', 'Polarisation', 
@@ -26,7 +27,36 @@ for info in results:
     # print(info['__metadata'])
     metadata = info['__metadata']
     if(info['Id'] in sentinel1_data):
-        print("sentinel1 - ", info['Id'])
-    
+        print("sentinel1")
+        if(info['Category'] == 'instrument'):
+            instr = models.eoInstrument()
+            print('instrument = ', info['Id'])
+        
+        if(info['Category'] == 'platform'):
+            platf = models.eoPlatform()
+            print('platform = ', info['Id'])
+        
+        if(info['Category'] == 'product'):
+            pr = models.eoAcquisitionParameters()
+            print('product = ', info['Id'])
+
+print()
+print()
+
+for info in results:
     if(info['Id'] in sentinel2_data):
-        print("sentinel2 - ", info['Id'])
+        print("sentinel2")
+        if(info['Category'] == 'instrument'):
+            instr = models.eoInstrument()
+            print('instrument = ', info['Id'])
+        
+        if(info['Category'] == 'platform'):
+            platf = models.eoPlatform()
+            print('platform = ', info['Id'])
+        
+        if(info['Category'] == 'product'):
+            pr = models.eoAcquisitionParameters()
+            print('product = ', info['Id'])
+
+
+    
