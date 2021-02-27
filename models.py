@@ -1,54 +1,31 @@
 class eoInstrument:
-    def __init__(
-        self
-        # id,
-        # name,
-        # instrumentShortName,
-        # description,                # NOT in Sentinel 2
-        # polarisationChannels,       # NOT in Sentinel 2
-        # operationalMode,
-        # swathIdentifier             # NOT in Sentinel 2
-    ):
-            self.id = ""
-            self.name = ""
-            self.instrumentShortName = ""
-            self.description = ""
-            self.polarisationChannels = ""
-            self.operationalMode = ""
-            self.swathIdentifier = ""
+    def __init__(self):
+        self.id = ""
+        self.name = ""
+        self.instrumentShortName = ""
+        self.description = ""           # NOT in Sentinel 2
+        self.polarisationChannels = ""  # NOT in Sentinel 2
+        self.resolution = ""            # NOT in Sentinel 2
+        self.operationalMode = ""
+        self.swathIdentifier = ""       # NOT in Sentinel 2
 
 
 class eoPlatform: 
-    def __init__(
-        self
-        # id,
-        # description,           
-        # platformSerialIdentifier,
-        # platformShortName
-    ):
-        self.id = ""
+    def __init__(self):
+        self.identifier = ""
         self.description = ""
-        self.platformSerialIdentifier = ""
+        self.platformSerialIdentifier = ""  #NOT in sentinel 2
         self.platformShortName = ""
 
 class eoAcquisitionParameters:
 
-    def __init__(
-        self
-        # acquisitionType,
-        # cycleNumber,
-        # ascendingNodeDate,
-        # acquisitionSubType,
-        # orbitNumber,
-        # orbitDirection,
-        # beginningDateTime,
-        # endingDateTime,
-        #ascendingNodeDate
-        #tileId     ONLY IN SENTINEL 2
-    ):
-        self.id = ""
-        self.description = ""
-        self.platformSerialIdentifier = ""
-        self.platformShortName = ""
-
-
+    def __init__(self):
+        self.acquisitionType = ""
+        self.cycleNumber = ""
+        self.ascendingNodeDate = ""
+        self.acquisitionSubType = ""
+        self.orbitNumber = ""
+        self.orbitDirection = ""
+        self.beginningDateTime = ""
+        self.endingDateTime = ""
+        self.tileId = ""                #ONLY IN SENTINEL 2
