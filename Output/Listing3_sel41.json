@@ -1,0 +1,31 @@
+{
+  "@context": "http://schema.org/",
+  "@type": "EarthObservation",
+  "eoAquisitionInformation": {
+    "@type" : "AcquisitionInformation",
+    "eoInstrument": {
+      "@type" :"Instrument",
+      "id" : "http://gcmdservices.gsfc.nasa.gov/kms/concept/081f9b6e-d0a0-4f1d-ad8-638189418480",
+      "name" : "Multi-Spectral Instrument",
+      "instrumentShortName" : "MSI",
+      "operationalMode" : "INS-NOBS"
+    },
+    "eoPlatform": {
+      "@type":"Platform",
+      "id": "http://gcmdservices.gsfc.nasa.gov/kms/concept/2ce20983-98b2-40b9-bb0e-a08074fb93b3",
+      "platformSerialIdentifier":"A",
+      "platformShortName":"Sentinel-2"
+    },
+    "eoAcquisitionParameters": {
+      "@type" : "AcquisitionParameters",
+      "acquisitionType" : "NOMINAL",
+      "ascendingNodeDate" : "2018-11-07T16:36:06.154Z",
+      "acquisitionSubType" : "GS2A_20181107T105231_017637_N02.07",
+      "orbitNumber" : "17637",
+      "orbitDirection" : "DESCENDING",
+      "beginningDateTime" : "2018-11-07T10:52:31.025Z",
+      "endingDateTime" : "2018-11-07T10:52:31.025Z",
+      "tileId" : "31UFU"
+    }
+  }
+}
