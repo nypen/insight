@@ -1,8 +1,24 @@
 [
     {
-        "@id": "_:Ndd490a98915f4cb08fced53eae83f3f4",
+        "@id": "_:Ne270187134a9497aae97709dc7dda260",
         "@type": [
             "http://schema.org/EarthObservation"
+        ]
+    },
+    {
+        "@id": "http://gcmdservices.gsfc.nasa.gov/kms/concept/2ce20983-98b2-40b9-bb0e-a08074fb93b3",
+        "@type": [
+            "http://schema.org/Platform"
+        ],
+        "http://schema.org/platformSerialIdentifier": [
+            {
+                "@value": "A"
+            }
+        ],
+        "http://schema.org/platformShortName": [
+            {
+                "@value": "Sentinel-2"
+            }
         ]
     }
 ]
