@@ -29,6 +29,10 @@ schemaorg = Namespace("http://schema.org/")
 eoNode = BNode()
 g.add((eoNode, RDF.type, schemaorg.EarthObservation))
 
+eoRef1 = URIRef("http://gcmdservices.gsfc.nasa.gov/kms/concept/081f9b6e-d0a0-4f1d-ad8-638189418480")
+eoRef2 = URIRef("http://gcmdservices.gsfc.nasa.gov/kms/concept/2ce20983-98b2-40b9-bb0e-a08074fb93b3")
+g.add((eoRef1, RDF.type, schemaorg.Instrument))
+
 f = open("earthobservation.json", "wb")
 f.write(g.serialize(format="json-ld", indent=4))
 f.close()
