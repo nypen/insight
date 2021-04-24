@@ -1,14 +1,30 @@
 [
     {
-        "@id": "_:N5adce444afb941799b9be721edde824c",
+        "@id": "http://gcmdservices.gsfc.nasa.gov/kms/concept/081f9b6e-d0a0-4f1d-ad8-638189418480",
+        "@type": [
+            "http://schema.org/Instrument"
+        ]
+    },
+    {
+        "@id": "_:N5999441930a8482f885704ae55b95fce",
         "@type": [
             "http://schema.org/EarthObservation"
         ]
     },
     {
-        "@id": "http://gcmdservices.gsfc.nasa.gov/kms/concept/081f9b6e-d0a0-4f1d-ad8-638189418480",
+        "@id": "http://gcmdservices.gsfc.nasa.gov/kms/concept/2ce20983-98b2-40b9-bb0e-a08074fb93b3",
         "@type": [
-            "http://schema.org/Instrument"
+            "http://schema.org/Platform"
+        ],
+        "http://schema.org/platformSerialIdentifier": [
+            {
+                "@value": "A"
+            }
+        ],
+        "http://schema.org/platformShortName": [
+            {
+                "@value": "Sentinel-2"
+            }
         ]
     }
 ]
