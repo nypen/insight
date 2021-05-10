@@ -1,111 +1,112 @@
 [
-    {
-        "@id": "http://gcmdservices.gsfc.nasa.gov/kms/concept/081f9b6e-d0a0-4f1d-ad8-638189418480",
-        "http://schema.org/instrumentShortName": [
-            {
-                "@value": "MSI"
-            }
-        ],
-        "http://schema.org/name": [
-            {
-                "@value": "Multi-Spectral Instrument"
-            }
-        ],
-        "http://schema.org/operationalMode": [
-            {
-                "@value": "INS-NOBS"
-            }
-        ]
-    },
-    {
-        "@id": "http://gcmdservices.gsfc.nasa.gov/kms/concept/2ce20983-98b2-40b9-bb0e-a08074fb93b3",
-        "@type": [
-            "http://schema.org/Platform"
-        ],
-        "http://schema.org/platformSerialIdentifier": [
-            {
-                "@value": "A"
-            }
-        ],
-        "http://schema.org/platformShortName": [
-            {
-                "@value": "Sentinel-2"
-            }
-        ]
-    },
-    {
-        "@id": "_:b1",
-        "@type": [
-            "http://schema.org/AcquisitionParameters"
-        ],
-        "http://schema.org/AcquisitionParameters": [
-            {
-                "@id": "_:b2"
-            }
-        ],
-        "http://schema.org/eoInstrument": [
-            {
-                "@id": "http://gcmdservices.gsfc.nasa.gov/kms/concept/081f9b6e-d0a0-4f1d-ad8-638189418480"
-            }
-        ],
-        "http://schema.org/eoPlatform": [
-            {
-                "@id": "http://gcmdservices.gsfc.nasa.gov/kms/concept/2ce20983-98b2-40b9-bb0e-a08074fb93b3"
-            }
-        ]
-    },
-    {
-        "@id": "_:b2",
-        "http://schema.org/acquisitionSubType": [
-            {
-                "@value": "GS2A_20181107T105231_017637_N02.07"
-            }
-        ],
-        "http://schema.org/acquisitionType": [
-            {
-                "@value": "NOMINAL"
-            }
-        ],
-        "http://schema.org/ascendingNodeDate": [
-            {
-                "@value": "2018-11-07T16:36:06.154Z"
-            }
-        ],
-        "http://schema.org/beginningDateTime": [
-            {
-                "@value": "2018-11-07T10:52:31.025Z"
-            }
-        ],
-        "http://schema.org/endingDateTime": [
-            {
-                "@value": "2018-11-07T10:52:31.025Z"
-            }
-        ],
-        "http://schema.org/orbitDirection": [
-            {
-                "@value": "DESCENDING"
-            }
-        ],
-        "http://schema.org/orbitNumber": [
-            {
-                "@value": "17637"
-            }
-        ],
-        "http://schema.org/tileId": [
-            {
-                "@value": "31UFU"
-            }
-        ]
-    },
-    {
-        "@id": "_:b0",
-        "@type": [
-            "http://schema.org/EarthObservation"
-        ],
-        "http://schema.org/eoAquisitionInformation": [
-            {
-                "@id": "_:b1"
-            }
-        ]
-    }
+  {
+    "@id": "_:b0",
+    "@type": [
+      "http://schema.org/EarthObservation"
+    ],
+    "http://schema.org/eoAquisitionInformation": [
+      {
+        "@id": "_:b1"
+      }
+    ]
+  },
+  {
+    "@id": "_:b1",
+    "@type": [
+      "http://schema.org/AcquisitionParameters"
+    ],
+    "http://schema.org/AcquisitionParameters": [
+      {
+        "@id": "_:b2"
+      }
+    ],
+    "http://schema.org/eoInstrument": [
+      {
+        "@id": "http://gcmdservices.gsfc.nasa.gov/kms/concept/081f9b6e-d0a0-4f1d-ad8-638189418480"
+      }
+    ],
+    "http://schema.org/eoPlatform": [
+      {
+        "@id": "http://gcmdservices.gsfc.nasa.gov/kms/concept/2ce20983-98b2-40b9-bb0e-a08074fb93b3"
+      }
+    ]
+  },
+  {
+    "@id": "http://gcmdservices.gsfc.nasa.gov/kms/concept/081f9b6e-d0a0-4f1d-ad8-638189418480",
+    "http://schema.org/instrumentShortName": [
+      {
+        "@value": "MSI"
+      }
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "Multi-Spectral Instrument"
+      }
+    ],
+    "http://schema.org/operationalMode": [
+      {
+        "@value": "INS-NOBS"
+      }
+    ]
+  },
+  {
+    "@id": "_:b2",
+    "http://schema.org/acquisitionSubType": [
+      {
+        "@value": "GS2A_20181107T105231_017637_N02.07"
+      }
+    ],
+    "http://schema.org/acquisitionType": [
+      {
+        "@value": "NOMINAL"
+      }
+    ],
+    "http://schema.org/ascendingNodeDate": [
+      {
+        "@value": "2018-11-07T16:36:06.154Z"
+      }
+    ],
+    "http://schema.org/beginningDateTime": [
+      {
+        "@value": "2018-11-07T10:52:31.025Z"
+      }
+    ],
+    "http://schema.org/endingDateTime": [
+      {
+        "@value": "2018-11-07T10:52:31.025Z"
+      }
+    ],
+    "http://schema.org/orbitDirection": [
+      {
+        "@value": "DESCENDING"
+      }
+    ],
+    "http://schema.org/orbitNumber": [
+      {
+        "@value": "17637"
+      }
+    ],
+    "http://schema.org/tileId": [
+      {
+        "@value": "31UFU"
+      }
+    ]
+  },
+  {
+    "@id": "http://gcmdservices.gsfc.nasa.gov/kms/concept/2ce20983-98b2-40b9-bb0e-a08074fb93b3",
+    "@type": [
+      "http://schema.org/Platform",
+      "http://schema.org/Instrument"
+    ],
+    "http://schema.org/platformSerialIdentifier": [
+      {
+        "@value": "A"
+      }
+    ],
+    "http://schema.org/platformShortName": [
+      {
+        "@value": "Sentinel-2"
+      }
+    ]
+  }
 ]
