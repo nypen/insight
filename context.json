@@ -1,0 +1,7 @@
+{
+    "EarthObservation": "http://schema.org/EarthObservation",
+    "eoAquisitionInformation": "http://schema.org/eoAquisitionInformation",
+    "acquisitionParameters": "http://schema.org/AcquisitionParameters",
+    "eoInstrument": "http://schema.org/eoInstrument",
+    "eoPlatform": "http://schema.org/eoPlatform"
+}
