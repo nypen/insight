@@ -1,5 +1,5 @@
 {
-  "@context": "http://schema.org/",
+  "@context": "https://schema.org/docs/jsonldcontext.jsonld",
   "@type": "EarthObservation",
   "eoAquisitionInformation": {
     "@type" : "AcquisitionInformation",
