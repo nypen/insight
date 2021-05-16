@@ -2,20 +2,22 @@ import requests
 import json
 
 class OpenAccessHubAPI:
-    url = 'https://scihub.copernicus.eu/apihub/odata/v1/Products(\'{}\')/Attributes?$format=json'
+    url = 'https://apihub.copernicus.eu/apihub/odata/v1/Products(\'{}\')/Attributes?$format=json'
 
     def login(self, username, password):
         self.session = requests.Session()
 
         if user and password:
             self.session.auth = (user, password)
+            print(self.session.auth)
 
     def getProductData(self, productId):
+        url = OpenAccessHubAPI.url.format(productId)
         resp = self.session.get(
-            OpenAccessHubAPI.url.format(productId),
+            url,
             auth=self.session.auth
         )
-
+        resp.raise_for_status()
         return resp.json()
 
 
@@ -27,12 +29,12 @@ id2 = "c444677e-3484-49a7-b3fc-7e6282a044f9"
 oah = OpenAccessHubAPI()
 oah.login(user, password)
 
-result = oah.getProductData(id1)
+result1 = oah.getProductData(id1)
+result2 = oah.getProductData(id2)
 
-print (result)
 
-print(type(result))
 
 # result = oah.getProductData(id2)
 
-# print (result)
+print (result1)
+print (result2)
