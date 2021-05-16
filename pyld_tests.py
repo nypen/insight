@@ -376,7 +376,7 @@ print()
 print()
 print()
 print()
-frame_file = open("./input/frame.json", "r")
+frame_file = open("./inputs/frame.json", "r")
 frame = json.load(frame_file)
 
 framed = jsonld.frame(g, frame)
