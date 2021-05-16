@@ -2,6 +2,8 @@ import urllib.request
 import sys
 import json
 import models
+from getOAData import OpenAccessHubAPI
+from eoCollector import EOCollector
 
 sentinel1_data = ['Acquisition Type', 'Cycle number', 'Ingestion Date', 'Mission datatake id', 
     'Orbit number (start)', 'Orbit number (stop)', 'Pass direction', 'Polarisation', 
@@ -14,22 +16,61 @@ sentinel2_data = ['Datatake sensing start', 'Ingestion Date', 'Mission datatake 
     'Satellite name','Satellite number', 'Instrument abbreviation', 'Instrument mode', 
     'identifier Instrument id', 'Instrument name', 'identifier Platform id']
 
-with open('Responses/response.json') as f:
-  data = json.load(f)
+print("---------------------------------------------------------------------------------------------------")      
+print("---------------------------------------------------------------------------------------------------")      
+print("---------------------------------------------------------------------------------------------------")      
+print("---------------------------------------------------------------------------------------------------")
 
-d = data['d']
+user = "pennypapadimas"
+password = "pennypapadimas88"
+id1 = "2b17b57d-fff4-4645-b539-91f305c27c69"
+id2 = "c444677e-3484-49a7-b3fc-7e6282a044f9"
 
-results = d['results']
+oah = OpenAccessHubAPI()
+oah.login(user, password)
 
-diction = {}
+result1 = oah.getProductData(id1)
+result2 = oah.getProductData(id2)
 
-for info in results:
-    metadata = info['__metadata']
-    if(info['Id'] in sentinel1_data):
-        diction[info['Id']] = info['Value']
+print (result1)
 
-for key in diction:
-    print(key, " : ", diction[key])
+print("---------------------------------------------------------------------------------------------------")      
+print("---------------------------------------------------------------------------------------------------")      
+
+print (result2)
+
+print("---------------------------------------------------------------------------------------------------")      
+print("---------------------------------------------------------------------------------------------------")
+
+result1 = EOCollector.collect(result1, sentinel1_data)
+result2 = EOCollector.collect(result2, sentinel2_data)
+
+for key in result1:
+    print(key, " : ", result1[key])
+
+print("---------------------------------------------------------------------------------------------------")      
+print("---------------------------------------------------------------------------------------------------")
+
+for key in result2:
+    print(key, " : ", result2[key])
+
+
+# with open('Responses/response.json') as f:
+#   data = json.load(f)
+
+# d = data['d']
+
+# results = d['results']
+
+# diction = {}
+
+# for info in results:
+#     metadata = info['__metadata']
+#     if(info['Id'] in sentinel1_data):
+#         diction[info['Id']] = info['Value']
+
+# for key in diction:
+#     print(key, " : ", diction[key])
 
 # # instr = models.eoInstrument()
 # # platf = models.eoPlatform()
@@ -151,11 +192,3 @@ for key in diction:
 # #                             '\nendingDateTime = ', pr2.endingDateTime,
 # #                             '\ntileId = ', pr2.tileId)       
 
-
-print("---------------------------------------------------------------------------------------------------")      
-print("---------------------------------------------------------------------------------------------------")      
-print("---------------------------------------------------------------------------------------------------")      
-print("---------------------------------------------------------------------------------------------------")
-
-for key in diction:
-    print(key, " : ", diction[key])
