@@ -58,7 +58,7 @@ graph ={
       },
       "predicate":{
         "type":"IRI",
-        "value":"http://schema.org/eoAquisitionInformation"
+        "value":"http://schema.org/eoAcquisitionInformation"
       },
       "object":{
         "type":"blank node",

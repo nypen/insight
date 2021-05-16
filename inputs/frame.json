@@ -2,7 +2,7 @@
     "@context": {"@vocab": "http://schema.org/"},
     "@type": "EarthObservation",
     "eoAcquisitionInformation": {
-      "@type": "AquisitionInformation",
+      "@type": "AcquisitionInformation",
       "eoAquisitionParameters": {
         "@type": "AcquisitionParameters"
       },
