@@ -1,0 +1,16 @@
+{
+    "@context": {"@vocab": "http://schema.org/"},
+    "@type": "EarthObservation",
+    "eoAcquisitionInformation": {
+      "@type": "AquisitionInformation",
+      "eoAquisitionParameters": {
+        "@type": "AcquisitionParameters"
+      },
+      "eoInstrument": {
+        "@type": "Instrument"
+      },
+      "eoPlatform": {
+        "@type": "Platform"
+      }
+    }
+  }
