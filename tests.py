@@ -2,8 +2,13 @@ import urllib.request
 import sys
 import json
 import models
+from pyld import jsonld
+
 from getOAData import OpenAccessHubAPI
 from eoCollector import EOCollector
+from models.graph import Graph
+from models.node import Node
+from models.literal import Literal
 
 sentinel1_data = ['Acquisition Type', 'Cycle number', 'Ingestion Date', 'Mission datatake id', 
     'Orbit number (start)', 'Orbit number (stop)', 'Pass direction', 'Polarisation', 
@@ -54,8 +59,69 @@ print("-------------------------------------------------------------------------
 for key in result2:
     print(key, " : ", result2[key])
 
+fnType = "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+fnblankNodeType = "blank node"
+
+b1 = Node(fnblankNodeType, "b1")
+pred = Node("IRI", "http://schema.org/eoInstrument")
+eoInstrument = Node("IRI", "http://gcmdservices.gsfc.nasa.gov/kms/concept/081f9b6e-d0a0-4f1d-ad8-638189418480")
+
+graph = Graph()
 
 
+graph.addTriple(b1, pred, eoInstrument)
+
+#     "eoInstrument": {
+#       "@type" :"Instrument",
+#       "id" : "http://gcmdservices.gsfc.nasa.gov/kms/concept/081f9b6e-d0a0-4f1d-ad8-638189418480",
+#       "name" : "Multi-Spectral Instrument",
+#       "instrumentShortName" : "MSI",
+#       "operationalMode" : "INS-NOBS"
+
+graph.addTriple(eoInstrument, Node("IRI", "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"), Node("IRI", "http://schema.org/Instrument"))
+graph.addTriple(eoInstrument, Node("IRI", "http://schema.org/eoInstrumentShortName"), Literal("MSI"))
+graph.addTriple(eoInstrument, Node("IRI", "http://schema.org/name"), Literal("Multi-Spectral Instrument"))
+graph.addTriple(eoInstrument, Node("IRI", "http://schema.org/operationalMode"), Literal("INS-NOBS"))
+
+# "eoPlatform": {
+#   "@type":"Platform",
+#   "id": "http://gcmdservices.gsfc.nasa.gov/kms/concept/2ce20983-98b2-40b9-bb0e-a08074fb93b3",
+#   "platformSerialIdentifier":"A",
+#   "platformShortName":"Sentinel-2"
+# }
+eoPlatform = URIRef("http://gcmdservices.gsfc.nasa.gov/kms/concept/2ce20983-98b2-40b9-bb0e-a08074fb93b3")
+
+
+g.add((b1, schemaorg.eoPlatform, eoPlatform))
+g.add((eoPlatform, RDF.type, schemaorg.Platform))
+g.add((eoPlatform, schemaorg.platformSerialIdentifier, Literal("A")))
+g.add((eoPlatform, schemaorg.platformShortName, Literal("Sentinel-2")))
+
+b1 = Node(fnblankNodeType, "b1")
+pred = Node("IRI", "http://schema.org/eoPlatform")
+eoPlatform = Node("IRI", "http://gcmdservices.gsfc.nasa.gov/kms/concept/2ce20983-98b2-40b9-bb0e-a08074fb93b3")
+
+graph.addTriple(b1, pred, eoPlatform)
+graph.addTriple(eoPlatform, pred, eoPlatform)
+
+graph.get()
+
+g = jsonld.from_rdf(graph.get())
+
+compacted = jsonld.compact(g, "https://schema.org/docs/jsonldcontext.jsonld")
+print(json.dumps(compacted, indent=2))
+
+
+print()
+print()
+print()
+print()
+frame_file = open("./inputs/frame.json", "r")
+frame = json.load(frame_file)
+
+framed = jsonld.frame(g, frame)
+
+print(json.dumps(framed, indent=2))
 
 # with open('Responses/response.json') as f:
 #   data = json.load(f)
