@@ -37,12 +37,12 @@ oah.login(user, password)
 result1 = oah.getProductData(id1)
 result2 = oah.getProductData(id2)
 
-print (result1)
+# print (result1)
 
 print("---------------------------------------------------------------------------------------------------")      
 print("---------------------------------------------------------------------------------------------------")      
 
-print (result2)
+# print (result2)
 
 print("---------------------------------------------------------------------------------------------------")      
 print("---------------------------------------------------------------------------------------------------")
@@ -68,7 +68,6 @@ eoInstrument = Node("IRI", "http://gcmdservices.gsfc.nasa.gov/kms/concept/081f9b
 
 graph = Graph()
 
-
 graph.addTriple(b1, pred, eoInstrument)
 
 #     "eoInstrument": {
@@ -89,20 +88,38 @@ graph.addTriple(eoInstrument, Node("IRI", "http://schema.org/operationalMode"), 
 #   "platformSerialIdentifier":"A",
 #   "platformShortName":"Sentinel-2"
 # }
-eoPlatform = URIRef("http://gcmdservices.gsfc.nasa.gov/kms/concept/2ce20983-98b2-40b9-bb0e-a08074fb93b3")
-
-
-g.add((b1, schemaorg.eoPlatform, eoPlatform))
-g.add((eoPlatform, RDF.type, schemaorg.Platform))
-g.add((eoPlatform, schemaorg.platformSerialIdentifier, Literal("A")))
-g.add((eoPlatform, schemaorg.platformShortName, Literal("Sentinel-2")))
 
 b1 = Node(fnblankNodeType, "b1")
 pred = Node("IRI", "http://schema.org/eoPlatform")
 eoPlatform = Node("IRI", "http://gcmdservices.gsfc.nasa.gov/kms/concept/2ce20983-98b2-40b9-bb0e-a08074fb93b3")
 
 graph.addTriple(b1, pred, eoPlatform)
-graph.addTriple(eoPlatform, pred, eoPlatform)
+graph.addTriple(eoPlatform, Node("IRI", "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"),  Node("IRI", "http://schema.org/Platform"))
+graph.addTriple(eoPlatform, Node("IRI", "http://schema.org/platformSerialIdentifier"), Literal("A"))
+graph.addTriple(eoPlatform, Node("IRI", "http://schema.org/platformShortName"), Literal("Sentinel-2"))
+
+# "eoAcquisitionParameters": {
+#       "@type" : "AcquisitionParameters",
+#       "acquisitionType" : "NOMINAL",
+#       "ascendingNodeDate" : "2018-11-07T16:36:06.154Z",
+#       "acquisitionSubType" : "GS2A_20181107T105231_017637_N02.07",
+#       "orbitNumber" : "17637",
+#       "orbitDirection" : "DESCENDING",
+#       "beginningDateTime" : "2018-11-07T10:52:31.025Z",
+#       "endingDateTime" : "2018-11-07T10:52:31.025Z",
+#       "tileId" : "31UFU"
+b2 = Node(fnblankNodeType, "b2")
+
+graph.addTriple(b1, Node("IRI", "http://schema.org/AcquisitionParameters"), b2)
+graph.addTriple(b1, Node("IRI", "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"), Node("IRI", "http://schema.org/AcquisitionParameters"))
+graph.addTriple(b2, Node("IRI", "http://schema.org/acquisitionType"), Literal("NOMINAL"))
+graph.addTriple(b2, Node("IRI", "http://schema.org/ascendingNodeDate"), Literal("2018-11-07T16:36:06.154Z"))
+graph.addTriple(b2, Node("IRI", "http://schema.org/acquisitionSubType"), Literal("GS2A_20181107T105231_017637_N02.07"))
+graph.addTriple(b2, Node("IRI", "http://schema.org/orbitNumber"), Literal("17637"))
+graph.addTriple(b2, Node("IRI", "http://schema.org/orbitDirection"), Literal("DESCENDING"))
+graph.addTriple(b2, Node("IRI", "http://schema.org/beginningDateTime"), Literal("2018-11-07T10:52:31.025Z"))
+graph.addTriple(b2, Node("IRI", "http://schema.org/endingDateTime"), Literal("2018-11-07T10:52:31.025Z"))
+graph.addTriple(b2, Node("IRI", "http://schema.org/tileId"), Literal("31UFU"))
 
 graph.get()
 
