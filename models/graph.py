@@ -1,8 +1,9 @@
+import literal
 class Graph:
     def __init__(self):
         self.triples = []   
 
-    def addTriple(subj, pred, obj):
+    def addTriple(self, subj, pred, obj):
         triple = {}
         triple["subject"] = {
             "type": subj.type,
