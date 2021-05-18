@@ -1,12 +1,12 @@
+from models.node import Node
 class Literal(Node):
     def __init__(
         self,
-        nodeType,
         nodeValue,
     ):
-        self.type = nodeType
+        self.type = "Literal"
         self.value = nodeValue 
-        self.datatype = type(nodeValue).__name__
+        self.datatype = "http://www.w3.org/2001/XMLSchema#string"
     
 class Graph:
     def __init__(self):

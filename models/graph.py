@@ -1,4 +1,4 @@
-import literal
+from models.literal import Literal
 class Graph:
     def __init__(self):
         self.triples = []   
