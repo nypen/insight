@@ -1,10 +1,17 @@
-
 class Graph:
     def __init__(self):
         self.triples = []   
 
-    def addTriple(subject, predicate, object):
+    def addTriple(subj, pred, obj):
         triple = {}
-        triple["subject"] = subject
-        triple["predicate"] = predicate
-        triple["object"] = object
+        triple["subject"] = subj
+        triple["predicate"] = pred
+        triple["object"] = obj
+
+        self.triples.append(triple)
+
+    def get(self):
+        graph = {}
+        graph["@graph"] = self.triples
+
+        return graph
