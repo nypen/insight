@@ -1,0 +1,15 @@
+Instrument abbreviation ---> instrumentShortName
+Instrument mode         ---> operationalMode
+Instrument name         ---> name       
+
+Satellite number        ---> platformSerialIdentifier
+Satellite name          ---> platformShortName
+
+Acquisition Type        ---> acquisitionType
+Ingestion Date          ---> ascendingNodeDate
+Mission datatake id     ---> acquisitionSubType
+Orbit number (start)    ---> orbitNumber
+Pass direction          ---> orbitDirection
+Sensing start           ---> beginningDateTime
+Sensing stop            ---> endingDateTime
+Tile Identifier         ---> tileId
