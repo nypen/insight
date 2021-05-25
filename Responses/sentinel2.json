@@ -1,539 +1,539 @@
 {
-    "d": {
-        "results": [
-            {
-                "__metadata": {
-                    "id": "https://scihub.copernicus.eu/dhus/odata/v1/Products('c444677e-3484-49a7-b3fc-7e6282a044f9')/Attributes('Cloud%20cover%20percentage')",
-                    "uri": "https://scihub.copernicus.eu/dhus/odata/v1/Products('c444677e-3484-49a7-b3fc-7e6282a044f9')/Attributes('Cloud%20cover%20percentage')",
-                    "type": "DHuS.Attribute"
-                },
-                "Id": "Cloud cover percentage",
-                "Name": "Cloud cover percentage",
-                "ContentType": "text/plain",
-                "ContentLength": "6",
-                "Value": "51.506",
-                "Category": "product"
-            },
-            {
-                "__metadata": {
-                    "id": "https://scihub.copernicus.eu/dhus/odata/v1/Products('c444677e-3484-49a7-b3fc-7e6282a044f9')/Attributes('Datatake%20sensing%20start')",
-                    "uri": "https://scihub.copernicus.eu/dhus/odata/v1/Products('c444677e-3484-49a7-b3fc-7e6282a044f9')/Attributes('Datatake%20sensing%20start')",
-                    "type": "DHuS.Attribute"
-                },
-                "Id": "Datatake sensing start",
-                "Name": "Datatake sensing start",
-                "ContentType": "text/plain",
-                "ContentLength": "24",
-                "Value": "2018-11-07T10:52:31.025Z",
-                "Category": "product"
-            },
-            {
-                "__metadata": {
-                    "id": "https://scihub.copernicus.eu/dhus/odata/v1/Products('c444677e-3484-49a7-b3fc-7e6282a044f9')/Attributes('Date')",
-                    "uri": "https://scihub.copernicus.eu/dhus/odata/v1/Products('c444677e-3484-49a7-b3fc-7e6282a044f9')/Attributes('Date')",
-                    "type": "DHuS.Attribute"
-                },
-                "Id": "Date",
-                "Name": "Date",
-                "ContentType": "text/plain",
-                "ContentLength": "24",
-                "Value": "2018-11-07T10:52:31.025Z",
-                "Category": "summary"
-            },
-            {
-                "__metadata": {
-                    "id": "https://scihub.copernicus.eu/dhus/odata/v1/Products('c444677e-3484-49a7-b3fc-7e6282a044f9')/Attributes('Degraded%20ancillary%20data%20percentage')",
-                    "uri": "https://scihub.copernicus.eu/dhus/odata/v1/Products('c444677e-3484-49a7-b3fc-7e6282a044f9')/Attributes('Degraded%20ancillary%20data%20percentage')",
-                    "type": "DHuS.Attribute"
-                },
-                "Id": "Degraded ancillary data percentage",
-                "Name": "Degraded ancillary data percentage",
-                "ContentType": "text/plain",
-                "ContentLength": "3",
-                "Value": "0.0",
-                "Category": "product"
-            },
-            {
-                "__metadata": {
-                    "id": "https://scihub.copernicus.eu/dhus/odata/v1/Products('c444677e-3484-49a7-b3fc-7e6282a044f9')/Attributes('Degraded%20MSI%20data%20percentage')",
-                    "uri": "https://scihub.copernicus.eu/dhus/odata/v1/Products('c444677e-3484-49a7-b3fc-7e6282a044f9')/Attributes('Degraded%20MSI%20data%20percentage')",
-                    "type": "DHuS.Attribute"
-                },
-                "Id": "Degraded MSI data percentage",
-                "Name": "Degraded MSI data percentage",
-                "ContentType": "text/plain",
-                "ContentLength": "1",
-                "Value": "0",
-                "Category": "product"
-            },
-            {
-                "__metadata": {
-                    "id": "https://scihub.copernicus.eu/dhus/odata/v1/Products('c444677e-3484-49a7-b3fc-7e6282a044f9')/Attributes('Filename')",
-                    "uri": "https://scihub.copernicus.eu/dhus/odata/v1/Products('c444677e-3484-49a7-b3fc-7e6282a044f9')/Attributes('Filename')",
-                    "type": "DHuS.Attribute"
-                },
-                "Id": "Filename",
-                "Name": "Filename",
-                "ContentType": "text/plain",
-                "ContentLength": "65",
-                "Value": "S2A_MSIL1C_20181107T105231_N0207_R051_T31UFU_20181107T111341.SAFE",
-                "Category": "summary"
-            },
-            {
-                "__metadata": {
-                    "id": "https://scihub.copernicus.eu/dhus/odata/v1/Products('c444677e-3484-49a7-b3fc-7e6282a044f9')/Attributes('Footprint')",
-                    "uri": "https://scihub.copernicus.eu/dhus/odata/v1/Products('c444677e-3484-49a7-b3fc-7e6282a044f9')/Attributes('Footprint')",
-                    "type": "DHuS.Attribute"
-                },
-                "Id": "Footprint",
-                "Name": "Footprint",
-                "ContentType": "text/plain",
-                "ContentLength": "444",
-                "Value": "<gml:Polygon srsName=\"http://www.opengis.net/gml/srs/epsg.xml#4326\" xmlns:gml=\"http://www.opengis.net/gml\">\n   <gml:outerBoundaryIs>\n      <gml:LinearRing>\n         <gml:coordinates>53.24020834947074,4.498460428340929 53.20820137275637,6.141769904481162 52.22256603361336,6.071678487044593 52.25345680664421,4.464980367164797 53.24020834947074,4.498460428340929</gml:coordinates>\n      </gml:LinearRing>\n   </gml:outerBoundaryIs>\n</gml:Polygon>",
-                "Category": "product"
-            },
-            {
-                "__metadata": {
-                    "id": "https://scihub.copernicus.eu/dhus/odata/v1/Products('c444677e-3484-49a7-b3fc-7e6282a044f9')/Attributes('Format')",
-                    "uri": "https://scihub.copernicus.eu/dhus/odata/v1/Products('c444677e-3484-49a7-b3fc-7e6282a044f9')/Attributes('Format')",
-                    "type": "DHuS.Attribute"
-                },
-                "Id": "Format",
-                "Name": "Format",
-                "ContentType": "text/plain",
-                "ContentLength": "4",
-                "Value": "SAFE",
-                "Category": "product"
-            },
-            {
-                "__metadata": {
-                    "id": "https://scihub.copernicus.eu/dhus/odata/v1/Products('c444677e-3484-49a7-b3fc-7e6282a044f9')/Attributes('Format%20correctness')",
-                    "uri": "https://scihub.copernicus.eu/dhus/odata/v1/Products('c444677e-3484-49a7-b3fc-7e6282a044f9')/Attributes('Format%20correctness')",
-                    "type": "DHuS.Attribute"
-                },
-                "Id": "Format correctness",
-                "Name": "Format correctness",
-                "ContentType": "text/plain",
-                "ContentLength": "6",
-                "Value": "PASSED",
-                "Category": "product"
-            },
-            {
-                "__metadata": {
-                    "id": "https://scihub.copernicus.eu/dhus/odata/v1/Products('c444677e-3484-49a7-b3fc-7e6282a044f9')/Attributes('General%20quality')",
-                    "uri": "https://scihub.copernicus.eu/dhus/odata/v1/Products('c444677e-3484-49a7-b3fc-7e6282a044f9')/Attributes('General%20quality')",
-                    "type": "DHuS.Attribute"
-                },
-                "Id": "General quality",
-                "Name": "General quality",
-                "ContentType": "text/plain",
-                "ContentLength": "6",
-                "Value": "PASSED",
-                "Category": "product"
-            },
-            {
-                "__metadata": {
-                    "id": "https://scihub.copernicus.eu/dhus/odata/v1/Products('c444677e-3484-49a7-b3fc-7e6282a044f9')/Attributes('Generation%20time')",
-                    "uri": "https://scihub.copernicus.eu/dhus/odata/v1/Products('c444677e-3484-49a7-b3fc-7e6282a044f9')/Attributes('Generation%20time')",
-                    "type": "DHuS.Attribute"
-                },
-                "Id": "Generation time",
-                "Name": "Generation time",
-                "ContentType": "text/plain",
-                "ContentLength": "27",
-                "Value": "2018-11-07T11:13:41.000000Z",
-                "Category": "product"
-            },
-            {
-                "__metadata": {
-                    "id": "https://scihub.copernicus.eu/dhus/odata/v1/Products('c444677e-3484-49a7-b3fc-7e6282a044f9')/Attributes('Geometric%20quality')",
-                    "uri": "https://scihub.copernicus.eu/dhus/odata/v1/Products('c444677e-3484-49a7-b3fc-7e6282a044f9')/Attributes('Geometric%20quality')",
-                    "type": "DHuS.Attribute"
-                },
-                "Id": "Geometric quality",
-                "Name": "Geometric quality",
-                "ContentType": "text/plain",
-                "ContentLength": "6",
-                "Value": "PASSED",
-                "Category": "product"
-            },
-            {
-                "__metadata": {
-                    "id": "https://scihub.copernicus.eu/dhus/odata/v1/Products('c444677e-3484-49a7-b3fc-7e6282a044f9')/Attributes('Identifier')",
-                    "uri": "https://scihub.copernicus.eu/dhus/odata/v1/Products('c444677e-3484-49a7-b3fc-7e6282a044f9')/Attributes('Identifier')",
-                    "type": "DHuS.Attribute"
-                },
-                "Id": "Identifier",
-                "Name": "Identifier",
-                "ContentType": "text/plain",
-                "ContentLength": "60",
-                "Value": "S2A_MSIL1C_20181107T105231_N0207_R051_T31UFU_20181107T111341",
-                "Category": "summary"
-            },
-            {
-                "__metadata": {
-                    "id": "https://scihub.copernicus.eu/dhus/odata/v1/Products('c444677e-3484-49a7-b3fc-7e6282a044f9')/Attributes('Ingestion%20Date')",
-                    "uri": "https://scihub.copernicus.eu/dhus/odata/v1/Products('c444677e-3484-49a7-b3fc-7e6282a044f9')/Attributes('Ingestion%20Date')",
-                    "type": "DHuS.Attribute"
-                },
-                "Id": "Ingestion Date",
-                "Name": "Ingestion Date",
-                "ContentType": "text/plain",
-                "ContentLength": "24",
-                "Value": "2018-11-07T16:36:06.154Z",
-                "Category": "product"
-            },
-            {
-                "__metadata": {
-                    "id": "https://scihub.copernicus.eu/dhus/odata/v1/Products('c444677e-3484-49a7-b3fc-7e6282a044f9')/Attributes('Instrument')",
-                    "uri": "https://scihub.copernicus.eu/dhus/odata/v1/Products('c444677e-3484-49a7-b3fc-7e6282a044f9')/Attributes('Instrument')",
-                    "type": "DHuS.Attribute"
-                },
-                "Id": "Instrument",
-                "Name": "Instrument",
-                "ContentType": "text/plain",
-                "ContentLength": "3",
-                "Value": "MSI",
-                "Category": "summary"
-            },
-            {
-                "__metadata": {
-                    "id": "https://scihub.copernicus.eu/dhus/odata/v1/Products('c444677e-3484-49a7-b3fc-7e6282a044f9')/Attributes('Instrument%20abbreviation')",
-                    "uri": "https://scihub.copernicus.eu/dhus/odata/v1/Products('c444677e-3484-49a7-b3fc-7e6282a044f9')/Attributes('Instrument%20abbreviation')",
-                    "type": "DHuS.Attribute"
-                },
-                "Id": "Instrument abbreviation",
-                "Name": "Instrument abbreviation",
-                "ContentType": "text/plain",
-                "ContentLength": "3",
-                "Value": "MSI",
-                "Category": "instrument"
-            },
-            {
-                "__metadata": {
-                    "id": "https://scihub.copernicus.eu/dhus/odata/v1/Products('c444677e-3484-49a7-b3fc-7e6282a044f9')/Attributes('Instrument%20mode')",
-                    "uri": "https://scihub.copernicus.eu/dhus/odata/v1/Products('c444677e-3484-49a7-b3fc-7e6282a044f9')/Attributes('Instrument%20mode')",
-                    "type": "DHuS.Attribute"
-                },
-                "Id": "Instrument mode",
-                "Name": "Instrument mode",
-                "ContentType": "text/plain",
-                "ContentLength": "8",
-                "Value": "INS-NOBS",
-                "Category": "instrument"
-            },
-            {
-                "__metadata": {
-                    "id": "https://scihub.copernicus.eu/dhus/odata/v1/Products('c444677e-3484-49a7-b3fc-7e6282a044f9')/Attributes('Instrument%20name')",
-                    "uri": "https://scihub.copernicus.eu/dhus/odata/v1/Products('c444677e-3484-49a7-b3fc-7e6282a044f9')/Attributes('Instrument%20name')",
-                    "type": "DHuS.Attribute"
-                },
-                "Id": "Instrument name",
-                "Name": "Instrument name",
-                "ContentType": "text/plain",
-                "ContentLength": "25",
-                "Value": "Multi-Spectral Instrument",
-                "Category": "instrument"
-            },
-            {
-                "__metadata": {
-                    "id": "https://scihub.copernicus.eu/dhus/odata/v1/Products('c444677e-3484-49a7-b3fc-7e6282a044f9')/Attributes('JTS%20footprint')",
-                    "uri": "https://scihub.copernicus.eu/dhus/odata/v1/Products('c444677e-3484-49a7-b3fc-7e6282a044f9')/Attributes('JTS%20footprint')",
-                    "type": "DHuS.Attribute"
-                },
-                "Id": "JTS footprint",
-                "Name": "JTS footprint",
-                "ContentType": "text/plain",
-                "ContentLength": "202",
-                "Value": "MULTIPOLYGON (((4.498460428340929 53.24020834947074, 4.464980367164797 52.25345680664421, 6.071678487044593 52.22256603361336, 6.141769904481162 53.20820137275637, 4.498460428340929 53.24020834947074)))",
-                "Category": "product"
-            },
-            {
-                "__metadata": {
-                    "id": "https://scihub.copernicus.eu/dhus/odata/v1/Products('c444677e-3484-49a7-b3fc-7e6282a044f9')/Attributes('Mission%20datatake%20id')",
-                    "uri": "https://scihub.copernicus.eu/dhus/odata/v1/Products('c444677e-3484-49a7-b3fc-7e6282a044f9')/Attributes('Mission%20datatake%20id')",
-                    "type": "DHuS.Attribute"
-                },
-                "Id": "Mission datatake id",
-                "Name": "Mission datatake id",
-                "ContentType": "text/plain",
-                "ContentLength": "34",
-                "Value": "GS2A_20181107T105231_017637_N02.07",
-                "Category": "product"
-            },
-            {
-                "__metadata": {
-                    "id": "https://scihub.copernicus.eu/dhus/odata/v1/Products('c444677e-3484-49a7-b3fc-7e6282a044f9')/Attributes('NSSDC%20identifier')",
-                    "uri": "https://scihub.copernicus.eu/dhus/odata/v1/Products('c444677e-3484-49a7-b3fc-7e6282a044f9')/Attributes('NSSDC%20identifier')",
-                    "type": "DHuS.Attribute"
-                },
-                "Id": "NSSDC identifier",
-                "Name": "NSSDC identifier",
-                "ContentType": "text/plain",
-                "ContentLength": "9",
-                "Value": "2015-028A",
-                "Category": "platform"
-            },
-            {
-                "__metadata": {
-                    "id": "https://scihub.copernicus.eu/dhus/odata/v1/Products('c444677e-3484-49a7-b3fc-7e6282a044f9')/Attributes('Orbit%20number%20%28start%29')",
-                    "uri": "https://scihub.copernicus.eu/dhus/odata/v1/Products('c444677e-3484-49a7-b3fc-7e6282a044f9')/Attributes('Orbit%20number%20%28start%29')",
-                    "type": "DHuS.Attribute"
-                },
-                "Id": "Orbit number (start)",
-                "Name": "Orbit number (start)",
-                "ContentType": "text/plain",
-                "ContentLength": "5",
-                "Value": "17637",
-                "Category": "product"
-            },
-            {
-                "__metadata": {
-                    "id": "https://scihub.copernicus.eu/dhus/odata/v1/Products('c444677e-3484-49a7-b3fc-7e6282a044f9')/Attributes('Pass%20direction')",
-                    "uri": "https://scihub.copernicus.eu/dhus/odata/v1/Products('c444677e-3484-49a7-b3fc-7e6282a044f9')/Attributes('Pass%20direction')",
-                    "type": "DHuS.Attribute"
-                },
-                "Id": "Pass direction",
-                "Name": "Pass direction",
-                "ContentType": "text/plain",
-                "ContentLength": "10",
-                "Value": "DESCENDING",
-                "Category": "product"
-            },
-            {
-                "__metadata": {
-                    "id": "https://scihub.copernicus.eu/dhus/odata/v1/Products('c444677e-3484-49a7-b3fc-7e6282a044f9')/Attributes('Platform%20serial%20identifier')",
-                    "uri": "https://scihub.copernicus.eu/dhus/odata/v1/Products('c444677e-3484-49a7-b3fc-7e6282a044f9')/Attributes('Platform%20serial%20identifier')",
-                    "type": "DHuS.Attribute"
-                },
-                "Id": "Platform serial identifier",
-                "Name": "Platform serial identifier",
-                "ContentType": "text/plain",
-                "ContentLength": "11",
-                "Value": "Sentinel-2A",
-                "Category": ""
-            },
-            {
-                "__metadata": {
-                    "id": "https://scihub.copernicus.eu/dhus/odata/v1/Products('c444677e-3484-49a7-b3fc-7e6282a044f9')/Attributes('Processing%20baseline')",
-                    "uri": "https://scihub.copernicus.eu/dhus/odata/v1/Products('c444677e-3484-49a7-b3fc-7e6282a044f9')/Attributes('Processing%20baseline')",
-                    "type": "DHuS.Attribute"
-                },
-                "Id": "Processing baseline",
-                "Name": "Processing baseline",
-                "ContentType": "text/plain",
-                "ContentLength": "5",
-                "Value": "02.07",
-                "Category": "product"
-            },
-            {
-                "__metadata": {
-                    "id": "https://scihub.copernicus.eu/dhus/odata/v1/Products('c444677e-3484-49a7-b3fc-7e6282a044f9')/Attributes('Processing%20level')",
-                    "uri": "https://scihub.copernicus.eu/dhus/odata/v1/Products('c444677e-3484-49a7-b3fc-7e6282a044f9')/Attributes('Processing%20level')",
-                    "type": "DHuS.Attribute"
-                },
-                "Id": "Processing level",
-                "Name": "Processing level",
-                "ContentType": "text/plain",
-                "ContentLength": "8",
-                "Value": "Level-1C",
-                "Category": "product"
-            },
-            {
-                "__metadata": {
-                    "id": "https://scihub.copernicus.eu/dhus/odata/v1/Products('c444677e-3484-49a7-b3fc-7e6282a044f9')/Attributes('Product%20type')",
-                    "uri": "https://scihub.copernicus.eu/dhus/odata/v1/Products('c444677e-3484-49a7-b3fc-7e6282a044f9')/Attributes('Product%20type')",
-                    "type": "DHuS.Attribute"
-                },
-                "Id": "Product type",
-                "Name": "Product type",
-                "ContentType": "text/plain",
-                "ContentLength": "7",
-                "Value": "S2MSI1C",
-                "Category": "product"
-            },
-            {
-                "__metadata": {
-                    "id": "https://scihub.copernicus.eu/dhus/odata/v1/Products('c444677e-3484-49a7-b3fc-7e6282a044f9')/Attributes('Radiometric%20quality')",
-                    "uri": "https://scihub.copernicus.eu/dhus/odata/v1/Products('c444677e-3484-49a7-b3fc-7e6282a044f9')/Attributes('Radiometric%20quality')",
-                    "type": "DHuS.Attribute"
-                },
-                "Id": "Radiometric quality",
-                "Name": "Radiometric quality",
-                "ContentType": "text/plain",
-                "ContentLength": "6",
-                "Value": "PASSED",
-                "Category": "product"
-            },
-            {
-                "__metadata": {
-                    "id": "https://scihub.copernicus.eu/dhus/odata/v1/Products('c444677e-3484-49a7-b3fc-7e6282a044f9')/Attributes('Relative%20orbit%20%28start%29')",
-                    "uri": "https://scihub.copernicus.eu/dhus/odata/v1/Products('c444677e-3484-49a7-b3fc-7e6282a044f9')/Attributes('Relative%20orbit%20%28start%29')",
-                    "type": "DHuS.Attribute"
-                },
-                "Id": "Relative orbit (start)",
-                "Name": "Relative orbit (start)",
-                "ContentType": "text/plain",
-                "ContentLength": "2",
-                "Value": "51",
-                "Category": "product"
-            },
-            {
-                "__metadata": {
-                    "id": "https://scihub.copernicus.eu/dhus/odata/v1/Products('c444677e-3484-49a7-b3fc-7e6282a044f9')/Attributes('Satellite')",
-                    "uri": "https://scihub.copernicus.eu/dhus/odata/v1/Products('c444677e-3484-49a7-b3fc-7e6282a044f9')/Attributes('Satellite')",
-                    "type": "DHuS.Attribute"
-                },
-                "Id": "Satellite",
-                "Name": "Satellite",
-                "ContentType": "text/plain",
-                "ContentLength": "10",
-                "Value": "Sentinel-2",
-                "Category": "summary"
-            },
-            {
-                "__metadata": {
-                    "id": "https://scihub.copernicus.eu/dhus/odata/v1/Products('c444677e-3484-49a7-b3fc-7e6282a044f9')/Attributes('Satellite%20name')",
-                    "uri": "https://scihub.copernicus.eu/dhus/odata/v1/Products('c444677e-3484-49a7-b3fc-7e6282a044f9')/Attributes('Satellite%20name')",
-                    "type": "DHuS.Attribute"
-                },
-                "Id": "Satellite name",
-                "Name": "Satellite name",
-                "ContentType": "text/plain",
-                "ContentLength": "10",
-                "Value": "Sentinel-2",
-                "Category": "platform"
-            },
-            {
-                "__metadata": {
-                    "id": "https://scihub.copernicus.eu/dhus/odata/v1/Products('c444677e-3484-49a7-b3fc-7e6282a044f9')/Attributes('Satellite%20number')",
-                    "uri": "https://scihub.copernicus.eu/dhus/odata/v1/Products('c444677e-3484-49a7-b3fc-7e6282a044f9')/Attributes('Satellite%20number')",
-                    "type": "DHuS.Attribute"
-                },
-                "Id": "Satellite number",
-                "Name": "Satellite number",
-                "ContentType": "text/plain",
-                "ContentLength": "1",
-                "Value": "A",
-                "Category": "platform"
-            },
-            {
-                "__metadata": {
-                    "id": "https://scihub.copernicus.eu/dhus/odata/v1/Products('c444677e-3484-49a7-b3fc-7e6282a044f9')/Attributes('Sensing%20start')",
-                    "uri": "https://scihub.copernicus.eu/dhus/odata/v1/Products('c444677e-3484-49a7-b3fc-7e6282a044f9')/Attributes('Sensing%20start')",
-                    "type": "DHuS.Attribute"
-                },
-                "Id": "Sensing start",
-                "Name": "Sensing start",
-                "ContentType": "text/plain",
-                "ContentLength": "24",
-                "Value": "2018-11-07T10:52:31.025Z",
-                "Category": "product"
-            },
-            {
-                "__metadata": {
-                    "id": "https://scihub.copernicus.eu/dhus/odata/v1/Products('c444677e-3484-49a7-b3fc-7e6282a044f9')/Attributes('Sensing%20stop')",
-                    "uri": "https://scihub.copernicus.eu/dhus/odata/v1/Products('c444677e-3484-49a7-b3fc-7e6282a044f9')/Attributes('Sensing%20stop')",
-                    "type": "DHuS.Attribute"
-                },
-                "Id": "Sensing stop",
-                "Name": "Sensing stop",
-                "ContentType": "text/plain",
-                "ContentLength": "24",
-                "Value": "2018-11-07T10:52:31.025Z",
-                "Category": "product"
-            },
-            {
-                "__metadata": {
-                    "id": "https://scihub.copernicus.eu/dhus/odata/v1/Products('c444677e-3484-49a7-b3fc-7e6282a044f9')/Attributes('Sensor%20quality')",
-                    "uri": "https://scihub.copernicus.eu/dhus/odata/v1/Products('c444677e-3484-49a7-b3fc-7e6282a044f9')/Attributes('Sensor%20quality')",
-                    "type": "DHuS.Attribute"
-                },
-                "Id": "Sensor quality",
-                "Name": "Sensor quality",
-                "ContentType": "text/plain",
-                "ContentLength": "6",
-                "Value": "PASSED",
-                "Category": "product"
-            },
-            {
-                "__metadata": {
-                    "id": "https://scihub.copernicus.eu/dhus/odata/v1/Products('c444677e-3484-49a7-b3fc-7e6282a044f9')/Attributes('Size')",
-                    "uri": "https://scihub.copernicus.eu/dhus/odata/v1/Products('c444677e-3484-49a7-b3fc-7e6282a044f9')/Attributes('Size')",
-                    "type": "DHuS.Attribute"
-                },
-                "Id": "Size",
-                "Name": "Size",
-                "ContentType": "text/plain",
-                "ContentLength": "9",
-                "Value": "733.68 MB",
-                "Category": "summary"
-            },
-            {
-                "__metadata": {
-                    "id": "https://scihub.copernicus.eu/dhus/odata/v1/Products('c444677e-3484-49a7-b3fc-7e6282a044f9')/Attributes('Tile%20Identifier')",
-                    "uri": "https://scihub.copernicus.eu/dhus/odata/v1/Products('c444677e-3484-49a7-b3fc-7e6282a044f9')/Attributes('Tile%20Identifier')",
-                    "type": "DHuS.Attribute"
-                },
-                "Id": "Tile Identifier",
-                "Name": "Tile Identifier",
-                "ContentType": "text/plain",
-                "ContentLength": "5",
-                "Value": "31UFU",
-                "Category": "product"
-            },
-            {
-                "__metadata": {
-                    "id": "https://scihub.copernicus.eu/dhus/odata/v1/Products('c444677e-3484-49a7-b3fc-7e6282a044f9')/Attributes('Datastrip%20identifier')",
-                    "uri": "https://scihub.copernicus.eu/dhus/odata/v1/Products('c444677e-3484-49a7-b3fc-7e6282a044f9')/Attributes('Datastrip%20identifier')",
-                    "type": "DHuS.Attribute"
-                },
-                "Id": "Datastrip identifier",
-                "Name": "Datastrip identifier",
-                "ContentType": "text/plain",
-                "ContentLength": "64",
-                "Value": "S2A_OPER_MSI_L1C_DS_MPS__20181107T111341_S20181107T105409_N02.07",
-                "Category": "product"
-            },
-            {
-                "__metadata": {
-                    "id": "https://scihub.copernicus.eu/dhus/odata/v1/Products('c444677e-3484-49a7-b3fc-7e6282a044f9')/Attributes('Granule%20identifier')",
-                    "uri": "https://scihub.copernicus.eu/dhus/odata/v1/Products('c444677e-3484-49a7-b3fc-7e6282a044f9')/Attributes('Granule%20identifier')",
-                    "type": "DHuS.Attribute"
-                },
-                "Id": "Granule identifier",
-                "Name": "Granule identifier",
-                "ContentType": "text/plain",
-                "ContentLength": "62",
-                "Value": "S2A_OPER_MSI_L1C_TL_MPS__20181107T111341_A017637_T31UFU_N02.07",
-                "Category": "product"
-            },
-            {
-                "__metadata": {
-                    "id": "https://scihub.copernicus.eu/dhus/odata/v1/Products('c444677e-3484-49a7-b3fc-7e6282a044f9')/Attributes('Tile%20Identifier%20horizontal%20order')",
-                    "uri": "https://scihub.copernicus.eu/dhus/odata/v1/Products('c444677e-3484-49a7-b3fc-7e6282a044f9')/Attributes('Tile%20Identifier%20horizontal%20order')",
-                    "type": "DHuS.Attribute"
-                },
-                "Id": "Tile Identifier horizontal order",
-                "Name": "Tile Identifier horizontal order",
-                "ContentType": "text/plain",
-                "ContentLength": "5",
-                "Value": "UU31F",
-                "Category": "product"
-            },
-            {
-                "__metadata": {
-                    "id": "https://scihub.copernicus.eu/dhus/odata/v1/Products('c444677e-3484-49a7-b3fc-7e6282a044f9')/Attributes('Level-1C%20PDI%20Identifier')",
-                    "uri": "https://scihub.copernicus.eu/dhus/odata/v1/Products('c444677e-3484-49a7-b3fc-7e6282a044f9')/Attributes('Level-1C%20PDI%20Identifier')",
-                    "type": "DHuS.Attribute"
-                },
-                "Id": "Level-1C PDI Identifier",
-                "Name": "Level-1C PDI Identifier",
-                "ContentType": "text/plain",
-                "ContentLength": "62",
-                "Value": "S2A_OPER_MSI_L1C_TL_MPS__20181107T111341_A017637_T31UFU_N02.07",
-                "Category": "product"
-            }
-        ]
+    "d":{
+      "results":[
+        {
+          "__metadata":{
+            "id":"https://apihub.copernicus.eu/apihub/odata/v1/Products('c444677e-3484-49a7-b3fc-7e6282a044f9')/Attributes('Cloud%20cover%20percentage')",
+            "uri":"https://apihub.copernicus.eu/apihub/odata/v1/Products('c444677e-3484-49a7-b3fc-7e6282a044f9')/Attributes('Cloud%20cover%20percentage')",
+            "type":"DHuS.Attribute"
+          },
+          "Id":"Cloud cover percentage",
+          "Name":"Cloud cover percentage",
+          "ContentType":"text/plain",
+          "ContentLength":"6",
+          "Value":"51.506",
+          "Category":"product"
+        },
+        {
+          "__metadata":{
+            "id":"https://apihub.copernicus.eu/apihub/odata/v1/Products('c444677e-3484-49a7-b3fc-7e6282a044f9')/Attributes('Datatake%20sensing%20start')",
+            "uri":"https://apihub.copernicus.eu/apihub/odata/v1/Products('c444677e-3484-49a7-b3fc-7e6282a044f9')/Attributes('Datatake%20sensing%20start')",
+            "type":"DHuS.Attribute"
+          },
+          "Id":"Datatake sensing start",
+          "Name":"Datatake sensing start",
+          "ContentType":"text/plain",
+          "ContentLength":"24",
+          "Value":"2018-11-07T10:52:31.025Z",
+          "Category":"product"
+        },
+        {
+          "__metadata":{
+            "id":"https://apihub.copernicus.eu/apihub/odata/v1/Products('c444677e-3484-49a7-b3fc-7e6282a044f9')/Attributes('Date')",
+            "uri":"https://apihub.copernicus.eu/apihub/odata/v1/Products('c444677e-3484-49a7-b3fc-7e6282a044f9')/Attributes('Date')",
+            "type":"DHuS.Attribute"
+          },
+          "Id":"Date",
+          "Name":"Date",
+          "ContentType":"text/plain",
+          "ContentLength":"24",
+          "Value":"2018-11-07T10:52:31.025Z",
+          "Category":"summary"
+        },
+        {
+          "__metadata":{
+            "id":"https://apihub.copernicus.eu/apihub/odata/v1/Products('c444677e-3484-49a7-b3fc-7e6282a044f9')/Attributes('Degraded%20ancillary%20data%20percentage')",
+            "uri":"https://apihub.copernicus.eu/apihub/odata/v1/Products('c444677e-3484-49a7-b3fc-7e6282a044f9')/Attributes('Degraded%20ancillary%20data%20percentage')",
+            "type":"DHuS.Attribute"
+          },
+          "Id":"Degraded ancillary data percentage",
+          "Name":"Degraded ancillary data percentage",
+          "ContentType":"text/plain",
+          "ContentLength":"3",
+          "Value":"0.0",
+          "Category":"product"
+        },
+        {
+          "__metadata":{
+            "id":"https://apihub.copernicus.eu/apihub/odata/v1/Products('c444677e-3484-49a7-b3fc-7e6282a044f9')/Attributes('Degraded%20MSI%20data%20percentage')",
+            "uri":"https://apihub.copernicus.eu/apihub/odata/v1/Products('c444677e-3484-49a7-b3fc-7e6282a044f9')/Attributes('Degraded%20MSI%20data%20percentage')",
+            "type":"DHuS.Attribute"
+          },
+          "Id":"Degraded MSI data percentage",
+          "Name":"Degraded MSI data percentage",
+          "ContentType":"text/plain",
+          "ContentLength":"1",
+          "Value":"0",
+          "Category":"product"
+        },
+        {
+          "__metadata":{
+            "id":"https://apihub.copernicus.eu/apihub/odata/v1/Products('c444677e-3484-49a7-b3fc-7e6282a044f9')/Attributes('Filename')",
+            "uri":"https://apihub.copernicus.eu/apihub/odata/v1/Products('c444677e-3484-49a7-b3fc-7e6282a044f9')/Attributes('Filename')",
+            "type":"DHuS.Attribute"
+          },
+          "Id":"Filename",
+          "Name":"Filename",
+          "ContentType":"text/plain",
+          "ContentLength":"65",
+          "Value":"S2A_MSIL1C_20181107T105231_N0207_R051_T31UFU_20181107T111341.SAFE",
+          "Category":"summary"
+        },
+        {
+          "__metadata":{
+            "id":"https://apihub.copernicus.eu/apihub/odata/v1/Products('c444677e-3484-49a7-b3fc-7e6282a044f9')/Attributes('Footprint')",
+            "uri":"https://apihub.copernicus.eu/apihub/odata/v1/Products('c444677e-3484-49a7-b3fc-7e6282a044f9')/Attributes('Footprint')",
+            "type":"DHuS.Attribute"
+          },
+          "Id":"Footprint",
+          "Name":"Footprint",
+          "ContentType":"text/plain",
+          "ContentLength":"444",
+          "Value":"<gml:Polygon srsName=\"http://www.opengis.net/gml/srs/epsg.xml#4326\" xmlns:gml=\"http://www.opengis.net/gml\">\n   <gml:outerBoundaryIs>\n      <gml:LinearRing>\n         <gml:coordinates>53.24020834947074,4.498460428340929 53.20820137275637,6.141769904481162 52.22256603361336,6.071678487044593 52.25345680664421,4.464980367164797 53.24020834947074,4.498460428340929</gml:coordinates>\n      </gml:LinearRing>\n   </gml:outerBoundaryIs>\n</gml:Polygon>",
+          "Category":"product"
+        },
+        {
+          "__metadata":{
+            "id":"https://apihub.copernicus.eu/apihub/odata/v1/Products('c444677e-3484-49a7-b3fc-7e6282a044f9')/Attributes('Format')",
+            "uri":"https://apihub.copernicus.eu/apihub/odata/v1/Products('c444677e-3484-49a7-b3fc-7e6282a044f9')/Attributes('Format')",
+            "type":"DHuS.Attribute"
+          },
+          "Id":"Format",
+          "Name":"Format",
+          "ContentType":"text/plain",
+          "ContentLength":"4",
+          "Value":"SAFE",
+          "Category":"product"
+        },
+        {
+          "__metadata":{
+            "id":"https://apihub.copernicus.eu/apihub/odata/v1/Products('c444677e-3484-49a7-b3fc-7e6282a044f9')/Attributes('Format%20correctness')",
+            "uri":"https://apihub.copernicus.eu/apihub/odata/v1/Products('c444677e-3484-49a7-b3fc-7e6282a044f9')/Attributes('Format%20correctness')",
+            "type":"DHuS.Attribute"
+          },
+          "Id":"Format correctness",
+          "Name":"Format correctness",
+          "ContentType":"text/plain",
+          "ContentLength":"6",
+          "Value":"PASSED",
+          "Category":"product"
+        },
+        {
+          "__metadata":{
+            "id":"https://apihub.copernicus.eu/apihub/odata/v1/Products('c444677e-3484-49a7-b3fc-7e6282a044f9')/Attributes('General%20quality')",
+            "uri":"https://apihub.copernicus.eu/apihub/odata/v1/Products('c444677e-3484-49a7-b3fc-7e6282a044f9')/Attributes('General%20quality')",
+            "type":"DHuS.Attribute"
+          },
+          "Id":"General quality",
+          "Name":"General quality",
+          "ContentType":"text/plain",
+          "ContentLength":"6",
+          "Value":"PASSED",
+          "Category":"product"
+        },
+        {
+          "__metadata":{
+            "id":"https://apihub.copernicus.eu/apihub/odata/v1/Products('c444677e-3484-49a7-b3fc-7e6282a044f9')/Attributes('Generation%20time')",
+            "uri":"https://apihub.copernicus.eu/apihub/odata/v1/Products('c444677e-3484-49a7-b3fc-7e6282a044f9')/Attributes('Generation%20time')",
+            "type":"DHuS.Attribute"
+          },
+          "Id":"Generation time",
+          "Name":"Generation time",
+          "ContentType":"text/plain",
+          "ContentLength":"27",
+          "Value":"2018-11-07T11:13:41.000000Z",
+          "Category":"product"
+        },
+        {
+          "__metadata":{
+            "id":"https://apihub.copernicus.eu/apihub/odata/v1/Products('c444677e-3484-49a7-b3fc-7e6282a044f9')/Attributes('Geometric%20quality')",
+            "uri":"https://apihub.copernicus.eu/apihub/odata/v1/Products('c444677e-3484-49a7-b3fc-7e6282a044f9')/Attributes('Geometric%20quality')",
+            "type":"DHuS.Attribute"
+          },
+          "Id":"Geometric quality",
+          "Name":"Geometric quality",
+          "ContentType":"text/plain",
+          "ContentLength":"6",
+          "Value":"PASSED",
+          "Category":"product"
+        },
+        {
+          "__metadata":{
+            "id":"https://apihub.copernicus.eu/apihub/odata/v1/Products('c444677e-3484-49a7-b3fc-7e6282a044f9')/Attributes('Identifier')",
+            "uri":"https://apihub.copernicus.eu/apihub/odata/v1/Products('c444677e-3484-49a7-b3fc-7e6282a044f9')/Attributes('Identifier')",
+            "type":"DHuS.Attribute"
+          },
+          "Id":"Identifier",
+          "Name":"Identifier",
+          "ContentType":"text/plain",
+          "ContentLength":"60",
+          "Value":"S2A_MSIL1C_20181107T105231_N0207_R051_T31UFU_20181107T111341",
+          "Category":"summary"
+        },
+        {
+          "__metadata":{
+            "id":"https://apihub.copernicus.eu/apihub/odata/v1/Products('c444677e-3484-49a7-b3fc-7e6282a044f9')/Attributes('Ingestion%20Date')",
+            "uri":"https://apihub.copernicus.eu/apihub/odata/v1/Products('c444677e-3484-49a7-b3fc-7e6282a044f9')/Attributes('Ingestion%20Date')",
+            "type":"DHuS.Attribute"
+          },
+          "Id":"Ingestion Date",
+          "Name":"Ingestion Date",
+          "ContentType":"text/plain",
+          "ContentLength":"24",
+          "Value":"2018-11-07T16:36:06.154Z",
+          "Category":"product"
+        },
+        {
+          "__metadata":{
+            "id":"https://apihub.copernicus.eu/apihub/odata/v1/Products('c444677e-3484-49a7-b3fc-7e6282a044f9')/Attributes('Instrument')",
+            "uri":"https://apihub.copernicus.eu/apihub/odata/v1/Products('c444677e-3484-49a7-b3fc-7e6282a044f9')/Attributes('Instrument')",
+            "type":"DHuS.Attribute"
+          },
+          "Id":"Instrument",
+          "Name":"Instrument",
+          "ContentType":"text/plain",
+          "ContentLength":"3",
+          "Value":"MSI",
+          "Category":"summary"
+        },
+        {
+          "__metadata":{
+            "id":"https://apihub.copernicus.eu/apihub/odata/v1/Products('c444677e-3484-49a7-b3fc-7e6282a044f9')/Attributes('Instrument%20abbreviation')",
+            "uri":"https://apihub.copernicus.eu/apihub/odata/v1/Products('c444677e-3484-49a7-b3fc-7e6282a044f9')/Attributes('Instrument%20abbreviation')",
+            "type":"DHuS.Attribute"
+          },
+          "Id":"Instrument abbreviation",
+          "Name":"Instrument abbreviation",
+          "ContentType":"text/plain",
+          "ContentLength":"3",
+          "Value":"MSI",
+          "Category":"instrument"
+        },
+        {
+          "__metadata":{
+            "id":"https://apihub.copernicus.eu/apihub/odata/v1/Products('c444677e-3484-49a7-b3fc-7e6282a044f9')/Attributes('Instrument%20mode')",
+            "uri":"https://apihub.copernicus.eu/apihub/odata/v1/Products('c444677e-3484-49a7-b3fc-7e6282a044f9')/Attributes('Instrument%20mode')",
+            "type":"DHuS.Attribute"
+          },
+          "Id":"Instrument mode",
+          "Name":"Instrument mode",
+          "ContentType":"text/plain",
+          "ContentLength":"8",
+          "Value":"INS-NOBS",
+          "Category":"instrument"
+        },
+        {
+          "__metadata":{
+            "id":"https://apihub.copernicus.eu/apihub/odata/v1/Products('c444677e-3484-49a7-b3fc-7e6282a044f9')/Attributes('Instrument%20name')",
+            "uri":"https://apihub.copernicus.eu/apihub/odata/v1/Products('c444677e-3484-49a7-b3fc-7e6282a044f9')/Attributes('Instrument%20name')",
+            "type":"DHuS.Attribute"
+          },
+          "Id":"Instrument name",
+          "Name":"Instrument name",
+          "ContentType":"text/plain",
+          "ContentLength":"25",
+          "Value":"Multi-Spectral Instrument",
+          "Category":"instrument"
+        },
+        {
+          "__metadata":{
+            "id":"https://apihub.copernicus.eu/apihub/odata/v1/Products('c444677e-3484-49a7-b3fc-7e6282a044f9')/Attributes('JTS%20footprint')",
+            "uri":"https://apihub.copernicus.eu/apihub/odata/v1/Products('c444677e-3484-49a7-b3fc-7e6282a044f9')/Attributes('JTS%20footprint')",
+            "type":"DHuS.Attribute"
+          },
+          "Id":"JTS footprint",
+          "Name":"JTS footprint",
+          "ContentType":"text/plain",
+          "ContentLength":"202",
+          "Value":"MULTIPOLYGON (((4.498460428340929 53.24020834947074, 4.464980367164797 52.25345680664421, 6.071678487044593 52.22256603361336, 6.141769904481162 53.20820137275637, 4.498460428340929 53.24020834947074)))",
+          "Category":"product"
+        },
+        {
+          "__metadata":{
+            "id":"https://apihub.copernicus.eu/apihub/odata/v1/Products('c444677e-3484-49a7-b3fc-7e6282a044f9')/Attributes('Mission%20datatake%20id')",
+            "uri":"https://apihub.copernicus.eu/apihub/odata/v1/Products('c444677e-3484-49a7-b3fc-7e6282a044f9')/Attributes('Mission%20datatake%20id')",
+            "type":"DHuS.Attribute"
+          },
+          "Id":"Mission datatake id",
+          "Name":"Mission datatake id",
+          "ContentType":"text/plain",
+          "ContentLength":"34",
+          "Value":"GS2A_20181107T105231_017637_N02.07",
+          "Category":"product"
+        },
+        {
+          "__metadata":{
+            "id":"https://apihub.copernicus.eu/apihub/odata/v1/Products('c444677e-3484-49a7-b3fc-7e6282a044f9')/Attributes('NSSDC%20identifier')",
+            "uri":"https://apihub.copernicus.eu/apihub/odata/v1/Products('c444677e-3484-49a7-b3fc-7e6282a044f9')/Attributes('NSSDC%20identifier')",
+            "type":"DHuS.Attribute"
+          },
+          "Id":"NSSDC identifier",
+          "Name":"NSSDC identifier",
+          "ContentType":"text/plain",
+          "ContentLength":"9",
+          "Value":"2015-028A",
+          "Category":"platform"
+        },
+        {
+          "__metadata":{
+            "id":"https://apihub.copernicus.eu/apihub/odata/v1/Products('c444677e-3484-49a7-b3fc-7e6282a044f9')/Attributes('Orbit%20number%20%28start%29')",
+            "uri":"https://apihub.copernicus.eu/apihub/odata/v1/Products('c444677e-3484-49a7-b3fc-7e6282a044f9')/Attributes('Orbit%20number%20%28start%29')",
+            "type":"DHuS.Attribute"
+          },
+          "Id":"Orbit number (start)",
+          "Name":"Orbit number (start)",
+          "ContentType":"text/plain",
+          "ContentLength":"5",
+          "Value":"17637",
+          "Category":"product"
+        },
+        {
+          "__metadata":{
+            "id":"https://apihub.copernicus.eu/apihub/odata/v1/Products('c444677e-3484-49a7-b3fc-7e6282a044f9')/Attributes('Pass%20direction')",
+            "uri":"https://apihub.copernicus.eu/apihub/odata/v1/Products('c444677e-3484-49a7-b3fc-7e6282a044f9')/Attributes('Pass%20direction')",
+            "type":"DHuS.Attribute"
+          },
+          "Id":"Pass direction",
+          "Name":"Pass direction",
+          "ContentType":"text/plain",
+          "ContentLength":"10",
+          "Value":"DESCENDING",
+          "Category":"product"
+        },
+        {
+          "__metadata":{
+            "id":"https://apihub.copernicus.eu/apihub/odata/v1/Products('c444677e-3484-49a7-b3fc-7e6282a044f9')/Attributes('Platform%20serial%20identifier')",
+            "uri":"https://apihub.copernicus.eu/apihub/odata/v1/Products('c444677e-3484-49a7-b3fc-7e6282a044f9')/Attributes('Platform%20serial%20identifier')",
+            "type":"DHuS.Attribute"
+          },
+          "Id":"Platform serial identifier",
+          "Name":"Platform serial identifier",
+          "ContentType":"text/plain",
+          "ContentLength":"11",
+          "Value":"Sentinel-2A",
+          "Category":""
+        },
+        {
+          "__metadata":{
+            "id":"https://apihub.copernicus.eu/apihub/odata/v1/Products('c444677e-3484-49a7-b3fc-7e6282a044f9')/Attributes('Processing%20baseline')",
+            "uri":"https://apihub.copernicus.eu/apihub/odata/v1/Products('c444677e-3484-49a7-b3fc-7e6282a044f9')/Attributes('Processing%20baseline')",
+            "type":"DHuS.Attribute"
+          },
+          "Id":"Processing baseline",
+          "Name":"Processing baseline",
+          "ContentType":"text/plain",
+          "ContentLength":"5",
+          "Value":"02.07",
+          "Category":"product"
+        },
+        {
+          "__metadata":{
+            "id":"https://apihub.copernicus.eu/apihub/odata/v1/Products('c444677e-3484-49a7-b3fc-7e6282a044f9')/Attributes('Processing%20level')",
+            "uri":"https://apihub.copernicus.eu/apihub/odata/v1/Products('c444677e-3484-49a7-b3fc-7e6282a044f9')/Attributes('Processing%20level')",
+            "type":"DHuS.Attribute"
+          },
+          "Id":"Processing level",
+          "Name":"Processing level",
+          "ContentType":"text/plain",
+          "ContentLength":"8",
+          "Value":"Level-1C",
+          "Category":"product"
+        },
+        {
+          "__metadata":{
+            "id":"https://apihub.copernicus.eu/apihub/odata/v1/Products('c444677e-3484-49a7-b3fc-7e6282a044f9')/Attributes('Product%20type')",
+            "uri":"https://apihub.copernicus.eu/apihub/odata/v1/Products('c444677e-3484-49a7-b3fc-7e6282a044f9')/Attributes('Product%20type')",
+            "type":"DHuS.Attribute"
+          },
+          "Id":"Product type",
+          "Name":"Product type",
+          "ContentType":"text/plain",
+          "ContentLength":"7",
+          "Value":"S2MSI1C",
+          "Category":"product"
+        },
+        {
+          "__metadata":{
+            "id":"https://apihub.copernicus.eu/apihub/odata/v1/Products('c444677e-3484-49a7-b3fc-7e6282a044f9')/Attributes('Radiometric%20quality')",
+            "uri":"https://apihub.copernicus.eu/apihub/odata/v1/Products('c444677e-3484-49a7-b3fc-7e6282a044f9')/Attributes('Radiometric%20quality')",
+            "type":"DHuS.Attribute"
+          },
+          "Id":"Radiometric quality",
+          "Name":"Radiometric quality",
+          "ContentType":"text/plain",
+          "ContentLength":"6",
+          "Value":"PASSED",
+          "Category":"product"
+        },
+        {
+          "__metadata":{
+            "id":"https://apihub.copernicus.eu/apihub/odata/v1/Products('c444677e-3484-49a7-b3fc-7e6282a044f9')/Attributes('Relative%20orbit%20%28start%29')",
+            "uri":"https://apihub.copernicus.eu/apihub/odata/v1/Products('c444677e-3484-49a7-b3fc-7e6282a044f9')/Attributes('Relative%20orbit%20%28start%29')",
+            "type":"DHuS.Attribute"
+          },
+          "Id":"Relative orbit (start)",
+          "Name":"Relative orbit (start)",
+          "ContentType":"text/plain",
+          "ContentLength":"2",
+          "Value":"51",
+          "Category":"product"
+        },
+        {
+          "__metadata":{
+            "id":"https://apihub.copernicus.eu/apihub/odata/v1/Products('c444677e-3484-49a7-b3fc-7e6282a044f9')/Attributes('Satellite')",
+            "uri":"https://apihub.copernicus.eu/apihub/odata/v1/Products('c444677e-3484-49a7-b3fc-7e6282a044f9')/Attributes('Satellite')",
+            "type":"DHuS.Attribute"
+          },
+          "Id":"Satellite",
+          "Name":"Satellite",
+          "ContentType":"text/plain",
+          "ContentLength":"10",
+          "Value":"Sentinel-2",
+          "Category":"summary"
+        },
+        {
+          "__metadata":{
+            "id":"https://apihub.copernicus.eu/apihub/odata/v1/Products('c444677e-3484-49a7-b3fc-7e6282a044f9')/Attributes('Satellite%20name')",
+            "uri":"https://apihub.copernicus.eu/apihub/odata/v1/Products('c444677e-3484-49a7-b3fc-7e6282a044f9')/Attributes('Satellite%20name')",
+            "type":"DHuS.Attribute"
+          },
+          "Id":"Satellite name",
+          "Name":"Satellite name",
+          "ContentType":"text/plain",
+          "ContentLength":"10",
+          "Value":"Sentinel-2",
+          "Category":"platform"
+        },
+        {
+          "__metadata":{
+            "id":"https://apihub.copernicus.eu/apihub/odata/v1/Products('c444677e-3484-49a7-b3fc-7e6282a044f9')/Attributes('Satellite%20number')",
+            "uri":"https://apihub.copernicus.eu/apihub/odata/v1/Products('c444677e-3484-49a7-b3fc-7e6282a044f9')/Attributes('Satellite%20number')",
+            "type":"DHuS.Attribute"
+          },
+          "Id":"Satellite number",
+          "Name":"Satellite number",
+          "ContentType":"text/plain",
+          "ContentLength":"1",
+          "Value":"A",
+          "Category":"platform"
+        },
+        {
+          "__metadata":{
+            "id":"https://apihub.copernicus.eu/apihub/odata/v1/Products('c444677e-3484-49a7-b3fc-7e6282a044f9')/Attributes('Sensing%20start')",
+            "uri":"https://apihub.copernicus.eu/apihub/odata/v1/Products('c444677e-3484-49a7-b3fc-7e6282a044f9')/Attributes('Sensing%20start')",
+            "type":"DHuS.Attribute"
+          },
+          "Id":"Sensing start",
+          "Name":"Sensing start",
+          "ContentType":"text/plain",
+          "ContentLength":"24",
+          "Value":"2018-11-07T10:52:31.025Z",
+          "Category":"product"
+        },
+        {
+          "__metadata":{
+            "id":"https://apihub.copernicus.eu/apihub/odata/v1/Products('c444677e-3484-49a7-b3fc-7e6282a044f9')/Attributes('Sensing%20stop')",
+            "uri":"https://apihub.copernicus.eu/apihub/odata/v1/Products('c444677e-3484-49a7-b3fc-7e6282a044f9')/Attributes('Sensing%20stop')",
+            "type":"DHuS.Attribute"
+          },
+          "Id":"Sensing stop",
+          "Name":"Sensing stop",
+          "ContentType":"text/plain",
+          "ContentLength":"24",
+          "Value":"2018-11-07T10:52:31.025Z",
+          "Category":"product"
+        },
+        {
+          "__metadata":{
+            "id":"https://apihub.copernicus.eu/apihub/odata/v1/Products('c444677e-3484-49a7-b3fc-7e6282a044f9')/Attributes('Sensor%20quality')",
+            "uri":"https://apihub.copernicus.eu/apihub/odata/v1/Products('c444677e-3484-49a7-b3fc-7e6282a044f9')/Attributes('Sensor%20quality')",
+            "type":"DHuS.Attribute"
+          },
+          "Id":"Sensor quality",
+          "Name":"Sensor quality",
+          "ContentType":"text/plain",
+          "ContentLength":"6",
+          "Value":"PASSED",
+          "Category":"product"
+        },
+        {
+          "__metadata":{
+            "id":"https://apihub.copernicus.eu/apihub/odata/v1/Products('c444677e-3484-49a7-b3fc-7e6282a044f9')/Attributes('Size')",
+            "uri":"https://apihub.copernicus.eu/apihub/odata/v1/Products('c444677e-3484-49a7-b3fc-7e6282a044f9')/Attributes('Size')",
+            "type":"DHuS.Attribute"
+          },
+          "Id":"Size",
+          "Name":"Size",
+          "ContentType":"text/plain",
+          "ContentLength":"9",
+          "Value":"733.68 MB",
+          "Category":"summary"
+        },
+        {
+          "__metadata":{
+            "id":"https://apihub.copernicus.eu/apihub/odata/v1/Products('c444677e-3484-49a7-b3fc-7e6282a044f9')/Attributes('Tile%20Identifier')",
+            "uri":"https://apihub.copernicus.eu/apihub/odata/v1/Products('c444677e-3484-49a7-b3fc-7e6282a044f9')/Attributes('Tile%20Identifier')",
+            "type":"DHuS.Attribute"
+          },
+          "Id":"Tile Identifier",
+          "Name":"Tile Identifier",
+          "ContentType":"text/plain",
+          "ContentLength":"5",
+          "Value":"31UFU",
+          "Category":"product"
+        },
+        {
+          "__metadata":{
+            "id":"https://apihub.copernicus.eu/apihub/odata/v1/Products('c444677e-3484-49a7-b3fc-7e6282a044f9')/Attributes('Datastrip%20identifier')",
+            "uri":"https://apihub.copernicus.eu/apihub/odata/v1/Products('c444677e-3484-49a7-b3fc-7e6282a044f9')/Attributes('Datastrip%20identifier')",
+            "type":"DHuS.Attribute"
+          },
+          "Id":"Datastrip identifier",
+          "Name":"Datastrip identifier",
+          "ContentType":"text/plain",
+          "ContentLength":"64",
+          "Value":"S2A_OPER_MSI_L1C_DS_MPS__20181107T111341_S20181107T105409_N02.07",
+          "Category":"product"
+        },
+        {
+          "__metadata":{
+            "id":"https://apihub.copernicus.eu/apihub/odata/v1/Products('c444677e-3484-49a7-b3fc-7e6282a044f9')/Attributes('Granule%20identifier')",
+            "uri":"https://apihub.copernicus.eu/apihub/odata/v1/Products('c444677e-3484-49a7-b3fc-7e6282a044f9')/Attributes('Granule%20identifier')",
+            "type":"DHuS.Attribute"
+          },
+          "Id":"Granule identifier",
+          "Name":"Granule identifier",
+          "ContentType":"text/plain",
+          "ContentLength":"62",
+          "Value":"S2A_OPER_MSI_L1C_TL_MPS__20181107T111341_A017637_T31UFU_N02.07",
+          "Category":"product"
+        },
+        {
+          "__metadata":{
+            "id":"https://apihub.copernicus.eu/apihub/odata/v1/Products('c444677e-3484-49a7-b3fc-7e6282a044f9')/Attributes('Tile%20Identifier%20horizontal%20order')",
+            "uri":"https://apihub.copernicus.eu/apihub/odata/v1/Products('c444677e-3484-49a7-b3fc-7e6282a044f9')/Attributes('Tile%20Identifier%20horizontal%20order')",
+            "type":"DHuS.Attribute"
+          },
+          "Id":"Tile Identifier horizontal order",
+          "Name":"Tile Identifier horizontal order",
+          "ContentType":"text/plain",
+          "ContentLength":"5",
+          "Value":"UU31F",
+          "Category":"product"
+        },
+        {
+          "__metadata":{
+            "id":"https://apihub.copernicus.eu/apihub/odata/v1/Products('c444677e-3484-49a7-b3fc-7e6282a044f9')/Attributes('Level-1C%20PDI%20Identifier')",
+            "uri":"https://apihub.copernicus.eu/apihub/odata/v1/Products('c444677e-3484-49a7-b3fc-7e6282a044f9')/Attributes('Level-1C%20PDI%20Identifier')",
+            "type":"DHuS.Attribute"
+          },
+          "Id":"Level-1C PDI Identifier",
+          "Name":"Level-1C PDI Identifier",
+          "ContentType":"text/plain",
+          "ContentLength":"62",
+          "Value":"S2A_OPER_MSI_L1C_TL_MPS__20181107T111341_A017637_T31UFU_N02.07",
+          "Category":"product"
+        }
+      ]
     }
-}
+  }
