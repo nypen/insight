@@ -1,4 +1,5 @@
 {
+    "id": "@id",
     "EarthObservation": "http://schema.org/EarthObservation",
     "eoAquisitionInformation": "http://schema.org/eoAquisitionInformation",
     "acquisitionParameters": "http://schema.org/AcquisitionParameters",
