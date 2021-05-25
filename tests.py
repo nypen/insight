@@ -154,7 +154,10 @@ print()
 frame_file = open("./inputs/frame.json", "r")
 frame = json.load(frame_file)
 
-framed = jsonld.frame(g, frame)
+context_file = open("./context.json", "r")
+context = json.load(context_file)
+
+framed = jsonld.frame(g, frame, { "expandContext": context })
 
 print(json.dumps(framed, indent=2))
 
