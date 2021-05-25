@@ -1,16 +1,16 @@
 {
-    "@context": {"@vocab": "http://schema.org/"},
-    "@type": "EarthObservation",
-    "eoAcquisitionInformation": {
-      "@type": "AcquisitionInformation",
-      "eoAquisitionParameters": {
-        "@type": "AcquisitionParameters"
-      },
-      "eoInstrument": {
-        "@type": "Instrument"
-      },
-      "eoPlatform": {
-        "@type": "Platform"
-      }
+  "@context": {"@vocab": "http://schema.org/"},
+  "@type": "EarthObservation",
+  "eoAcquisitionInformation": {
+    "@type": "AcquisitionInformation",
+    "eoInstrument": {
+      "@type": "Instrument"
+    },
+    "eoPlatform": {
+      "@type": "Platform"
+    },
+    "eoAcquisitionParameters": {
+      "@type": "AcquisitionParameters"
     }
   }
+}

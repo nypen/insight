@@ -1,7 +1,7 @@
 {
   "@context": "https://schema.org/docs/jsonldcontext.jsonld",
   "@type": "EarthObservation",
-  "eoAquisitionInformation": {
+  "eoAcquisitionInformation": {
     "@type" : "AcquisitionInformation",
     "eoInstrument": {
       "@type" :"Instrument",
