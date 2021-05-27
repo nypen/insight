@@ -1,0 +1,27 @@
+{
+    "EarthObservation": {
+        "eoAquisitionInformation": {
+            "eoInstrument": {
+                "id" : "",
+                "name" : "Instrument name",
+                "instrumentShortName" : "Instrument abbreviation",
+                "operationalMode" : "Instrument mode"
+            },
+            "eoPlatform": {
+                "id": "",
+                "platformSerialIdentifier" : "Satellite number",
+                "platformShortName" : "Satellite name"
+            },
+            "eoAcquisitionParameters": {
+                "acquisitionType" : "Acquisition Type",
+                "ascendingNodeDate" : "Ingestion Date",
+                "acquisitionSubType" : "Mission datatake id",
+                "orbitNumber" : "Orbit number (start)",
+                "orbitDirection" : "Pass direction",
+                "beginningDateTime" : "Sensing start",
+                "endingDateTime" : "Sensing stop",
+                "tileId" : "Tile Identifier"
+            }
+        }
+    }
+}
