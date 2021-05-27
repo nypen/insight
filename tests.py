@@ -19,7 +19,7 @@ sentinel1_data = ['Acquisition Type', 'Cycle number', 'Ingestion Date', 'Mission
 sentinel2_data = ['Datatake sensing start', 'Ingestion Date', 'Mission datatake id', 
     'Orbit number (start)', 'Pass direction', 'Sensing start', 'Sensing stop', 'Tile Identifier', 
     'Satellite name','Satellite number', 'Instrument abbreviation', 'Instrument mode', 
-    'identifier Instrument id', 'Instrument name', 'identifier Platform id']
+    'Instrument id', 'Instrument name', 'Platform id']
 
 print("---------------------------------------------------------------------------------------------------")      
 print("---------------------------------------------------------------------------------------------------")      
