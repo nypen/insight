@@ -37,6 +37,7 @@ oah.login(user, password)
 result1 = oah.getProductData(id1)
 result2 = oah.getProductData(id2)
 
+
 # print (result1)
 
 print("---------------------------------------------------------------------------------------------------")      
