@@ -5,22 +5,26 @@
                 "id" : "",
                 "name" : "Instrument name",
                 "instrumentShortName" : "Instrument abbreviation",
-                "operationalMode" : "Instrument mode"
+                "description": "Instrument description",
+                "polarisationChannels": "Polarisation",
+                "operationalMode" : "Instrument mode",
+                "swathIdentifier" : "Instrument swath"
             },
             "eoPlatform": {
-                "id": "",
-                "platformSerialIdentifier" : "Satellite number",
-                "platformShortName" : "Satellite name"
+                "id": "Platform id",
+                "description": "Instrument description",
+                "platformSerialIdentifier": "Satellite number",
+                "platformShortName": "Satellite name"
             },
             "eoAcquisitionParameters": {
                 "acquisitionType" : "Acquisition Type",
+                "cycleNumber" : "Cycle number",
                 "ascendingNodeDate" : "Ingestion Date",
                 "acquisitionSubType" : "Mission datatake id",
                 "orbitNumber" : "Orbit number (start)",
                 "orbitDirection" : "Pass direction",
                 "beginningDateTime" : "Sensing start",
-                "endingDateTime" : "Sensing stop",
-                "tileId" : "Tile Identifier"
+                "endingDateTime" : "Sensing stop"
             }
         }
     }
