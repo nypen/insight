@@ -2,11 +2,12 @@ import urllib.request
 import sys
 import json
 import models
+from gcmdApi import GCMDApi
 from pyld import jsonld
 
 from getOAData import OpenAccessHubAPI
 from eoCollector import EOCollector
-from models.graph import Graph
+from models.eoGraph import EOGraph
 from models.node import Node
 from models.literal import Literal
 
@@ -73,9 +74,9 @@ print(".........................................................................
 fnType = "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
 fnblankNodeType = "blank node"
 
-b0 = Node(fnblankNodeType, "_:b0")
-b1 = Node(fnblankNodeType, "_:b1")
-b2 = Node(fnblankNodeType, "_:b2")
+b0 = Node(fnblankNodeType, "_:b0")  # earth observation
+b1 = Node(fnblankNodeType, "_:b1")  # acquisition information
+b2 = Node(fnblankNodeType, "_:b2")  # acquisition parameters
 
 Instrument_pred = Node("IRI", "http://schema.org/eoInstrument")
 eoInstrument = Node("IRI", "http://gcmdservices.gsfc.nasa.gov/kms/concept/081f9b6e-d0a0-4f1d-ad8-638189418480")
@@ -86,7 +87,7 @@ eoPlatform = Node("IRI", "http://gcmdservices.gsfc.nasa.gov/kms/concept/2ce20983
 AcqInfo_pred = Node("IRI", "http://schema.org/eoAcquisitionInformation")
 AcqParam_pred = Node("IRI", "http://schema.org/eoAcquisitionParameters")
 
-graph = Graph()
+graph = EOGraph()
 
 graph.addTriple(b0, Node("IRI",fnType), Node("IRI", "http://schema.org/EarthObservation"))
 graph.addTriple(b0, AcqInfo_pred, b1)
@@ -138,29 +139,44 @@ graph.addTriple(eoPlatform, Node("IRI", "http://schema.org/platformSerialIdentif
 graph.addTriple(eoPlatform, Node("IRI", "http://schema.org/platformShortName"), Literal("Sentinel-2"))
 
 
-
-graph.get()
-
-g = jsonld.from_rdf(graph.get())
-
-compacted = jsonld.compact(g, "https://schema.org/docs/jsonldcontext.jsonld")
-
-# print(json.dumps(compacted, indent=2))
-
-
-print()
-print()
-print()
-print()
 frame_file = open("./inputs/frame.json", "r")
 frame = json.load(frame_file)
 
 context_file = open("./context.json", "r")
 context = json.load(context_file)
 
-framed = jsonld.frame(g, frame, { "expandContext": context })
+graph1 = EOGraph()
+
+structure1_file = open("./inputs/structure1.json", "r")
+structure1 = json.load(structure1_file)
+
+graph1.addEoTriples(structure1, result1)
+
+g1 = jsonld.from_rdf(graph1.get())
+compacted = jsonld.compact(g1, "https://schema.org/docs/jsonldcontext.jsonld")
+
+framed = jsonld.frame(g1, frame, { "expandContext": context })
+print(json.dumps(framed, indent=2))
+
+
+graph2 = EOGraph()
+
+structure2_file = open("./inputs/structure2.json", "r")
+structure2 = json.load(structure2_file)
+
+graph2.addEoTriples(structure2, result2)
+
+graph2.get()
+
+g2 = jsonld.from_rdf(graph2.get())
+
+framed = jsonld.frame(g2, frame, { "expandContext": context })
 
 print(json.dumps(framed, indent=2))
+
+compacted = jsonld.compact(g2, "https://schema.org/docs/jsonldcontext.jsonld")
+
+# print(json.dumps(compacted, indent=2))
 
 # with open('Responses/response.json') as f:
 #   data = json.load(f)
@@ -299,3 +315,6 @@ print(json.dumps(framed, indent=2))
 # #                             '\nendingDateTime = ', pr2.endingDateTime,
 # #                             '\ntileId = ', pr2.tileId)       
 
+platformId = GCMDApi.getPlatformId("Sentinel-2A")
+
+print(platformId)
