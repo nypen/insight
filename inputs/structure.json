@@ -1,0 +1,27 @@
+{
+    "earthObservation": {
+        "eoAcquisitionInformation": {
+            "eoInstrument": {
+            "id" : "",
+            "name" : "Literal",
+            "instrumentShortName" : "Literal",
+            "operationalMode" : "Literal"
+            },
+            "eoPlatform": {
+            "id": "",
+            "platformSerialIdentifier": "Literal",
+            "platformShortName": "Literal"
+            },
+            "eoAcquisitionParameters": {
+            "acquisitionType" : "Literal",
+            "ascendingNodeDate" : "Literal",
+            "acquisitionSubType" : "Literal",
+            "orbitNumber" : "Literal",
+            "orbitDirection" : "Literal",
+            "beginningDateTime" : "Literal",
+            "endingDateTime" : "Literal",
+            "tileId" : "Literal"
+            }
+        }
+    }
+}
