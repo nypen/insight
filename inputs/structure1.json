@@ -1,5 +1,6 @@
 {
     "EarthObservation": {
+    "eoEarthObservation": {
         "eoAcquisitionInformation": {
             "eoInstrument": {
                 "id" : "",
