@@ -145,6 +145,17 @@ frame = json.load(frame_file)
 context_file = open("./context.json", "r")
 context = json.load(context_file)
 
+g = jsonld.from_rdf(graph.get())
+compacted = jsonld.compact(g, "https://schema.org/docs/jsonldcontext.jsonld")
+
+framed = jsonld.frame(g, frame, { "expandContext": context })
+print(json.dumps(framed, indent=2))
+
+
+print("---------------------------------------------------------------------------------------------------")      
+print("Sentinel 1 JSONLD")
+print("---------------------------------------------------------------------------------------------------")
+
 graph1 = EOGraph()
 
 structure1_file = open("./inputs/structure1.json", "r")
@@ -155,9 +166,13 @@ graph1.addEoTriples(structure1, result1)
 g1 = jsonld.from_rdf(graph1.get())
 compacted = jsonld.compact(g1, "https://schema.org/docs/jsonldcontext.jsonld")
 
-framed = jsonld.frame(g1, frame, { "expandContext": context })
+framed = jsonld.frame(g1, frame)
 print(json.dumps(framed, indent=2))
 
+
+print("---------------------------------------------------------------------------------------------------")      
+print("Sentinel 2 JSONLD")
+print("---------------------------------------------------------------------------------------------------")
 
 graph2 = EOGraph()
 
@@ -170,7 +185,7 @@ graph2.get()
 
 g2 = jsonld.from_rdf(graph2.get())
 
-framed = jsonld.frame(g2, frame, { "expandContext": context })
+framed = jsonld.frame(g2, frame)
 
 print(json.dumps(framed, indent=2))
 
