@@ -9,7 +9,6 @@ class OpenAccessHubAPI:
 
         if username and password:
             self.session.auth = (username, password)
-            print(self.session.auth)
 
     def getProductData(self, productId):
         url = OpenAccessHubAPI.url.format(productId)
