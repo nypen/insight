@@ -78,7 +78,7 @@ print("-------------------------------------------------------------------------
 
 graph2 = EOGraph()
 
-structure2_file = open("./inputs/structure2.json", "r")
+structure2_file = open("./inputs/structure1.json", "r")
 structure2 = json.load(structure2_file)
 
 graph2.addEoTriples(structure2, result2)
