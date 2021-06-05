@@ -28,7 +28,8 @@ password = "pennypapadimas88"
 ids = [
     "a239b5b3-62a4-4509-9bd6-ff6db6a3b40b",
     "c444677e-3484-49a7-b3fc-7e6282a044f9",
-    "2b17b57d-fff4-4645-b539-91f305c27c69"
+    "2b17b57d-fff4-4645-b539-91f305c27c69",
+    "0ee2be67-7b4e-48a2-aad4-71dbefa7471e"
 ]
 
 oah = OpenAccessHubAPI()
