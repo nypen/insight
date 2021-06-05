@@ -38,10 +38,27 @@ class EOGraph(Graph):
                     self.addEoTriples(structure[key], values, b)
             else:
                 subj = parent
- 
-                if(key=="id" or structure[key] not in values):
+
+                if(key=="id"):
                     continue
+                
+                mappedValue = ""
+                
+                # if the key maps to a list, 
+                # e.g. "beginningDateTime" : ["Sensing start", "Datatake sensing start"]
+                # check all values of the list and keep the value that exists in collected valued
+                if(type(structure[key])==type([])):
+                    for value in structure[key]:
+                        if(value in values):
+                            mappedValue = value
+                            break
                 else:
-                    obj = Literal(values[structure[key]])
+                    if(structure[key] in values):
+                        mappedValue = structure[key]
+                
+                if(mappedValue==""):
+                    continue
+
+                obj = Literal(values[mappedValue])
             
                 self.addTriple(subj, pred, obj)
