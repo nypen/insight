@@ -38,10 +38,9 @@ class EOGraph(Graph):
                     self.addEoTriples(structure[key], values, b)
             else:
                 subj = parent
-                if(key=="id"):
+ 
+                if(key=="id" or structure[key] not in values):
                     continue
-                if(structure[key] not in values):
-                    obj = Literal("Not Found")
                 else:
                     obj = Literal(values[structure[key]])
             
