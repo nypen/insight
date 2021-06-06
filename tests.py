@@ -64,8 +64,16 @@ for id in ids:
     graph = EOGraph()
 
     graph.addEoTriples(structure1, result)
-
+   
     g = jsonld.from_rdf(graph.get())
+   
+    print("!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!")
+    # graph.serialize(destination='output.txt', format='turtle')
+    # gr2 = jsonld.to_rdf(g)
+    filename = "sentinel_" + id
+    graph.get_rdf(filename)
+    print("!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!")
+
     compacted = jsonld.compact(g, "https://schema.org/docs/jsonldcontext.jsonld")
 
     framed = jsonld.frame(g, frame)
