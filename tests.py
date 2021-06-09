@@ -4,6 +4,7 @@ import json
 import models
 from gcmdApi import GCMDApi
 from pyld import jsonld
+import sys
 
 from getOAData import OpenAccessHubAPI
 from eoCollector import EOCollector
@@ -24,13 +25,18 @@ sentinel_data = ['Acquisition Type', 'Cycle number', 'Ingestion Date', 'Mission 
 user = "pennypapadimas"
 password = "pennypapadimas88"
 
+id = ""
 
-ids = [
-    "a239b5b3-62a4-4509-9bd6-ff6db6a3b40b",
-    "c444677e-3484-49a7-b3fc-7e6282a044f9",
-    "2b17b57d-fff4-4645-b539-91f305c27c69",
-    "0ee2be67-7b4e-48a2-aad4-71dbefa7471e"
-]
+for i in range(1, len(sys.argv)):
+    if(sys.argv[i] == "-i"):
+        id = sys.argv[i+1]
+
+# "a239b5b3-62a4-4509-9bd6-ff6db6a3b40b",
+# "c444677e-3484-49a7-b3fc-7e6282a044f9",
+# "2b17b57d-fff4-4645-b539-91f305c27c69",
+# "0ee2be67-7b4e-48a2-aad4-71dbefa7471e"
+
+ids = [ id ]
 
 oah = OpenAccessHubAPI()
 oah.login(user, password)
@@ -46,13 +52,22 @@ structure1 = json.load(structure1_file)
 
 for id in ids:
 
-    result = oah.getProductData(id)
+    metadata = oah.getProductData(id)
 
     print("---------------------------------------------------------------------------------------------------")
     print("Values collected from Copernicus for " + id)
     print("---------------------------------------------------------------------------------------------------")
 
-    result = EOCollector.collect(result, sentinel_data)
+    result = EOCollector.collect(metadata)
+
+    for key in result:
+        print(key, " : ", result[key])
+    
+    print("---------------------------------------------------------------------------------------------------")
+    print("Values to use for Annotation from Copernicus for " + id)
+    print("---------------------------------------------------------------------------------------------------")
+
+    result = EOCollector.collect(metadata, sentinel_data)
 
     for key in result:
         print(key, " : ", result[key])
@@ -67,20 +82,16 @@ for id in ids:
    
     g = jsonld.from_rdf(graph.get())
    
-    print("!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!")
-    # graph.serialize(destination='output.txt', format='turtle')
-    # gr2 = jsonld.to_rdf(g)
-    filename = "sentinel_" + id
-    graph.get_rdf(filename)
-    print("!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!")
+    filename = "./Output/rdfGraph_{}.json".format(id)
+    graph.printRdf(filename)
 
-    compacted = jsonld.compact(g, "https://schema.org/docs/jsonldcontext.jsonld")
+    # compacted = jsonld.compact(g, "https://schema.org/docs/jsonldcontext.jsonld")
 
     framed = jsonld.frame(g, frame)
     print(json.dumps(framed, indent=2))
     print()
     print()
 
-platformId = GCMDApi.getPlatformId("Sentinel-2A")
+# platformId = GCMDApi.getPlatformId("Sentinel-2A")
 
-print(platformId)
+# print(platformId)
