@@ -1,0 +1,280 @@
+{
+    "@graph": [
+        {
+            "subject": {
+                "type": "blank node",
+                "value": "_:b0"
+            },
+            "predicate": {
+                "type": "IRI",
+                "value": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+            },
+            "object": {
+                "type": "IRI",
+                "value": "http://schema.org/EarthObservation"
+            }
+        },
+        {
+            "subject": {
+                "type": "blank node",
+                "value": "_:b1"
+            },
+            "predicate": {
+                "type": "IRI",
+                "value": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+            },
+            "object": {
+                "type": "IRI",
+                "value": "http://schema.org/AcquisitionInformation"
+            }
+        },
+        {
+            "subject": {
+                "type": "blank node",
+                "value": "_:b0"
+            },
+            "predicate": {
+                "type": "IRI",
+                "value": "http://schema.org/eoAcquisitionInformation"
+            },
+            "object": {
+                "type": "blank node",
+                "value": "_:b1"
+            }
+        },
+        {
+            "subject": {
+                "type": "blank node",
+                "value": "_:b1"
+            },
+            "predicate": {
+                "type": "IRI",
+                "value": "http://schema.org/eoInstrument"
+            },
+            "object": {
+                "type": "IRI",
+                "value": "id to be fixed http://schema.org/eoInstrument"
+            }
+        },
+        {
+            "subject": {
+                "type": "IRI",
+                "value": "id to be fixed http://schema.org/eoInstrument"
+            },
+            "predicate": {
+                "type": "IRI",
+                "value": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+            },
+            "object": {
+                "type": "IRI",
+                "value": "http://schema.org/Instrument"
+            }
+        },
+        {
+            "subject": {
+                "type": "IRI",
+                "value": "id to be fixed http://schema.org/eoInstrument"
+            },
+            "predicate": {
+                "type": "IRI",
+                "value": "http://schema.org/name"
+            },
+            "object": {
+                "type": "Literal",
+                "value": "Sea and Land Surface Temperature Radiometer",
+                "datatype": "http://www.w3.org/2001/XMLSchema#string"
+            }
+        },
+        {
+            "subject": {
+                "type": "IRI",
+                "value": "id to be fixed http://schema.org/eoInstrument"
+            },
+            "predicate": {
+                "type": "IRI",
+                "value": "http://schema.org/instrumentShortName"
+            },
+            "object": {
+                "type": "Literal",
+                "value": "SLSTR",
+                "datatype": "http://www.w3.org/2001/XMLSchema#string"
+            }
+        },
+        {
+            "subject": {
+                "type": "IRI",
+                "value": "id to be fixed http://schema.org/eoInstrument"
+            },
+            "predicate": {
+                "type": "IRI",
+                "value": "http://schema.org/operationalMode"
+            },
+            "object": {
+                "type": "Literal",
+                "value": "Earth Observation",
+                "datatype": "http://www.w3.org/2001/XMLSchema#string"
+            }
+        },
+        {
+            "subject": {
+                "type": "blank node",
+                "value": "_:b1"
+            },
+            "predicate": {
+                "type": "IRI",
+                "value": "http://schema.org/eoPlatform"
+            },
+            "object": {
+                "type": "IRI",
+                "value": "id to be fixed http://schema.org/eoPlatform"
+            }
+        },
+        {
+            "subject": {
+                "type": "IRI",
+                "value": "id to be fixed http://schema.org/eoPlatform"
+            },
+            "predicate": {
+                "type": "IRI",
+                "value": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+            },
+            "object": {
+                "type": "IRI",
+                "value": "http://schema.org/Platform"
+            }
+        },
+        {
+            "subject": {
+                "type": "IRI",
+                "value": "id to be fixed http://schema.org/eoPlatform"
+            },
+            "predicate": {
+                "type": "IRI",
+                "value": "http://schema.org/platformSerialIdentifier"
+            },
+            "object": {
+                "type": "Literal",
+                "value": "B",
+                "datatype": "http://www.w3.org/2001/XMLSchema#string"
+            }
+        },
+        {
+            "subject": {
+                "type": "IRI",
+                "value": "id to be fixed http://schema.org/eoPlatform"
+            },
+            "predicate": {
+                "type": "IRI",
+                "value": "http://schema.org/platformShortName"
+            },
+            "object": {
+                "type": "Literal",
+                "value": "Sentinel-3",
+                "datatype": "http://www.w3.org/2001/XMLSchema#string"
+            }
+        },
+        {
+            "subject": {
+                "type": "blank node",
+                "value": "_:b2"
+            },
+            "predicate": {
+                "type": "IRI",
+                "value": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+            },
+            "object": {
+                "type": "IRI",
+                "value": "http://schema.org/AcquisitionParameters"
+            }
+        },
+        {
+            "subject": {
+                "type": "blank node",
+                "value": "_:b1"
+            },
+            "predicate": {
+                "type": "IRI",
+                "value": "http://schema.org/eoAcquisitionParameters"
+            },
+            "object": {
+                "type": "blank node",
+                "value": "_:b2"
+            }
+        },
+        {
+            "subject": {
+                "type": "blank node",
+                "value": "_:b2"
+            },
+            "predicate": {
+                "type": "IRI",
+                "value": "http://schema.org/cycleNumber"
+            },
+            "object": {
+                "type": "Literal",
+                "value": "53",
+                "datatype": "http://www.w3.org/2001/XMLSchema#string"
+            }
+        },
+        {
+            "subject": {
+                "type": "blank node",
+                "value": "_:b2"
+            },
+            "predicate": {
+                "type": "IRI",
+                "value": "http://schema.org/ascendingNodeDate"
+            },
+            "object": {
+                "type": "Literal",
+                "value": "2021-06-05T18:00:19.436Z",
+                "datatype": "http://www.w3.org/2001/XMLSchema#string"
+            }
+        },
+        {
+            "subject": {
+                "type": "blank node",
+                "value": "_:b2"
+            },
+            "predicate": {
+                "type": "IRI",
+                "value": "http://schema.org/orbitNumber"
+            },
+            "object": {
+                "type": "Literal",
+                "value": "16192",
+                "datatype": "http://www.w3.org/2001/XMLSchema#string"
+            }
+        },
+        {
+            "subject": {
+                "type": "blank node",
+                "value": "_:b2"
+            },
+            "predicate": {
+                "type": "IRI",
+                "value": "http://schema.org/beginningDateTime"
+            },
+            "object": {
+                "type": "Literal",
+                "value": "2021-06-04T08:10:46.652766Z",
+                "datatype": "http://www.w3.org/2001/XMLSchema#string"
+            }
+        },
+        {
+            "subject": {
+                "type": "blank node",
+                "value": "_:b2"
+            },
+            "predicate": {
+                "type": "IRI",
+                "value": "http://schema.org/endingDateTime"
+            },
+            "object": {
+                "type": "Literal",
+                "value": "2021-06-04T08:13:46.652766Z",
+                "datatype": "http://www.w3.org/2001/XMLSchema#string"
+            }
+        }
+    ]
+}
