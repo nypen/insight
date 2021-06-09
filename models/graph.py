@@ -31,9 +31,9 @@ class Graph:
 
         return graph
 
-    def get_rdf(self, fname):
+
+    def printRdf(self, fname="./Output/rdfGraph.json"):
         graph = self.get()
-        print(type(graph))
-        file = open(fname+".json", mode="w")
+        file = open(fname, mode="w")
         file.write(json.dumps(graph, indent=4))
     
