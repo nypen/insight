@@ -1,5 +1,5 @@
 import React from 'react';
-import { Grid, Typography } from '@material-ui/core';
+import { Grid, LinearProgress, Typography } from '@material-ui/core';
 import { AppBar } from './appBar';
 import { getUrl } from '../appServices';
 import { RequestFormType } from '../requestForm';
@@ -47,25 +47,25 @@ const Main = (props: React.PropsWithChildren<MainProps>) => {
 
     return (
         <div>
-            <Grid container spacing={2}>
+            <Grid container justify="space-evenly">
                 <Grid item xs={12}>
                     <AppBar />
                 </Grid>
-                <Grid item container direction="row">
+                <Grid item container xs={6}>
                     <RequestForm
                         loading={loading}
                         onSubmitRequest={handleonClick}
                     />
                 </Grid>
-                <Grid item>
+                <Grid item xs={6}>
                     <pre>
                         {JSON.stringify(result, null, '\t')}
                     </pre>
-                    <Typography>
-                        {loading ? "true" : "false"}
-                    </Typography>
-                    <Typography>
-                        {error ? error.message : "no error"}
+                    {
+                        loading && <LinearProgress color="secondary" />
+                    }
+                    <Typography color="error">
+                        {error && error.message}
                     </Typography>
                 </Grid>
             </Grid>

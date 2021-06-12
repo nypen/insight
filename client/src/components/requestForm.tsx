@@ -23,7 +23,7 @@ const RequestForm = (props: React.PropsWithChildren<RequestFormProps>) => {
     }
 
     return (
-        <Grid container direction="row">
+        <Grid container direction="column" spacing={3}>
             <Grid item>
                 <FormControl>
                     <InputLabel>Id</InputLabel>
@@ -63,7 +63,7 @@ const RequestForm = (props: React.PropsWithChildren<RequestFormProps>) => {
                     onClick={handleonClick}
                     disabled={loading}
                 >
-                    Produce JsonLD re
+                    Produce JsonLD
                 </Button>
             </Grid>
         </Grid>
