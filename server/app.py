@@ -1,6 +1,10 @@
 # https://flask.palletsprojects.com/en/2.0.x/quickstart/
-# $env:FLASK_APP="app"
+# pip3 install flask
+# pip3 install flask_cors
+# $env:FLASK_APP="app"   (for powershell)
 # python -m flask run
+# export FLASK_APP=hello   (for bash)
+# flask run
 
 from flask import Flask, jsonify, request
 from flask_cors import CORS
