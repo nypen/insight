@@ -1,7 +1,7 @@
 import requests
 import json
 
-class OpenAccessHubAPI:
+class OpenAccessHubService:
     url = 'https://apihub.copernicus.eu/apihub/odata/v1/Products(\'{}\')/Attributes?$format=json'
 
     def login(self, username, password):

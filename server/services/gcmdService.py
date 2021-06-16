@@ -1,11 +1,11 @@
 import requests
 
-class GCMDApi():
+class GcmdService():
     instrumentsUrl = 'https://gcmd.earthdata.nasa.gov/kms/concepts/concept_scheme/instruments/?format=json'
     platformsUrl = 'https://gcmd.earthdata.nasa.gov/kms/concepts/concept_scheme/platforms/?format=json'
 
     def getInstrumentId(instrumentPrefLabel):
-        url  = GCMDApi.instrumentsUrl
+        url  = GcmdService.instrumentsUrl
 
         session = requests.Session()
         resp = session.get(url)
@@ -20,7 +20,7 @@ class GCMDApi():
                 return concept["uuid"]
     
     def getPlatformId(platformPrefLabel):
-        url  = GCMDApi.platformsUrl
+        url  = GcmdService.platformsUrl
 
         session = requests.Session()
         resp = session.get(url)
