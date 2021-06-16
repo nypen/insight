@@ -14,6 +14,7 @@
 
 from flask import Flask, jsonify, request
 from flask_cors import CORS
+from services.requestExecuter import RequestExecuter
 
 app = Flask(__name__)
 CORS(app)
@@ -29,14 +30,11 @@ def hello_world():
 @app.route('/api/products/<product_id>', methods=['POST'])
 def get_product(product_id):
   if request.method == 'POST':
-    credentials = request.get_json()
+    body = request.get_json()
 
+    result = RequestExecuter().executeRequest(product_id, body["username"], body["password"])
     response = {
-      "result": {
-        "id": product_id,
-        "username": credentials["username"],
-        "password": credentials["password"]
-      }
+      "result": result
     }
 
     return jsonify(response)

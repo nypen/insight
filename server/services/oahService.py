@@ -11,7 +11,7 @@ class OpenAccessHubService:
             self.session.auth = (username, password)
 
     def getProductData(self, productId):
-        url = OpenAccessHubAPI.url.format(productId)
+        url = OpenAccessHubService.url.format(productId)
         resp = self.session.get(
             url,
             auth=self.session.auth
