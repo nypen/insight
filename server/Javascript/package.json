@@ -1,6 +1,0 @@
-{
-  "type": "module",
-  "dependencies": {
-    "jsonld-streaming-parser": "^2.3.0"
-  }
-}
