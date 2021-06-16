@@ -80,7 +80,7 @@ for id in ids:
 
     graph.addEoTriples(structure1, result)
    
-    g = jsonld.from_rdf(graph.get())
+    g = jsonld.from_rdf(graph.serialize())
    
     filename = "./Output/rdfGraph_{}.json".format(id)
     graph.printRdf(filename)

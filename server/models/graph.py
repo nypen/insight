@@ -25,7 +25,7 @@ class Graph:
 
         self.triples.append(triple)
 
-    def get(self):
+    def serialize(self):
         graph = {}
         graph["@graph"] = self.triples
 
@@ -33,7 +33,7 @@ class Graph:
 
 
     def printRdf(self, fname="./Output/rdfGraph.json"):
-        graph = self.get()
+        graph = self.serialize()
         file = open(fname, mode="w")
         file.write(json.dumps(graph, indent=4))
     
