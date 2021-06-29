@@ -1,5 +1,5 @@
 import React from 'react';
-import { Grid, LinearProgress, makeStyles, Typography } from '@material-ui/core';
+import { CircularProgress, Grid, makeStyles, Typography } from '@material-ui/core';
 import { AppBar } from './appBar';
 import { getUrl } from '../appServices';
 import { RequestFormType } from '../requestForm';
@@ -7,12 +7,10 @@ import { RequestForm } from './requestForm';
 
 const useStyles = makeStyles(() => ({
     root: {
-        border:"3px solid #66afff",
         height: "100vh"
     },
     requestForm: {
-        border:"3px solid #66a5a3",
-        height: "500px"
+        height: "90vh"
     }
 
 }));
@@ -28,6 +26,7 @@ const Main = (props: React.PropsWithChildren<MainProps>) => {
 
     const handleonClick = (requestForm: RequestFormType) => {
         setLoading(true);
+        setResult(null);
 
         fetch(getUrl(requestForm.id), {
             method: 'POST',
@@ -40,8 +39,9 @@ const Main = (props: React.PropsWithChildren<MainProps>) => {
         })
             .then(
                 (result) => {
-                    console.log(result);
-                    return result.json();
+                    const jsonResult = result.json()
+                    console.log("result " + jsonResult);
+                    return jsonResult;
                 },
                 (error) => {
                     console.log("Error" + error);
@@ -50,6 +50,7 @@ const Main = (props: React.PropsWithChildren<MainProps>) => {
                 }
             )
             .then(
+                // TODO: Fix loading remaining true after error response
                 (data) => {
                     setLoading(false);
                     setResult(data);
@@ -64,7 +65,7 @@ const Main = (props: React.PropsWithChildren<MainProps>) => {
                 <Grid item xs={12}>
                     <AppBar />
                 </Grid>
-                <Grid item container className={classes.requestForm} xs={10}>
+                <Grid item container className={classes.requestForm} justify="center" alignItems="center" xs={10}>
                     <Grid item xs={5}>
                         <RequestForm
                             loading={loading}
@@ -72,15 +73,19 @@ const Main = (props: React.PropsWithChildren<MainProps>) => {
                         />
                     </Grid>
                     <Grid item container justify="center" alignItems="center" xs={5}>
-                        <pre>
-                            {JSON.stringify(result, null, '\t')}
-                        </pre>
-                        {
-                            loading && <LinearProgress color="secondary" />
-                        }
-                        <Typography color="error">
-                            {error && error.message}
-                        </Typography>
+                        <Grid item>
+                            {result &&
+                                <pre>
+                                    {JSON.stringify(result, null, '\t')}
+                                </pre>
+                            }
+                            {
+                                loading && <CircularProgress size={60} color="secondary" />
+                            }
+                            <Typography color="error">
+                                {error && error.message}
+                            </Typography>
+                        </Grid>
                     </Grid>
                 </Grid>
             </Grid>
