@@ -19,7 +19,7 @@ class EOGraph(Graph):
                 nodeType = Node(EOGraph.IRI, EOGraph.fnType)
 
                 if("id" in dictionary):
-                    idNode = Node(EOGraph.IRI, "id to be fixed " + EOGraph.schema.format(key))
+                    idNode = Node(EOGraph.IRI, values[key])
                     self.addTriple(parent, pred, idNode)
                     
                     # remove "eo" prefix from type

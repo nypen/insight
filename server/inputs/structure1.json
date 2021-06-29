@@ -11,7 +11,7 @@
                 "swathIdentifier": "Instrument swath"
             },
             "eoPlatform": {
-                "id": "Platform id",
+                "id": "",
                 "platformSerialIdentifier": "Satellite number",
                 "platformShortName": "Satellite name"
             },
