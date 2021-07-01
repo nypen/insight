@@ -100,20 +100,21 @@ const RequestForm = (props: React.PropsWithChildren<RequestFormProps>) => {
     };
 
     return (
-        <Grid container direction="column" alignItems="center" spacing={4} >
-            <Grid item>
+        <Grid container id="ss" direction="column" alignItems="center" spacing={4}>
+            <Grid item style={{width:"50%"}}>
                 <TextField
                     label="Product Id"
                     value={id}
                     color="secondary"
                     disabled={loading}
+                    fullWidth
                     placeholder="0ee2be67-7b4e-48a2-aad4-71dbefa7471e"
                     onChange={(e) => handleIdChange(e.target.value)}
                     helperText={idError}
                     error={!!idError}
                 />
             </Grid>
-            <Grid item>
+            <Grid item style={{width:"50%"}}>
                 <TextField
                     label="Username"
                     value={username}
@@ -123,18 +124,20 @@ const RequestForm = (props: React.PropsWithChildren<RequestFormProps>) => {
 
                     }}
                     disabled={loading}
+                    fullWidth
                     onChange={(e) => handleUsernameChange(e.target.value)}
                     helperText={usernameError}
                     error={!!usernameError}
                 />
             </Grid>
-            <Grid item>
+            <Grid item style={{width:"50%"}}>
                 <TextField
                     label="Password"
                     type="password"
                     color="secondary"
                     value={password}
                     disabled={loading}
+                    fullWidth
                     onChange={(e) => handlePasswordChange(e.target.value)}
                     helperText={passwordError}
                     error={!!passwordError}
@@ -143,6 +146,8 @@ const RequestForm = (props: React.PropsWithChildren<RequestFormProps>) => {
             <Grid item>
                 <Button
                     onClick={handleonClick}
+                    color="secondary"
+                    variant="contained"
                     disabled={loading}
                 >
                     Produce JsonLD

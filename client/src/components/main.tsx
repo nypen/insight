@@ -1,16 +1,20 @@
 import React from 'react';
-import { CircularProgress, Grid, makeStyles, Typography } from '@material-ui/core';
+import { CircularProgress, Divider, Grid, makeStyles, Theme, Typography } from '@material-ui/core';
 import { AppBar } from './appBar';
 import { getUrl } from '../appServices';
 import { RequestFormType } from '../requestForm';
 import { RequestForm } from './requestForm';
+import JSONPretty from 'react-json-pretty';
+import purple from '@material-ui/core/colors/purple';
 
-const useStyles = makeStyles(() => ({
+const useStyles = makeStyles((theme: Theme) => ({
     root: {
-        height: "100vh"
+        height: "100vh",
+        backgroundColor: theme.palette.grey[700],
     },
     requestForm: {
-        height: "90vh"
+        height: "90vh",
+        backgroundColor: "#FFF",
     }
 
 }));
@@ -23,6 +27,11 @@ const Main = (props: React.PropsWithChildren<MainProps>) => {
     const [result, setResult] = React.useState(null);
 
     const classes = useStyles();
+
+    const theme = {
+        main: "line-height:1.3;background:#FFF;overflow:auto;",
+        key: `color:${purple[700]}`,
+    };
 
     const handleonClick = (requestForm: RequestFormType) => {
         setLoading(true);
@@ -61,23 +70,25 @@ const Main = (props: React.PropsWithChildren<MainProps>) => {
 
     return (
         <div>
-            <Grid container className={classes.root} justify="center">
+            <Grid container className={classes.root} justify="center" xs={12}>
                 <Grid item xs={12}>
                     <AppBar />
                 </Grid>
-                <Grid item container className={classes.requestForm} justify="center" alignItems="center" xs={10}>
-                    <Grid item xs={5}>
+                <Grid item container className={classes.requestForm}  direction="row" justify="center" alignItems="center" xs={10}>
+                    <Grid item style={{width:"50%"}}>
                         <RequestForm
                             loading={loading}
                             submitRequest={handleonClick}
                         />
                     </Grid>
-                    <Grid item container justify="center" alignItems="center" xs={5}>
-                        <Grid item>
+                    <Divider orientation="vertical"  style={{marginRight:"-1px"}} />
+                    <Grid item container justify="center" alignItems="center" style={{width:"50%"}}>
+                        <Grid item >
                             {result &&
-                                <pre>
-                                    {JSON.stringify(result, null, '\t')}
-                                </pre>
+                                <JSONPretty style={{padding:"10px", height:"100%"}}
+                                    themeClassName="custom-json-pretty"
+                                    theme={theme}
+                                    data={result["result"]}/>
                             }
                             {
                                 loading && <CircularProgress size={60} color="secondary" />

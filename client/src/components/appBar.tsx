@@ -22,7 +22,7 @@ const AppBar = (props: React.PropsWithChildren<MainProps>) => {
                 color="primary"
             >
                 <Toolbar>
-                    <Typography variant="h6">
+                    <Typography variant="h5" color="secondary">
                         GeoJsonLD
                     </Typography>
                 </Toolbar>
