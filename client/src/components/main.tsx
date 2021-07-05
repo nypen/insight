@@ -40,7 +40,7 @@ const Main = (props: React.PropsWithChildren<MainProps>) => {
         fetch(getUrl(requestForm.id), {
             method: 'POST',
             cache: "no-cache",
-            body: JSON.stringify({ username: requestForm.username, password: requestForm.password }),
+            body: JSON.stringify({ username: requestForm.username, password: requestForm.password, isSentinel5P: requestForm.isSentinel5P }),
             headers: new Headers({
                 'mode': 'cors',
                 'Content-Type': 'application/json'
@@ -75,14 +75,14 @@ const Main = (props: React.PropsWithChildren<MainProps>) => {
                     <AppBar />
                 </Grid>
                 <Grid item container className={classes.requestForm}  direction="row" justify="center" alignItems="center" xs={10}>
-                    <Grid item style={{width:"50%"}}>
+                    <Grid item style={{width:"45%"}}>
                         <RequestForm
                             loading={loading}
                             submitRequest={handleonClick}
                         />
                     </Grid>
                     <Divider orientation="vertical"  style={{marginRight:"-1px"}} />
-                    <Grid item container justify="center" alignItems="center" style={{width:"50%"}}>
+                    <Grid item container justify="center" alignItems="center" style={{width:"55%"}}>
                         <Grid item >
                             {result &&
                                 <JSONPretty style={{padding:"10px", height:"100%"}}

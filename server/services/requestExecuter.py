@@ -4,11 +4,11 @@ from services.oahService import OpenAccessHubService
 from services.geoJsonProducer import GeoJsonProducer
 
 class RequestExecuter:
-    def executeRequest(self, id, username, password):
+    def executeRequest(self, id, isSentinel5P, username, password):
         oah = OpenAccessHubService()
         oah.login(username, password)
 
-        data = oah.getProductData(id)
+        data = oah.getProductData(id, isSentinel5P)
 
         frame_file = open("./inputs/frame.json", "r")
         frame = json.load(frame_file)

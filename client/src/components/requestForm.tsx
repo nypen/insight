@@ -1,5 +1,5 @@
 import React from 'react';
-import { Button, Grid, TextField } from '@material-ui/core';
+import { Button, Checkbox, FormControl, FormControlLabel, Grid, TextField } from '@material-ui/core';
 import { RequestFormType } from '../requestForm';
 import { Guid } from "guid-typescript";
 
@@ -17,20 +17,22 @@ const RequestForm = (props: React.PropsWithChildren<RequestFormProps>) => {
     const [idError, setIdError] = React.useState<string>("");
     const [usernameError, setUsernameError] = React.useState<string>("");
     const [passwordError, setPasswordError] = React.useState<string>("");
+    const [isSentinel5P, setIsSentinel5p] = React.useState<boolean>(false);
 
     const handleonClick = () => {
         const validId = validateId(id);
         const validUsername = validateUsername(username);
         const validPassword = validatePassword(password);
-        
-        if(!validId || !validUsername || !validPassword){
+
+        if (!validId || !validUsername || !validPassword) {
             return;
         }
-        
-        const request = {
+
+        const request: RequestFormType = {
             id,
             username,
-            password
+            password,
+            isSentinel5P
         };
 
         console.log("request sent");
@@ -72,7 +74,7 @@ const RequestForm = (props: React.PropsWithChildren<RequestFormProps>) => {
     const handleUsernameChange = (username: string) => {
         setUsername(username);
 
-        if(!validateUsername(username)){
+        if (!validateUsername(username)) {
             return;
         }
 
@@ -92,7 +94,7 @@ const RequestForm = (props: React.PropsWithChildren<RequestFormProps>) => {
     const handleIdChange = (id: string) => {
         setId(id);
 
-        if (!validateId(id)){
+        if (!validateId(id)) {
             return;
         }
 
@@ -101,7 +103,7 @@ const RequestForm = (props: React.PropsWithChildren<RequestFormProps>) => {
 
     return (
         <Grid container id="ss" direction="column" alignItems="center" spacing={4}>
-            <Grid item style={{width:"50%"}}>
+            <Grid item style={{ width: "50%" }}>
                 <TextField
                     label="Product Id"
                     value={id}
@@ -114,7 +116,15 @@ const RequestForm = (props: React.PropsWithChildren<RequestFormProps>) => {
                     error={!!idError}
                 />
             </Grid>
-            <Grid item style={{width:"50%"}}>
+            <Grid item style={{ width: "50%" }}>
+                <FormControl disabled={loading}>
+                    <FormControlLabel
+                        control={<Checkbox checked={isSentinel5P} onChange={(e, checked) => setIsSentinel5p(checked)} />}
+                        label="Sentinel-5P"
+                    />
+                </FormControl>;
+                </Grid>
+            <Grid item style={{ width: "50%" }}>
                 <TextField
                     label="Username"
                     value={username}
@@ -130,7 +140,7 @@ const RequestForm = (props: React.PropsWithChildren<RequestFormProps>) => {
                     error={!!usernameError}
                 />
             </Grid>
-            <Grid item style={{width:"50%"}}>
+            <Grid item style={{ width: "50%" }}>
                 <TextField
                     label="Password"
                     type="password"

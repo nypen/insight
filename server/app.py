@@ -32,7 +32,8 @@ def get_product(product_id):
   if request.method == 'POST':
     body = request.get_json()
 
-    result = RequestExecuter().executeRequest(product_id, body["username"], body["password"])
+    print(body)
+    result = RequestExecuter().executeRequest(product_id, body["username"], body["password"], bool(body["isSentinel5P"]))
     response = {
       "result": result
     }
