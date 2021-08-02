@@ -239,3 +239,53 @@
     }
 }
 ```
+
+### c444677e-3484-49a7-b3fc-7e6282a044f9
+
+```json
+{
+    "result": {
+        "Cloud cover percentage": "51.506",
+        "Datastrip identifier": "S2A_OPER_MSI_L1C_DS_MPS__20181107T111341_S20181107T105409_N02.07",
+        "Datatake sensing start": "2018-11-07T10:52:31.025Z",
+        "Date": "2018-11-07T10:52:31.025Z",
+        "Degraded MSI data percentage": "0",
+        "Degraded ancillary data percentage": "0.0",
+        "Filename": "S2A_MSIL1C_20181107T105231_N0207_R051_T31UFU_20181107T111341.SAFE",
+        "Footprint": "<gml:Polygon srsName=\"http://www.opengis.net/gml/srs/epsg.xml#4326\" xmlns:gml=\"http://www.opengis.net/gml\">\n   <gml:outerBoundaryIs>\n      <gml:LinearRing>\n         <gml:coordinates>53.24020834947074,4.498460428340929 53.20820137275637,6.141769904481162 52.22256603361336,6.071678487044593 52.25345680664421,4.464980367164797 53.24020834947074,4.498460428340929</gml:coordinates>\n      </gml:LinearRing>\n   </gml:outerBoundaryIs>\n</gml:Polygon>",
+        "Format": "SAFE",
+        "Format correctness": "PASSED",
+        "General quality": "PASSED",
+        "Generation time": "2018-11-07T11:13:41.000000Z",
+        "Geometric quality": "PASSED",
+        "Granule identifier": "S2A_OPER_MSI_L1C_TL_MPS__20181107T111341_A017637_T31UFU_N02.07",
+        "Identifier": "S2A_MSIL1C_20181107T105231_N0207_R051_T31UFU_20181107T111341",
+        "Ingestion Date": "2018-11-07T16:36:06.154Z",
+        "Instrument": "MSI",
+        "Instrument abbreviation": "MSI",
+        "Instrument mode": "INS-NOBS",
+        "Instrument name": "Multi-Spectral Instrument",
+        "JTS footprint": "MULTIPOLYGON (((4.498460428340929 53.24020834947074, 4.464980367164797 52.25345680664421, 6.071678487044593 52.22256603361336, 6.141769904481162 53.20820137275637, 4.498460428340929 53.24020834947074)))",
+        "Level-1C PDI Identifier": "S2A_OPER_MSI_L1C_TL_MPS__20181107T111341_A017637_T31UFU_N02.07",
+        "Mission datatake id": "GS2A_20181107T105231_017637_N02.07",
+        "NSSDC identifier": "2015-028A",
+        "Orbit number (start)": "17637",
+        "Pass direction": "DESCENDING",
+        "Platform serial identifier": "Sentinel-2A",
+        "Processing baseline": "02.07",
+        "Processing level": "Level-1C",
+        "Product type": "S2MSI1C",
+        "Radiometric quality": "PASSED",
+        "Relative orbit (start)": "51",
+        "Satellite": "Sentinel-2",
+        "Satellite name": "Sentinel-2",
+        "Satellite number": "A",
+        "Sensing start": "2018-11-07T10:52:31.025Z",
+        "Sensing stop": "2018-11-07T10:52:31.025Z",
+        "Sensor quality": "PASSED",
+        "Size": "733.68 MB",
+        "Tile Identifier": "31UFU",
+        "Tile Identifier horizontal order": "UU31F"
+    }
+}
+```
