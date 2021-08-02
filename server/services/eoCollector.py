@@ -16,6 +16,7 @@ class EOCollector:
 
     # returns a dictionary containing only the data 
     # given in sentinelProperties
+    # if sentinelProperties are not defined, all will be returned
 
     def collect(data, sentinelProperties=None):
         d = data['d']

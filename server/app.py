@@ -28,12 +28,25 @@ def hello_world():
     return "<p>Hello, World!</p>"
 
 @app.route('/api/products/<product_id>', methods=['POST'])
-def get_product(product_id):
+def getProduct(product_id):
   if request.method == 'POST':
     body = request.get_json()
 
     print(body)
-    result = RequestExecuter().executeRequest(product_id, body["username"], body["password"], bool(body["isSentinel5P"]))
+    result = RequestExecuter().executeRequest(product_id, bool(body["isSentinel5P"]), body["username"], body["password"])
+    response = {
+      "result": result
+    }
+
+    return jsonify(response)
+
+@app.route('/api/products/<product_id>/attributes', methods=['POST'])
+def getallAttributes(product_id):
+  if request.method == 'POST':
+    body = request.get_json()
+
+    print(body)
+    result = RequestExecuter().executeRequest(product_id, bool(body["isSentinel5P"]), body["username"], body["password"], True)
     response = {
       "result": result
     }
