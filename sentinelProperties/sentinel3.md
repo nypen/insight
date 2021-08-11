@@ -364,21 +364,3 @@ Product types that are grouped together contain almost the same properties. The 
     }
 }
 ```
-
-### Product Type: SY_2_VG1___	
-### 5bf3cbac-9e44-4191-a541-4c5758cceb1d
-
-```json
-```
-
-### Product Type: SY_2_VGP___	
-### 5bf3cbac-9e44-4191-a541-4c5758cceb1d
-
-```json
-```
-
-### Product Type: SY_2_AOD___
-### 5bf3cbac-9e44-4191-a541-4c5758cceb1d
-
-```json
-```
