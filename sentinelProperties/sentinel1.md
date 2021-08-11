@@ -231,3 +231,65 @@
     }
 }
 ```
+
+## All distinct properties of Sentinel 1 products along with example values
+_Please note that this is not a valid product, it serves the purpose of gathering all properties of Sentinel 1 products_
+```json
+{
+	"Acquisition Type": "NOMINAL",
+	"Byte Order": "BIG_ENDIAN BIG_ENDIAN",
+	"Cal Compression Type": "BYPASS",
+	"Carrier rocket": "Soyuz",
+	"Circulation flag": "11",
+	"Cycle number": "167",
+	"Date": "2021-08-10T04:48:26.831Z",
+	"Echo Compression Type": "FDBAQ_0",
+	"Filename": "S1B_IW_RAW__0SDV_20210810T044826_20210810T044859_028179_035C9B_6C5A.SAFE",
+	"Footprint": "<gml:Polygon srsName=\"http://www.opengis.net/gml/srs/epsg.xml#4326\" xmlns:gml=\"http://www.opengis.net/gml\">\n   <gml:outerBoundaryIs>\n      <gml:LinearRing>\n         <gml:coordinates>36.1275,17.2414 34.1716,16.8516 33.9029,19.4971 35.8582,19.9520 36.1275,17.2414 36.1275,17.2414</gml:coordinates>\n      </gml:LinearRing>\n   </gml:outerBoundaryIs>\n</gml:Polygon>",
+	"Format": "SAFE",
+	"Identifier": "S1B_IW_RAW__0SDV_20210810T044826_20210810T044859_028179_035C9B_6C5A",
+	"Ingestion Date": "2021-08-10T06:36:21.527Z",
+	"Instrument": "SAR-C",
+	"Instrument abbreviation": "SAR-C SAR",
+	"Instrument description": "<a target=\"_blank\" href=\"https://sentinel.esa.int/web/sentinel/missions/sentinel-1\">https://sentinel.esa.int/web/sentinel/missions/sentinel-1</a>",
+	"Instrument description text": "The SAR Antenna Subsystem (SAS) is developed and build by AstriumGmbH. It is a large foldable planar phased array antenna, which isformed by a centre panel and two antenna side wings. In deployedconfiguration the antenna has an overall aperture of 12.3 x 0.84 m.The antenna provides a fast electronic scanning capability inazimuth and elevation and is based on low loss and highly stablewaveguide radiators build in carbon fibre technology, which arealready successfully used by the TerraSAR-X radar imaging mission.The SAR Electronic Subsystem (SES) is developed and build byAstrium Ltd. It provides all radar control, IF/ RF signalgeneration and receive data handling functions for the SARInstrument. The fully redundant SES is based on a channelisedarchitecture with one transmit and two receive chains, providing amodular approach to the generation and reception of wide-bandsignals and the handling of multi-polarisation modes. One keyfeature is the implementation of the Flexible Dynamic BlockAdaptive Quantisation (FD-BAQ) data compression concept, whichallows an efficient use of on-board storage resources and minimisesdownlink times.",
+	"Instrument mode": "IW",
+	"Instrument name": "Synthetic Aperture Radar (C-band)",
+	"JTS footprint": "MULTIPOLYGON (((19.4971 33.9029, 19.952 35.8582, 17.2414 36.1275, 16.8516 34.1716, 19.4971 33.9029)))",
+	"Launch date": "April 25th, 2016",
+	"Mission datatake id": "220315",
+	"Mission type": "Earth observation",
+	"Mode": "IW",
+	"NSSDC identifier": "2016-025A",
+	"Noise Compression Type": "BYPASS",
+	"Operator": "European Space Agency",
+	"Orbit number (start)": "28179",
+	"Orbit number (stop)": "28179",
+	"Pass direction": "DESCENDING",
+	"Phase identifier": "1",
+	"Polarisation": "VH VV",
+	"Product class": "S",
+	"Product class description": "SAR Slice L0 product",
+	"Product consolidation": "SLICE",
+	"Product level": "L0",
+	"Product type": "RAW",
+	"Relative orbit (start)": "153",
+	"Relative orbit (stop)": "153",
+	"Satellite": "Sentinel-1",
+	"Satellite description": "<a target=\"_blank\" href=\"https://sentinel.esa.int/web/sentinel/missions/sentinel-1\">https://sentinel.esa.int/web/sentinel/missions/sentinel-1</a>",
+	"Satellite name": "Sentinel-1",
+	"Satellite number": "B",
+	"Sensing start": "2021-08-10T04:48:26.831Z",
+	"Sensing stop": "2021-08-10T04:48:59.230Z",
+	"Size": "1.56 GB",
+	"Slice number": "27",
+	"Start relative orbit number": "153",
+	"Status": "ARCHIVED",
+	"Stop relative orbit number": "153",
+	"Instrument swath": "IW1 IW2 IW3",
+	"Timeliness Category": "NRT-3h",
+	"Resolution": "High",
+	"Product composition": "Individual"
+}
+```
+
