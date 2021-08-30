@@ -1,0 +1,246 @@
+{
+    "@context": "",
+    "type": "",
+    "@id": "",
+    "bbox": "",
+    "geometry": {
+        "type": "",
+        "coordinates": []
+    },
+    "properties": {
+        "type": "",
+        "status": "",
+        "parentIdentifier": "",
+        "doi": "",
+        "title": "",
+        "identifier": "",
+        "date": "",
+        "created": "",
+        "available": "",
+        "additionalAttributes": {},
+        "offerings": [
+            {
+                "operations": [
+                    {
+                        "code": "",
+                        "method": "",
+                        "type": "",
+                        "href": "",
+                        "request": {
+                            "type": "",
+                            "href": "",
+                            "title": "",
+                            "content": "",
+                            "extension": ""
+                        },
+                        "result": {
+                            "type": "",
+                            "href": "",
+                            "title": "",
+                            "content": "",
+                            "extension": ""
+                        },
+                        "extension": ""
+                    }
+                ],
+                "contents": "miss",
+                "styles": "miss",
+                "extension": "miss"
+            }
+        ],
+        "links": {
+            "type": "",
+            "alternates": [
+                {
+                    "href": "",
+                    "type": "",
+                    "title": "",
+                    "length": "",
+                    "category": "",
+                    "expression": "",
+                    "conformsTo": ""
+                }
+            ],
+            "via": [
+                {
+                    "href": "",
+                    "type": "",
+                    "title": "",
+                    "length": "",
+                    "category": "",
+                    "expression": "",
+                    "conformsTo": ""
+                }
+            ],
+            "previews": [
+                {
+                    "href": "",
+                    "type": "",
+                    "title": "",
+                    "length": "",
+                    "category": "",
+                    "expression": "",
+                    "conformsTo": ""
+                }
+            ],
+            "data": [
+                {
+                    "href": "",
+                    "type": "",
+                    "title": "",
+                    "length": "",
+                    "category": "",
+                    "expression": "",
+                    "conformsTo": ""
+                }
+            ],
+            "qualityReport": [
+                {
+                    "href": "",
+                    "type": "",
+                    "title": "",
+                    "length": "",
+                    "category": "",
+                    "expression": "",
+                    "conformsTo": ""
+                }
+            ],
+            "related": [
+                {
+                    "href": "",
+                    "type": "",
+                    "title": "",
+                    "length": "",
+                    "category": "",
+                    "expression": "",
+                    "conformsTo": ""
+                }
+            ],
+            "up": [
+                {
+                    "href": "",
+                    "type": "",
+                    "title": "",
+                    "length": "",
+                    "category": "",
+                    "expression": "",
+                    "conformsTo": ""
+                }
+            ]
+        },
+        "acquisitionInformation": {
+            "acquisitionParameters": {
+                "type": "",
+                "acquisitionType": "",
+                "acquisitionSubType": "",
+                "startTimeFromAscendingNode": "",
+                "completionTimeFromAscendingNode": "",
+                "relativeOrbitNumber": "",
+                "wrsLongitudeGrid": "",
+                "wrsLatitudeGrid": "",
+                "tileId": "",
+                "groundTrackUncertainty": "",
+                "cycleNumber": "",
+                "antennaLookDirection": "",
+                "acquisitionStation": "",
+                "operationalMode": "",
+                "swathIdentifier": "",
+                "polarisationMode": "",
+                "polarisationChannels": "",
+                "resolution": "",
+                "verticalResolution": "",
+                "measurementType": "",
+                "dopplerFrequency": "",
+                "samplingRates": "",
+                "orbitDirection": "",
+                "lastOrbitDirection": "",
+                "orbitDuration": "",
+                "orbitNumber": "",
+                "lastOrbitNumber": "",
+                "ascendingNodeDate": "",
+                "ascendingNodeLongitude": "",
+                "beginningDateTime": "",
+                "endingDateTime": "",
+                "lowestLocation": "",
+                "highestLocation": "",
+                "locationUnit": "",
+                "acquisitionAngles": {
+                    "type": "",
+                    "illuminationAzimuthAngle": "",
+                    "illuminationZenithAngle": "",
+                    "illuminationElevationAngle": "",
+                    "incidenceAngle": "",
+                    "minimumIncidenceAngle": "",
+                    "maximumIncidenceAngle": "",
+                    "incidenceAngleVariation": "",
+                    "acrossTrackIncidenceAngle": "",
+                    "alongTrackIncidenceAngle": "",
+                    "instrumentAzimuthAngle": "",
+                    "instrumentZenithAngle": "",
+                    "instrumentElevationAngle": "",
+                    "pitch": "",
+                    "roll": "",
+                    "yaw": ""
+                },
+                "wavelengths": [
+                    {
+                        "type": "",
+                        "discreteWavelengths": "",
+                        "startWavelength": "",
+                        "endWavelength": "",
+                        "spectralRange": "",
+                        "wavelengthResolution": ""
+                    }
+                ]
+            },
+            "platform": {
+                "type": "",
+                "id": "",
+                "platformShortName": "",
+                "platformSerialIdentifier": "",
+                "orbitType": ""
+            },
+            "instrument": {
+                "type": "",
+                "id": "",
+                "sensorType": "",
+                "instrumentShortName": "",
+                "description": ""
+            }
+        },
+        "productInformation": {
+            "type": "",
+            "productType": "",
+            "size": "",
+            "statusSubType": "",
+            "statusDetail": "",
+            "availabilityTime": "",
+            "timeliness": "",
+            "productGroupId": "",
+            "productVersion": "",
+            "archivingCenter": "",
+            "archivingDate": "",
+            "referenceSystemIdentifier": "",
+            "compositeType": "",
+            "format": "",
+            "processingMethod": "",
+            "processingMethodVersion": "",
+            "processingCenter": "",
+            "processingDate": "",
+            "processingLevel": "",
+            "processingMode": "",
+            "processorName": "",
+            "processorVersion": "",
+            "productContentsType": "",
+            "cloudCover": "",
+            "snowCover": "",
+            "qualityInformation": {
+                "type": "",
+                "qualityStatus": "",
+                "qualityDegradation": "",
+                "qualityDegradationQuotationMode": "",
+                "qualityDegradationTag": ""
+            }
+        }
+    }
+}
