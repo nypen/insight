@@ -1,34 +1,118 @@
 {
     "eoEarthObservation": {
-        "eoAcquisitionInformation": {
-            "eoInstrument": {
-                "id": "",
-                "name": "Instrument name",
-                "instrumentShortName": "Instrument abbreviation",
-                "description": "Instrument description",
-                "polarisationChannels": "Polarisation",
-                "operationalMode": "Instrument mode",
-                "swathIdentifier": "Instrument swath"
+        "bbox": "",
+        "geometry": {
+            "type": "Footprint",
+            "coordinates": "Footprint"
+        },
+        "eoProperties": {
+            "status": "Status",
+            "parentIdentifier": "",
+            "doi": "",
+            "title": "Identifier",
+            "identifier": "Identifier",
+            "date": "Date",
+            "created": "Ingestion Date",
+            "available": ["Generation Date", "Creation Date"],
+            "additionalAttributes": "",
+            "lang": "HARDCODED",
+            "eoAcquisitionInformation": {
+                "eoAcquisitionParameters": {
+                    "acquisitionType": "Acquisition Type",
+                    "acquisitionSubType": "Mission datatake id",
+                    "startTimeFromAscendingNode": "",
+                    "completionTimeFromAscendingNode": "",
+                    "relativeOrbitNumber": "Relative orbit (start)",
+                    "wrsLongitudeGrid": "",
+                    "wrsLatitudeGrid": "",
+                    "tileId": "Tile Identifier",
+                    "groundTrackUncertainty": "",
+                    "cycleNumber": "Cycle number",
+                    "antennaLookDirection": "",
+                    "acquisitionStation": "",
+                    "operationalMode": ["Instrument mode", "Mode"],
+                    "swathIdentifier": "Instrument swath",
+                    "polarisationMode": "",
+                    "polarisationChannels": "Polarisation",
+                    "resolution": "",
+                    "verticalResolution": "",
+                    "measurementType": "",
+                    "dopplerFrequency": "",
+                    "samplingRates": "",
+                    "orbitDirection": ["Orbit Direction (start)", "Pass direction"],
+                    "lastOrbitDirection": ["Orbit Direction (stop)", "Orbit Direction (start)", "Pass direction"],
+                    "orbitDuration": "PDU Duration (s)",
+                    "orbitNumber": "Orbit number (start)",
+                    "lastOrbitNumber": ["Orbit number (stop)", "Orbit number (start)"],
+                    "ascendingNodeDate": "",
+                    "ascendingNodeLongitude": "",
+                    "beginningDateTime": "Sensing start",
+                    "endingDateTime": "Sensing stop",
+                    "lowestLocation": "",
+                    "highestLocation": "",
+                    "locationUnit": "",
+                    "acquisitionAngles": {
+                        "illuminationAzimuthAngle": "Illumination Azimuth Angle",
+                        "illuminationZenithAngle": "Illumination Zenith Angle",
+                        "illuminationElevationAngle": "",
+                        "incidenceAngle": "",
+                        "minimumIncidenceAngle": "",
+                        "maximumIncidenceAngle": "",
+                        "incidenceAngleVariation": "",
+                        "acrossTrackIncidenceAngle": "",
+                        "alongTrackIncidenceAngle": "",
+                        "instrumentAzimuthAngle": "",
+                        "instrumentZenithAngle": "",
+                        "instrumentElevationAngle": "",
+                        "pitch": "",
+                        "roll": "",
+                        "yaw": ""
+                    }
+                },
+                "eoPlatform": {
+                    "id": "",
+                    "platformShortName": ["Satellite name", "Satellite"],
+                    "platformSerialIdentifier": "Platform serial identifier",
+                    "orbitType": ""
+                },
+                "eoInstrument": {
+                    "id": "",
+                    "sensorType": "HARDCODED",
+                    "instrumentShortName": ["Instrument abbreviation", "Instrument short name"],
+                    "description": ["Instrument description text"]
+                }
             },
-            "eoPlatform": {
-                "id": "",
-                "platformSerialIdentifier": "Satellite number",
-                "platformShortName": "Satellite name"
-            },
-            "eoAcquisitionParameters": {
-                "acquisitionType": "Acquisition Type",
-                "cycleNumber": "Cycle number",
-                "ascendingNodeDate": "Ingestion Date",
-                "acquisitionSubType": "Mission datatake id",
-                "orbitNumber": "Orbit number (start)",
-                "lastOrbitNumber": "Orbit number (stop)",
-                "orbitDirection": "Pass direction",
-                "beginningDateTime": [
-                    "Sensing start",
-                    "Datatake sensing start"
-                ],
-                "endingDateTime": "Sensing stop",
-                "tileId": "Tile Identifier"
+            "eoProductInformation": {
+                "productType": "Product type",
+                "size": "Size",
+                "statusSubType": "",
+                "statusDetail": "",
+                "availabilityTime": "Ingestion Date",
+                "timeliness": "Timeliness Category",
+                "productGroupId": "Product class",
+                "productVersion": "",
+                "archivingCenter": "",
+                "archivingDate": "",
+                "referenceSystemIdentifier": "",
+                "compositeType": "",
+                "format": "Format",
+                "processingMethod": "",
+                "processingMethodVersion": ["Baseline Collection", "Processing baseline"],
+                "processingCenter": "Processing Facility Name",
+                "processingDate": "",
+                "processingLevel": ["Processing Level", "Product level"],
+                "processingMode": "Processor mode abbreviation",
+                "processorName": "",
+                "processorVersion": "Processor version",
+                "productContentsType": "",
+                "cloudCover": ["Cloud cover percentage", "Cloud Cover Percentage (%)"],
+                "snowCover": ["Snow ice percentage", "Snow or Ice Cover Percentage (%)"],
+                "qualityInformation": {
+                    "qualityStatus": "",
+                    "qualityDegradation": "",
+                    "qualityDegradationQuotationMode": "",
+                    "qualityDegradationTag": ""
+                }
             }
         }
     }
