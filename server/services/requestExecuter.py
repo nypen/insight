@@ -18,6 +18,9 @@ class RequestExecuter:
             structure1_file = open("./inputs/structure1.json", "r")
             structure = json.load(structure1_file)
 
-            result = GeoJsonProducer.produceGeoJsonLd(result, structure, frame)
+            types_file = open("./inputs/types.json", "r")
+            types = json.load(types_file)
+
+            result = GeoJsonProducer.produceGeoJsonLd(result, structure, types, frame)
 
         return result
