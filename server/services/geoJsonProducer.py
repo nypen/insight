@@ -11,19 +11,20 @@ sentinel_data = ['Acquisition Type', 'Cycle number', 'Ingestion Date', 'Mission 
     'Datatake sensing start', 'Ingestion Date', 'Mission datatake id', 
     'Orbit number (start)', 'Pass direction', 'Sensing start', 'Sensing stop', 'Tile Identifier', 
     'Satellite name','Satellite number', 'Satellite', 'Instrument', 'Instrument abbreviation', 'Instrument mode', 
-    'Instrument id', 'Instrument name', 'Platform id']
+    'Instrument id', 'Instrument name', 'Platform id', ]
 
 class GeoJsonProducer:
-    def produceGeoJsonLd(data, structure, frame):
+
+    def produceGeoJsonLd(data, structure, types, frame):
         
-        result = EOCollector.collect(data, sentinel_data)
+        result = EOCollector.collect(data)
 
         result['eoPlatform'] = GcmdService.getPlatformUrl(result['Satellite'])
         result['eoInstrument'] = GcmdService.getInstrumentUrl(result['Instrument'])
 
         graph = EOGraph()
 
-        graph.addEoTriples(structure, result)
+        graph.addEoTriples(structure, result, types)
     
         g = jsonld.from_rdf(graph.serialize())
 
