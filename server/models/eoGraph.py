@@ -9,7 +9,7 @@ class EOGraph(Graph):
     IRI = "IRI"
     
 
-    def addEoTriples(self, structure, values, parent=None):
+    def addEoTriples(self, structure, values, types, parent=None):
         for key in structure:
             pred = Node(EOGraph.IRI, EOGraph.schema.format(key))
             # Node("IRI", "http://schema.org/EarthObservation")
@@ -17,25 +17,25 @@ class EOGraph(Graph):
             if(type(structure[key])==type({})):
                 dictionary = structure[key]
                 nodeType = Node(EOGraph.IRI, EOGraph.fnType)
+                typeValue = types[key] if key in types.keys() else ""
 
                 if("id" in dictionary):
-                    idNode = Node(EOGraph.IRI, values[key])
+                    value = values[key] if key in values.keys() else ""
+                    idNode = Node(EOGraph.IRI, value)
                     self.addTriple(parent, pred, idNode)
                     
-                    # remove "eo" prefix from type
-                    self.addTriple(idNode, nodeType, Node(EOGraph.IRI, EOGraph.schema.format(key[2:])))
+                    self.addTriple(idNode, nodeType, Node(EOGraph.IRI, EOGraph.schema.format(typeValue)))
 
-                    self.addEoTriples(dictionary, values, idNode)
+                    self.addEoTriples(dictionary, values, types, idNode)
                 else:
                     b = Node(EOGraph.blankNode)
 
-                    # remove "eo" prefix from type
-                    self.addTriple(b, nodeType, Node(EOGraph.IRI, EOGraph.schema.format(key[2:])))
+                    self.addTriple(b, nodeType, Node(EOGraph.IRI, EOGraph.schema.format(typeValue)))
                     
                     if(parent!=None):
                         self.addTriple(parent, pred, b)
 
-                    self.addEoTriples(structure[key], values, b)
+                    self.addEoTriples(structure[key], values, types, b)
             else:
                 subj = parent
 
