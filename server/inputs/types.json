@@ -1,0 +1,11 @@
+{
+    "eoEarthObservation": "EarthObservation",
+    "eoProperties": "Properties",
+    "eoAcquisitionInformation": "AcquisitionInformation",
+    "eoInstrument": "Instrument",
+    "eoPlatform": "Platform",
+    "eoAcquisitionParameters": "AcquisitionParameters",
+    "eoAcquisitionAngles": "AcquisitionAngles",
+    "eoWavelengths": "Wavelengths",
+    "eoProductInformation": "ProductInformation"
+}
