@@ -12,13 +12,13 @@ class RequestExecuter:
         if(allAttributes):
             data =  EOCollector.collect(data)
         else:
-            frame_file = open("./inputs/frame.json", "r")
+            frame_file = open("./configurations/frame.json", "r")
             frame = json.load(frame_file)
 
-            graphDefinition_file = open("./inputs/graphDefinition.json", "r")
+            graphDefinition_file = open("./configurations/graphDefinition.json", "r")
             definition = json.load(graphDefinition_file)
 
-            types_file = open("./inputs/types.json", "r")
+            types_file = open("./configurations/types.json", "r")
             types = json.load(types_file)
 
             data = GeoJsonProducer.produceGeoJsonLd(data, definition, types, frame)
