@@ -9,8 +9,9 @@ class RequestExecuter:
         oah = OpenAccessHubService()
         data = oah.getProductData(username, password, id, isSentinel5P)
 
+        result = None
         if(allAttributes):
-            data =  EOCollector.collect(data)
+            result =  EOCollector.collect(data)
         else:
             frame_file = open("./configurations/frame.json", "r")
             frame = json.load(frame_file)
@@ -21,7 +22,7 @@ class RequestExecuter:
             types_file = open("./configurations/types.json", "r")
             types = json.load(types_file)
 
-            data = GeoJsonProducer.produceGeoJsonLd(data, definition, types, frame)
+            result = GeoJsonProducer.produceGeoJsonLd(data, definition, types, frame)
 
-        return data
+        return result
 
