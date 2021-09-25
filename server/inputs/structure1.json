@@ -1,5 +1,6 @@
 {
     "eoEarthObservation": {
+        "id": "",
         "bbox": "",
         "geometry": {
             "type": "Footprint",
