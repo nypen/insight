@@ -6,8 +6,7 @@ class EOGraph(Graph):
     schema = "http://schema.org/{}"
     fnType = "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
     blankNode = "blank node"
-    IRI = "IRI"
-    
+    IRI = "IRI"    
 
     def addEoTriples(self, structure, values, types, parent=None):
         for key in structure:
@@ -39,26 +38,9 @@ class EOGraph(Graph):
             else:
                 subj = parent
 
-                if(key=="id"):
-                    continue
-                
-                mappedValue = ""
-                
-                # if the key maps to a list, 
-                # e.g. "beginningDateTime" : ["Sensing start", "Datatake sensing start"]
-                # check all values of the list and keep the value that exists in collected valued
-                if(type(structure[key])==type([])):
-                    for value in structure[key]:
-                        if(value in values):
-                            mappedValue = value
-                            break
-                else:
-                    if(structure[key] in values):
-                        mappedValue = structure[key]
-                
-                if(mappedValue==""):
-                    continue
-
-                obj = Literal(values[mappedValue])
+                if(key=="id" or key not in values or not len(values[key])):
+                    continue        
+        
+                obj = Literal(values[key])
             
                 self.addTriple(subj, pred, obj)
