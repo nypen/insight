@@ -8,29 +8,29 @@ class EOGraph(Graph):
     blankNode = "blank node"
     IRI = "IRI"    
 
-    def addEoTriples(self, structure, values, types, parent=None):
-        for key in structure:
+    def addEoTriples(self, graphDefinition, values, types, parent=None):
+        for key in graphDefinition:
             pred = Node(EOGraph.IRI, EOGraph.schema.format(key))
             # Node("IRI", "http://schema.org/EarthObservation")
 
-            if(type(structure[key])==type({})):
-                dictionary = structure[key]
-                nodeType = Node(EOGraph.IRI, EOGraph.fnType)
-                typeValue = types[key] if key in types.keys() else ""
+            if(type(graphDefinition[key])==type({})):
+                nestedGraphObject = graphDefinition[key]
                 node = None
-                if("id" in dictionary):
+
+                if("id" in nestedGraphObject):
                     idValue = values[key] if key in values.keys() else ""
                     node = Node(EOGraph.IRI, idValue)
-                    
                 else:
                     node = Node(EOGraph.blankNode)
 
-                self.addTriple(node, nodeType, Node(EOGraph.IRI, EOGraph.schema.format(typeValue)))
+                if(key in types.keys()):
+                    typeValue = types[key]
+                    self.addTriple(node, Node(EOGraph.IRI, EOGraph.fnType), Node(EOGraph.IRI, EOGraph.schema.format(typeValue)))
                 
                 if(parent!=None):
                     self.addTriple(parent, pred, node)
 
-                self.addEoTriples(dictionary, values, types, node)
+                self.addEoTriples(nestedGraphObject, values, types, node)
             else:
                 subj = parent
 
