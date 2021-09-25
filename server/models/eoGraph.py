@@ -11,7 +11,6 @@ class EOGraph(Graph):
     def addEoTriples(self, graphDefinition, values, types, parent=None):
         for key in graphDefinition:
             pred = Node(EOGraph.IRI, EOGraph.schema.format(key))
-            # Node("IRI", "http://schema.org/EarthObservation")
 
             if(type(graphDefinition[key])==type({})):
                 nestedGraphObject = graphDefinition[key]

@@ -7,20 +7,21 @@ from services.eoCollector import EOCollector
 class RequestExecuter:
     def executeRequest(self, id, isSentinel5P, username, password, allAttributes=False):
         oah = OpenAccessHubService()
-        result = oah.getProductData(username, password, id, isSentinel5P)
+        data = oah.getProductData(username, password, id, isSentinel5P)
 
         if(allAttributes):
-            result =  EOCollector.collect(result)
+            data =  EOCollector.collect(data)
         else:
             frame_file = open("./inputs/frame.json", "r")
             frame = json.load(frame_file)
 
-            structure1_file = open("./inputs/structure1.json", "r")
-            structure = json.load(structure1_file)
+            graphDefinition_file = open("./inputs/graphDefinition.json", "r")
+            definition = json.load(graphDefinition_file)
 
             types_file = open("./inputs/types.json", "r")
             types = json.load(types_file)
 
-            result = GeoJsonProducer.produceGeoJsonLd(result, structure, types, frame)
+            data = GeoJsonProducer.produceGeoJsonLd(data, definition, types, frame)
 
-        return result
+        return data
+
