@@ -17,24 +17,20 @@ class EOGraph(Graph):
                 dictionary = structure[key]
                 nodeType = Node(EOGraph.IRI, EOGraph.fnType)
                 typeValue = types[key] if key in types.keys() else ""
-
+                node = None
                 if("id" in dictionary):
-                    value = values[key] if key in values.keys() else ""
-                    idNode = Node(EOGraph.IRI, value)
-                    self.addTriple(parent, pred, idNode)
+                    idValue = values[key] if key in values.keys() else ""
+                    node = Node(EOGraph.IRI, idValue)
                     
-                    self.addTriple(idNode, nodeType, Node(EOGraph.IRI, EOGraph.schema.format(typeValue)))
-
-                    self.addEoTriples(dictionary, values, types, idNode)
                 else:
-                    b = Node(EOGraph.blankNode)
+                    node = Node(EOGraph.blankNode)
 
-                    self.addTriple(b, nodeType, Node(EOGraph.IRI, EOGraph.schema.format(typeValue)))
-                    
-                    if(parent!=None):
-                        self.addTriple(parent, pred, b)
+                self.addTriple(node, nodeType, Node(EOGraph.IRI, EOGraph.schema.format(typeValue)))
+                
+                if(parent!=None):
+                    self.addTriple(parent, pred, node)
 
-                    self.addEoTriples(structure[key], values, types, b)
+                self.addEoTriples(dictionary, values, types, node)
             else:
                 subj = parent
 
