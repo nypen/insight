@@ -57,10 +57,6 @@ class EOGraph(Graph):
 
                 if(key=="id" or key not in values or not len(values[key])):
                     continue        
-        
-                obj = Literal(values[key])
-            
-                self.addTriple(subj, pred, obj)
                 
                 if(type(values[key])==type([])):
                     obj = Node(EOGraph.blankNode)
