@@ -11,23 +11,10 @@ class GeoJsonProducer:
     def produceGeoJsonLd(data, structure, types, frame):
 
         result = EOCollector.collect(data)
-        for i in result:
-            print(i + ": " + result[i])
-        print("--------------")
-        print("-----------")
 
         result = GeoJsonProducer.annotate(result, structure)
-        for i in result:
-            print(i + ": " + result[i])
-        print("--------------")
-        print("-----------")
 
         result = GeoJsonProducer.formatValues(result)
-
-        for i in result:
-            print(i + ": " + result[i])
-        print("--------------")
-        print("-----------")
 
         graph = EOGraph()
 
