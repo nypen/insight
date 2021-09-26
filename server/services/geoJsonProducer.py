@@ -2,7 +2,7 @@ from pyld import jsonld
 from services.eoCollector import EOCollector
 from models.eoGraph import EOGraph
 from services.gcmdService import GcmdService
-from services.helpers import getValueBetweenTag
+from services.helpers import getValueBetweenTag, getValueBetween
 
 
 class GeoJsonProducer:
@@ -64,12 +64,21 @@ class GeoJsonProducer:
 
         return annotatedData
 
-    def formatValues(diction):
-        for key in diction.keys():
+    def formatValues(values):
+        for key in values.keys():
             if(key == "type"):
-                diction[key] = "POLYGON" if "Polygon" in diction[key] else ""
+                values[key] = "POLYGON" if "Polygon" in values[key] else ""
             elif(key == "coordinates"):
-                value = getValueBetweenTag("gml:coordinates", diction[key])
-                diction[key] = value
-
-        return diction
+                value = getValueBetweenTag("gml:coordinates", values[key])
+                # values[key] = [value]
+                coordinates = value.split(" ")
+                coordinatesArray = []
+                for coordinate in coordinates:
+                    points = coordinate.split(",")
+                    coordinatesArray.append(
+                        [float(points[0]), float(points[1])])
+                values[key] = [coordinatesArray]
+            elif(key == "processingCenter"):
+                value = getValueBetween("[", "]", values[key])
+                values[key] = value
+        return values

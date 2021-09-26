@@ -1,5 +1,11 @@
 {
   "@context": {"@vocab": "http://schema.org/"},
+  "@context": {
+    "@vocab": "http://schema.org/",
+    "coordinates": {
+      "@container": "@list"
+    }
+  },
   "@type": "EarthObservation",
   "eoProperties": {
     "@type": "Properties",
