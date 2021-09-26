@@ -52,7 +52,7 @@
                     "lowestLocation": "",
                     "highestLocation": "",
                     "locationUnit": "",
-                    "acquisitionAngles": {
+                    "eoAcquisitionAngles": {
                         "illuminationAzimuthAngle": "Illumination Azimuth Angle",
                         "illuminationZenithAngle": "Illumination Zenith Angle",
                         "illuminationElevationAngle": "",
