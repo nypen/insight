@@ -5,26 +5,18 @@
       "@container": "@list"
     }
   },
-  "@type": "EarthObservation",
   "eoProperties": {
-    "@type": "Properties",
     "eoAcquisitionInformation": {
-      "@type": "AcquisitionInformation",
       "eoInstrument": {
-        "@type": "Instrument"
       },
       "eoPlatform": {
-        "@type": "Platform"
       },
       "eoAcquisitionParameters": {
-        "@type": "AcquisitionParameters",
         "eoAcquisitionAngles": {
-          "@type": "AcquisitionAngles"
         }
       }
     },
     "eoProductInformation": {
-      "@type": "ProductInformation"
     }
   }
 }
