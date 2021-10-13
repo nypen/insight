@@ -9,7 +9,7 @@
 #
 #   - Bash -
 #
-#   export FLASK_APP=app
+#   export FLASK_APP=app.py
 #   flask run
 
 from flask import Flask, jsonify, request
