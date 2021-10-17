@@ -42,11 +42,11 @@ class GeoJsonProducer:
                 nested = GeoJsonProducer.annotate(data, annotations[key])
                 annotatedData.update(nested)
 
-        annotatedData['eoPlatform'] = GcmdService.getPlatformUrl(
+        annotatedData['platform'] = GcmdService.getPlatformUrl(
             data['Satellite'])
-        annotatedData['eoInstrument'] = GcmdService.getInstrumentUrl(
+        annotatedData['instrument'] = GcmdService.getInstrumentUrl(
             data['Instrument'])
-        annotatedData['eoEarthObservation'] = GeoJsonProducer.IRI.format(
+        annotatedData['earthObservation'] = GeoJsonProducer.IRI.format(
             data['Identifier'])
 
         return annotatedData

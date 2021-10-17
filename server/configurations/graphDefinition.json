@@ -1,12 +1,12 @@
 {
-    "eoEarthObservation": {
+    "earthObservation": {
         "id": "",
         "bbox": "",
         "geometry": {
             "type": "Footprint",
             "coordinates": "Footprint"
         },
-        "eoProperties": {
+        "properties": {
             "status": "Status",
             "parentIdentifier": "",
             "doi": "",
@@ -17,8 +17,8 @@
             "available": ["Generation Date", "Creation Date"],
             "additionalAttributes": "",
             "lang": "HARDCODED",
-            "eoAcquisitionInformation": {
-                "eoAcquisitionParameters": {
+            "acquisitionInformation": {
+                "acquisitionParameters": {
                     "acquisitionType": "Acquisition Type",
                     "acquisitionSubType": "Mission datatake id",
                     "startTimeFromAscendingNode": "",
@@ -70,20 +70,20 @@
                         "yaw": ""
                     }
                 },
-                "eoPlatform": {
+                "platform": {
                     "id": "",
                     "platformShortName": ["Satellite name", "Satellite"],
                     "platformSerialIdentifier": "Platform serial identifier",
                     "orbitType": ""
                 },
-                "eoInstrument": {
+                "instrument": {
                     "id": "",
                     "sensorType": "HARDCODED",
                     "instrumentShortName": ["Instrument abbreviation", "Instrument short name"],
                     "description": ["Instrument description text"]
                 }
             },
-            "eoProductInformation": {
+            "productInformation": {
                 "productType": "Product type",
                 "size": "Size",
                 "statusSubType": "",

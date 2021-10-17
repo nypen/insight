@@ -1,11 +1,11 @@
 {
-    "eoEarthObservation": "EarthObservation",
-    "eoProperties": "Properties",
-    "eoAcquisitionInformation": "AcquisitionInformation",
-    "eoInstrument": "Instrument",
-    "eoPlatform": "Platform",
-    "eoAcquisitionParameters": "AcquisitionParameters",
-    "eoAcquisitionAngles": "AcquisitionAngles",
-    "eoWavelengths": "Wavelengths",
-    "eoProductInformation": "ProductInformation"
+    "earthObservation": "EarthObservation",
+    "properties": "Properties",
+    "acquisitionInformation": "AcquisitionInformation",
+    "instrument": "Instrument",
+    "platform": "Platform",
+    "acquisitionParameters": "AcquisitionParameters",
+    "acquisitionAngles": "AcquisitionAngles",
+    "wavelengths": "Wavelengths",
+    "productInformation": "ProductInformation"
 }

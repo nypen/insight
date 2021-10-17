@@ -5,18 +5,18 @@
       "@container": "@list"
     }
   },
-  "eoProperties": {
-    "eoAcquisitionInformation": {
-      "eoInstrument": {
+  "properties": {
+    "acquisitionInformation": {
+      "instrument": {
       },
-      "eoPlatform": {
+      "platform": {
       },
-      "eoAcquisitionParameters": {
-        "eoAcquisitionAngles": {
+      "acquisitionParameters": {
+        "acquisitionAngles": {
         }
       }
     },
-    "eoProductInformation": {
+    "productInformation": {
     }
   }
 }
