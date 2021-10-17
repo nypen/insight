@@ -1,5 +1,5 @@
 import React from 'react';
-import { CircularProgress, Divider, Grid, makeStyles, Theme, Typography } from '@material-ui/core';
+import { CircularProgress, Divider, Grid, makeStyles, Theme } from '@material-ui/core';
 import { AppBar } from './appBar';
 import { getUrl } from '../appServices';
 import { RequestFormType } from '../requestForm';
@@ -7,6 +7,7 @@ import { RequestForm } from './requestForm';
 import { githubGist } from 'react-syntax-highlighter/dist/esm/styles/hljs'
 import { encode } from "base-64";
 import SyntaxHighlighter from 'react-syntax-highlighter';
+import { ErrorContainer } from './errorContainer';
 
 const useStyles = makeStyles((theme: Theme) => ({
     root: {
@@ -36,45 +37,42 @@ const Main = (props: React.PropsWithChildren<MainProps>) => {
     //     key: `color:${purple[700]}`,
     // };
 
+    function handleErrors(response) {
+        if (!response.ok) {
+            throw Error(response.statusText);
+        }
+        return response.json();
+    }
+
     const handleonClick = (requestForm: RequestFormType) => {
         setLoading(true);
         setResult(null);
+        setError(null);
 
         fetch(getUrl(requestForm.id) + "?issentinel5p=" + requestForm.isSentinel5P.toString(), {
             method: 'GET',
             cache: "no-cache",
-            // body: JSON.stringify({ username: requestForm.username, password: requestForm.password, isSentinel5P: requestForm.isSentinel5P }),
             headers: new Headers({
                 'mode': 'cors',
                 'Content-Type': 'application/json',
                 'Authorization': 'Basic ' + encode(requestForm.username + ":" + requestForm.password),
             })
         })
-            .then(
-                (result) => {
-                    const jsonResult = result.json()
-                    console.log("result " + jsonResult);
-                    return jsonResult;
-                },
-                (error) => {
-                    console.log("Error" + error);
-                    setLoading(false);
-                    setError(error);
-                }
-            )
-            .then(
-                // TODO: Fix loading remaining true after error response
-                (data) => {
-                    setLoading(false);
-                    setResult(data);
-                    console.log(data)
-                }
-            )
+            .then(handleErrors)
+            .then(response => {
+                setLoading(false);
+                setResult(response["result"]);
+                console.log(response);
+            }).catch(error => {
+                console.log("error " + error);
+                setLoading(false);
+                setError(error);
+            });
     }
 
     return (
         <div>
-            <Grid container className={classes.root} justify="center" xs={12}>
+            <Grid container className={classes.root} justify="center">
                 <Grid item xs={12}>
                     <AppBar />
                 </Grid>
@@ -87,8 +85,8 @@ const Main = (props: React.PropsWithChildren<MainProps>) => {
                     </Grid>
                     <Divider orientation="vertical" style={{ marginRight: "-1px" }} />
                     <Grid item container justify="center" alignItems="center" style={{ width: "55%", height: "inherit", overflow: "auto" }}>
-                        <Grid item style={{ width: "100%" }}>
-                            {result &&
+                        {result &&
+                            <Grid item style={{ width: "100%" }}>
                                 <SyntaxHighlighter
                                     language='json'
                                     showLineNumbers={true}
@@ -103,18 +101,18 @@ const Main = (props: React.PropsWithChildren<MainProps>) => {
                                 >
                                     {JSON.stringify(result, null, 2)}
                                 </SyntaxHighlighter>
-                            }
-                            {
-                                loading && <CircularProgress size={60} color="secondary" />
-                            }
-                            <Typography color="error">
-                                {error && error.message}
-                            </Typography>
-                        </Grid>
+                            </Grid>
+                        }
+                        {loading &&
+                            <Grid item>
+                                <CircularProgress size={60} color="secondary" />
+                            </Grid>
+                        }
+                        {error && <ErrorContainer error={error.message} />}
                     </Grid>
                 </Grid>
             </Grid>
-        </div>
+        </div >
     );
 }
 
