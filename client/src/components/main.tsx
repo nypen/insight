@@ -40,7 +40,7 @@ const Main = (props: React.PropsWithChildren<MainProps>) => {
         setLoading(true);
         setResult(null);
 
-        fetch(getUrl(requestForm.id) + "?isSentinel5p=" + requestForm.isSentinel5P.toString(), {
+        fetch(getUrl(requestForm.id) + "?issentinel5p=" + requestForm.isSentinel5P.toString(), {
             method: 'GET',
             cache: "no-cache",
             // body: JSON.stringify({ username: requestForm.username, password: requestForm.password, isSentinel5P: requestForm.isSentinel5P }),

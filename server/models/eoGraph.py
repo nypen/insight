@@ -55,7 +55,7 @@ class EOGraph(Graph):
             else:
                 subj = parent
 
-                if(key=="id" or key not in values or not len(values[key])):
+                if(key=="id" or key not in values or not values[key]):
                     continue        
                 
                 if(type(values[key])==type([])):

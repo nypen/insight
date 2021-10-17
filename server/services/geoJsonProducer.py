@@ -62,8 +62,9 @@ class GeoJsonProducer:
                 coordinatesArray = []
                 for coordinate in coordinates:
                     points = coordinate.split(",")
-                    coordinatesArray.append(
-                        [float(points[0]), float(points[1])])
+                    if(len(points[0]) and len(points[1])):
+                        coordinatesArray.append(
+                            [float(points[0]), float(points[1])])
                 values[key] = [coordinatesArray]
             elif(key == "processingCenter"):
                 value = getValueBetween("[", "]", values[key])
