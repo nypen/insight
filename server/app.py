@@ -19,26 +19,22 @@ from services.requestExecuter import RequestExecuter
 app = Flask(__name__)
 CORS(app)
 
-##
-# API routes
-##
-
-@app.route("/")
-def hello_world():
-    return "<p>Hello, World!</p>"
-
-@app.route('/api/products/<product_id>', methods=['POST'])
+@app.route('/api/products/<product_id>', methods=['GET'])
 def getProduct(product_id):
-  if request.method == 'POST':
-    body = request.get_json()
+  isSentinel5P = False
+  if(request.args.get('issentinel5p')):
+    isSentinel5P = request.args.get('issentinel5p').lower() == 'true'
 
-    print(body)
-    result = RequestExecuter().executeRequest(product_id, bool(body["isSentinel5P"]), body["username"], body["password"])
-    response = {
-      "result": result
-    }
+  username = request.authorization.username
+  password = request.authorization.password
+  
+  result = RequestExecuter().executeRequest(product_id, isSentinel5P, username, password)
 
-    return jsonify(response)
+  response = {
+    "result": result
+  }
+
+  return jsonify(response)
 
 @app.route('/api/products/<product_id>/attributes', methods=['POST'])
 def getallAttributes(product_id):
