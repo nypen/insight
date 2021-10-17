@@ -4,16 +4,19 @@ import { AppBar } from './appBar';
 import { getUrl } from '../appServices';
 import { RequestFormType } from '../requestForm';
 import { RequestForm } from './requestForm';
-import JSONPretty from 'react-json-pretty';
-import purple from '@material-ui/core/colors/purple';
+import { githubGist } from 'react-syntax-highlighter/dist/esm/styles/hljs'
+import { encode } from "base-64";
+import SyntaxHighlighter from 'react-syntax-highlighter';
 
 const useStyles = makeStyles((theme: Theme) => ({
     root: {
         height: "100vh",
+        overflowY: "hidden",
         backgroundColor: theme.palette.grey[700],
     },
     requestForm: {
         height: "90vh",
+        padding: "1px",
         backgroundColor: "#FFF",
     }
 
@@ -28,22 +31,23 @@ const Main = (props: React.PropsWithChildren<MainProps>) => {
 
     const classes = useStyles();
 
-    const theme = {
-        main: "line-height:1.3;background:#FFF;overflow:auto;",
-        key: `color:${purple[700]}`,
-    };
+    // const theme = {
+    //     main: "line-height:1.3;background:#FFF;overflow:auto;",
+    //     key: `color:${purple[700]}`,
+    // };
 
     const handleonClick = (requestForm: RequestFormType) => {
         setLoading(true);
         setResult(null);
 
-        fetch(getUrl(requestForm.id), {
-            method: 'POST',
+        fetch(getUrl(requestForm.id) + "?isSentinel5p=" + requestForm.isSentinel5P.toString(), {
+            method: 'GET',
             cache: "no-cache",
-            body: JSON.stringify({ username: requestForm.username, password: requestForm.password, isSentinel5P: requestForm.isSentinel5P }),
+            // body: JSON.stringify({ username: requestForm.username, password: requestForm.password, isSentinel5P: requestForm.isSentinel5P }),
             headers: new Headers({
                 'mode': 'cors',
-                'Content-Type': 'application/json'
+                'Content-Type': 'application/json',
+                'Authorization': 'Basic ' + encode(requestForm.username + ":" + requestForm.password),
             })
         })
             .then(
@@ -74,21 +78,31 @@ const Main = (props: React.PropsWithChildren<MainProps>) => {
                 <Grid item xs={12}>
                     <AppBar />
                 </Grid>
-                <Grid item container className={classes.requestForm}  direction="row" justify="center" alignItems="center" xs={10}>
-                    <Grid item style={{width:"45%"}}>
+                <Grid item container className={classes.requestForm} direction="row" justify="center" alignItems="center" xs={10}>
+                    <Grid item style={{ width: "45%" }}>
                         <RequestForm
                             loading={loading}
                             submitRequest={handleonClick}
                         />
                     </Grid>
-                    <Divider orientation="vertical"  style={{marginRight:"-1px"}} />
-                    <Grid item container justify="center" alignItems="center" style={{width:"55%"}}>
-                        <Grid item >
+                    <Divider orientation="vertical" style={{ marginRight: "-1px" }} />
+                    <Grid item container justify="center" alignItems="center" style={{ width: "55%", height: "inherit", overflow: "auto" }}>
+                        <Grid item style={{ width: "100%" }}>
                             {result &&
-                                <JSONPretty style={{padding:"10px", height:"100%"}}
-                                    themeClassName="custom-json-pretty"
-                                    theme={theme}
-                                    data={result["result"]}/>
+                                <SyntaxHighlighter
+                                    language='json'
+                                    showLineNumbers={true}
+                                    style={githubGist}
+                                    wrapLongLines={true}
+                                    wrapLines={true}
+                                    lineProps={lineNumber => ({
+                                        style: { display: 'block' },
+                                        onClick() {
+                                        }
+                                    })}
+                                >
+                                    {JSON.stringify(result, null, 2)}
+                                </SyntaxHighlighter>
                             }
                             {
                                 loading && <CircularProgress size={60} color="secondary" />
